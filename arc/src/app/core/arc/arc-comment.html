@@ -1,0 +1,9 @@
+<md-input-container class="container pb-10" ng-form="vm.CommentForm">
+    <label translate="ARC.ADDCOMMENTHERE">Add Comment Here</label>
+    <textarea max-rows="3" required minlength="10" name="Value" ng-model="vm.comment.Value"></textarea>
+    <div ng-messages="vm.CommentForm.Value.$error" role="alert">
+        <div ng-message-exp="['required', 'minlength']">
+            <span>Comment is required, and must be at least 10 characters.</span>
+        </div>
+    </div>
+</md-input-container>

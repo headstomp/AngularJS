@@ -1,0 +1,79 @@
+<md-dialog aria-label="Edit" flex="80">
+    <form name="vm.editTagForm" class="md-inline-form" novalidate>
+
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title" flex>
+                    <span class="fa fa-fw fa-calculator"></span>
+                    <span translate="ARC.CREATE_CALCULATED_TAG">Create Calculated Tag</span>
+                    <span style="font-size: 0.6em" ng-bind="vm.calculatedTagDetail.Name"></span>
+                </span>
+                <span flex="nogrow">
+                    <!-- HELP BUTTON -->
+                    <md-button class="md-icon-button"
+                             ng-click="vm.gotoHelp('calc')"
+                             aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                      <md-icon md-font-icon="icon-help-circle"></md-icon>
+                      <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                    </md-button>
+                    <!-- / HELP BUTTON -->
+                    <md-button class="md-icon-button" ng-click="vm.closeDialog()">
+                        <span class="fa fa-fw fa-times"></span>
+                    </md-button>
+                </span>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+        
+            <div layout="row" layout-margin>
+                <div layout="column" layout-align="start none" flex="25">
+                    
+                    <md-input-container class="md-block">
+                        <label translate="ARC.NAME">Name</label>
+                        <input name="Name" ng-model="vm.calculatedTagDetail.Name" />
+                    </md-input-container>
+                     
+                    <md-input-container class="md-block">
+                        <label translate="ARC.AREA">Area</label>
+                        <input name="Area" ng-model="vm.calculatedTagDetail.Area" />
+                    </md-input-container>
+                    
+                    <md-input-container class="md-block">
+                        <label translate="ARC.DESCRIPTION">Description</label>
+                        <textarea max-rows="3" md-maxlength="150" name="ShortDescription" ng-model="vm.calculatedTagDetail.Description"></textarea>
+                        <div ng-messages="vm.editTagForm.ShortDescription.$error" role="alert">
+                            <div ng-message-exp="['md-maxlength']"><span translate="DESCRIPTION_LIMIT_100_CHARS"> Description cannot exceed 150 characters</span></div>
+                        </div>
+                    </md-input-container>
+                    
+                    <arc-select-tag-source tag-source="vm.calculatedTagDetail.TagSource" 
+                                           where-set="vm.tagSourceWhereSet"></arc-select-tag-source>
+                
+                </div>
+                <div layout="column" flex="75">
+                
+                    <arc-expression-builder
+                        mvel-json="vm.calculatedTagDetail.Expression"
+                        is-valid="vm.expressionIsValid">
+                    </arc-expression-builder>
+                
+                </div>
+            </div>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="vm.closePrompt($event)">
+                <span class="fa fa-fw fa-times"></span>
+                <span translate="ARC.CLOSE">Close</span>
+            </md-button>
+            <span flex></span>
+            <md-button type="submit" ng-click="vm.saveCalculatedTagDetail(vm.value)" class="send-button md-accent md-raised" ng-disabled="vm.editTagForm.$invalid || vm.editTagForm.$pristine || !vm.expressionIsValid" aria-label="SAVE">
+                <span class="fa fa-fw fa-save"></span>
+                <span translate="ARC.SAVE">Save</span>
+            </md-button>
+        </md-dialog-actions>
+
+    </form>
+</md-dialog>

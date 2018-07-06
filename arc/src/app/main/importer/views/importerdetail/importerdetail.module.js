@@ -1,0 +1,99 @@
+(function () {
+    'use strict';
+    
+    angular
+    .module('app.importerdetail', [])
+    .config(config);
+    
+    /** @ngInject */
+    function config($stateProvider, msApiProvider, $translatePartialLoaderProvider) {
+        // State
+        $stateProvider.state('app.importerdetail', {
+            url: '/sourcedetail/:id',
+            views: {
+                'content@app': {
+                    templateUrl: 'app/main/importer/views/importerdetail/importerdetail.html',
+                    controller: 'importerdetailController as vm'
+                }
+            },
+            resolve: {
+                ImporterDetailService: function ($stateParams, ImporterDetailService) {
+                    return ImporterDetailService.getImporterDetail($stateParams.id);
+                }
+            }
+        });
+        
+        // TagSource (importers) details
+        msApiProvider.register('importerDetail', ['/TagSource/:id']);
+        
+        // get tag results
+        msApiProvider.register('tagresult', ['/TagReducedResult/:id', {
+                    id: '@Id',
+                }, {
+                    query: {
+                        method: 'query',
+                        params: {
+                            /* Defaults if any ex. (getByDate: true) */
+                        }
+                    }
+                }
+            ]);
+        
+        // get report list /Report/Tag/:id
+        msApiProvider.register('reportlist', ['/Report/Tag/:id', {
+                    id: '@Id',
+                },
+                
+            ]);
+        
+        // update report details
+        msApiProvider.register('editValue', ['/ReportResult/NonReduced', {}, {
+                    update: {
+                        method: 'POST',
+                        params: {
+                            /* Defaults if any ex. (getByDate: true) */
+                        }
+                    },
+                }
+            ]);
+        
+        msApiProvider.register('deleteValue', ['/ReportResult/NonReducedReportResult/Tag/:tagId/Group/:groupId', {
+                    tagId: '@tagId',
+                    groupId: '@groupId',
+                }, {
+                    delete : {
+                        method: 'DELETE',
+                        params: {},
+                    }
+                }
+            ]);
+        
+        // update tag details
+        msApiProvider.register('saveTagDetails', ['/Tag', {}, {
+                    update: {
+                        method: 'PUT',
+                        params: {
+                            /* Defaults if any ex. (getByDate: true) */
+                        }
+                    },
+                    del: {
+                        method: 'DELETE',
+                        params: {
+                            /* Defaults if any ex. (getByDate: true) */
+                        }
+                    }
+                }
+            ]);
+        
+        msApiProvider.register('importerValueCount', ['/TagSource/ValueCount', {}, {
+                    query: {
+                        method: 'get',
+                        params: {
+                            /* Defaults if any ex. (getByDate: true) */
+                        }
+                    }
+                }
+            ]);
+        
+    }
+})();

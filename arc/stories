@@ -1,0 +1,31 @@
+Refucktoring thing for me:-
+
+
+1. Alternate for datatable
+
+2. Forms app need to re-build
+    a) Re-create the forms app
+    b) empty endpoints needed for posting tags
+    c) CSS for table
+
+3. Reports UI stuff rebuild for all the Apps
+    a) Highcharts
+    b) Tag result
+    c) Details
+    d) Header
+    c) Taglist
+
+4. Impoters detail Screen fixes
+  a. Highlighter for selectod tags
+  b. spinner for loading tag data and CSS change on tag in taglist
+  c. CSS fix for datatables (scrolbar for horizontal scrolling)
+
+5. design n color selection for reports
+    a. color scheme
+    b. layout scheme
+    c. component scheme
+    d. rendering and maping architecture
+
+6. spinning for totalizer for tag Details
+   a. Failiure notification
+   b. restoring the state after failure

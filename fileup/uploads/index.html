@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>DAVE v2 API</title>
+  <link rel="stylesheet" href="public/css/app.css"/>
+
+<!-- TWITTER BOOTSTRAP -->
+<script src="public/bootstrap/js/ui-bootstrap-custom-0.10.0.js"></script>
+<script src="public/bootstrap/js/ui-bootstrap-custom-tpls-0.10.0.js"></script>
+
+
+<link rel="stylesheet" href="public/bootstrap/css/bootstrap.css"/>
+
+
+
+</head>
+<body>
+
+
+<br>
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#/home"><b>DAVE v2 UI API</b></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+    <li><a href="#/home">Home</a></li> 
+    <li><a href="#/docs">Documentation</a></li>
+    <li><a href="#/jsonspecs">JSON Format</a></li>
+    <li><a href="#/selectitem">Examples</a></li>
+    <li><a href="#/code">Code</a></li>
+  
+    </ul>
+
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+
+
+  <div ng-view></div>
+
+
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+
+  <script src="public/js/angular/angular.js"></script>
+  <script src="public/js/angular/angular-route.js"></script>
+  <script src="public/js/app.js"></script>
+  <script src="public/js/services.js"></script>
+  <script src="public/js/controllers.js"></script>
+  <script src="public/js/filters.js"></script>
+  <script src="public/js/directives.js"></script>
+  <script src="public/js/API.js"></script>
+
+ 
+
+
+</body>
+</html>

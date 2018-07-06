@@ -1,0 +1,54 @@
+<md-dialog class="edit-tag-comment-dialog" aria-label="Edit">
+    <md-toolbar class="md-accent md-hue-2">
+        <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+            <span class="title" translate="" >
+                <span ng-bind="vm.title"></span>
+                <span style="font-size: 0.6em" ng-bind="vm.dateTime"></span>
+
+            </span>
+            <!-- HELP BUTTON -->
+            <md-button class="md-icon-button"
+                     ng-click="vm.gotoHelp('comments')"
+                     aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+              <md-icon md-font-icon="icon-help-circle"></md-icon>
+              <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+            </md-button>
+            <!-- / HELP BUTTON -->
+            <md-button class="md-icon-button" ng-click="vm.closeDialog()">
+                <md-icon md-font-icon="icon-close" aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div layout="column" layout-align="start start">
+            <div class="scrollbar" id="style-5" layout="column">
+                <div flex-offset="80">{{vm.comments.length}} <span translate="ARC.COMMENTS">Comments</span> <i flex="1"class="fa fa-comments" aria-hidden="true"></i></div>
+                <md-list flex>
+                    <md-list-item class="md-3-line" ng-repeat="comment in vm.comments" ng-click="null">
+
+                        <div class="md-list-item-text" layout="column">
+                            <h3 ng-bind="comment.CreatedBy"></h3>
+                            <h4 ng-bind="comment.CreatedAt | date:'yyyy-MM-dd HH:mm'"></h4>
+                            <p ng-bind="comment.Value"></p>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                </md-list>
+            </div>
+        </div>
+        <arc-comment service="vm.commentService"></arc-comment>
+        <div layout="row" >
+          <div layout-align="left">
+          <md-button class="send-button md-accent md-raised" ng-click="vm.closeDialog()">
+              <span class="fa fa-fw fa-times"></span>
+              <span translate="ARC.CLOSE">close</span>
+          </md-button></div>
+          <span flex></span>
+          <div layout-align="end">
+            <md-button class="send-button md-accent md-raised" ng-click="vm.saveComment()">
+                <span class="fa fa-fw fa-save"></span>
+                <span translate="ARC.SAVE">Save</span>
+            </md-button></div>
+        </div>
+    </md-dialog-content>
+</md-dialog>

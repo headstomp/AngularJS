@@ -1,0 +1,162 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page">
+    <!-- HEADER -->
+    <div class="header md-accent-bg" ng-class="'md-'+vm.settings.color+'-bg'" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="1">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                    ng-class="''+vm.settings.color+'-700-bg'"
+                    ui-sref="app.exporthome"
+                    aria-label="apps button" translate-attr-aria-label="ARC.HOME">
+                    <md-icon md-font-icon="icon-format-list-bulleted" class="icon"></md-icon>
+                    <span translate="ARC.HOME">Home</span>
+                </md-button>
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                    ng-class="''+vm.settings.color+'-700-bg'"
+                    ui-sref=""
+                    aria-label="apps button" translate-attr-aria-label="ARC.CONFIRM">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.CONFIRM">Confirm</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+
+            <!-- DESIGN NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="3" flex-order-xs="3"
+                 flex-xs="50">
+                <span>  
+                    {{ vm.designdetail.Name }}<br>
+                    {{ vm.designdetail.Owner }}
+                </span>
+            </div>
+            <!-- / DESIGN NAME -->
+
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+                <div class="search" layout="row" layout-align="start center">
+                    <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                    <input id="design-search" class="search-input" type="text" placeholder="Search"
+                           translate-attr-placeholder="ARC.SEARCH_EXCISE">
+                    </input>
+                </div>
+
+                <!-- SETTINGS BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.toggleSidenav('settings-sidenav')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-cog"></md-icon>
+                    <md-tooltip><span translate="ARC.SETTINGS">Settings</span></md-tooltip>
+                </md-button>
+                <!-- / SETTINGS BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+        </div>
+    </div>
+    <!-- / HEADER -->
+
+    <!-- PAGE CONTENT -->
+
+    <!-- CONTENT -->
+    <div class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content fullpage-datatable">
+            <div class="white-bg md-whiteframe-4dp">
+                <table id="excise-list" class="dataTable row-border hover" datatable="ng" dt-instance="vm.dtInstance7" dt-options="vm.dtOptions7">
+                    <thead>
+                        <tr>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Date / Time</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Lot #</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Product</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Source</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Weight (kg)</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Initials</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Destination</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Strength</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">Density</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">LABS</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">DMA Status</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="(key, value) in vm.excisedata">
+                            <td>{{ key | date:'yyyy-MM-dd HH:mm'}}</td>
+                            <td ng-repeat="(key, data) in value">
+                                <span ng-if="$index!=9 && $index!=8 && $index!=0 && $index!=3" style="cursor: pointer;" class="pl-15" ng-click="vm.openEditDialog($event, data)">{{data.Value}}</span>
+                                <span ng-if="$index==0">{{data.Value}}</span>
+                                <span ng-if="$index==8">{{data.Value | number:2}}</span>
+                                <span ng-if="$index==3">{{data.Value | number:2}}</span>
+                                <span ng-if="$index==9 && data.Value==1">rejected</span>
+                            </td>
+                  
+
+
+                           
+
+                    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </md-content>
+    <!-- / CONTENT -->
+
+
+
+</div>
+<!-- / PAGE CONTENT -->
+
+<!-- SETTINGS SIDENAV -->
+<md-sidenav class="settings-sidenav md-sidenav-right" md-component-id="settings-sidenav"
+    ng-include="'app/main/report/views/design/sidenavs/settings/design-settings-sidenav.html'"
+    ng-controller="designController as vm" ms-sidenav-helper>
+</md-sidenav>
+<!-- / SETTINGS SIDENAV -->
+
+</div>

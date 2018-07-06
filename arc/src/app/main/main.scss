@@ -1,0 +1,447 @@
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    /*transition: all 0.4s ease;*/
+  /*  padding: 0.3em 0.8em; */
+    padding: 9px 12px;
+    background: #D6D6D6;
+    border: 1px solid transparent;
+}
+
+
+
+.search {
+        position: relative;
+        // padding-right: 120px;
+        max-width: 480px;
+
+        .search-icon {
+            margin: 0 -24px 0 0;
+        }
+
+        .search-input {
+            margin: 0 0 0 32px;
+            background: none;
+            font-size: 16px;
+            line-height: 40px;
+            height: 40px;
+            color: #FFFFFF;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            transition: border-color 300ms ease;
+
+            &:focus {
+                border-color: rgba(255, 255, 255, 1);
+            }
+
+            &::-webkit-input-placeholder {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+#data_tables
+{
+    .dataTable input.filter-input
+    {
+        border: 1px dotted #cacaca;
+        padding: 5px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        //font-style: italic;
+        background-color: #F8F8F8;
+        color: red;
+    }
+
+
+}
+
+#data_table-list tbody th, #data_table-list tbody td {
+    padding: 4px 10px;
+    cursor:pointer;
+}
+#data_table-list thead th {
+    padding: 10px 10px;
+}
+
+
+.trash{
+
+    vertical-align: -10%;
+    padding-left: 1.6em;
+    color: #208ABE;
+    &:hover {
+        color:red;
+    }
+}
+
+.pub-link{
+    cursor: pointer;
+    color: #039BE5;
+    text-decoration: underline;
+
+
+}
+
+
+
+
+
+
+
+
+
+#apps {
+    min-height: 100%;
+
+    #app-selector {
+        margin-top: 88px;
+
+        .app-list {
+            padding: 32px 0;
+
+            .app-list-item {
+                min-width: 210px;
+                width: 210px;
+                padding: 24px 0;
+                margin: 16px;
+                border-radius: 2px;
+                background: rgba(0, 0, 0, 0.12);
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: $whiteframe-shadow-4dp;
+                }
+
+                .app-name {
+                    padding-top: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#appheader {
+
+    // height: 100%;
+    // padding-bottom:7%;
+    background-color: #FFFFFF;
+
+    > .header {
+        position: relative;
+        height: 66px;
+        min-height: 66px;
+        max-height: 66px;
+        width: 100%;
+
+        z-index: 49;
+
+        .header-content {
+
+
+            .header-apps-button {
+                margin-right: 5;
+
+
+            }
+
+            .header-app-name {
+                font-size: 16px;
+
+                .app-subscribe {
+                    margin-right: 8px;
+                }
+
+                .editable-buttons {
+
+                    md-icon {
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+
+            .right-side {
+
+                > .md-button:last-child {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    #app-selector {
+        position: absolute;
+        top: 96px;
+        right: 0;
+        left: 0;
+        height: 108px;
+        z-index: 48;
+        padding: 14px;
+        opacity: 40;
+
+        .app-list-item {
+            width: 128px;
+            height: 128px;
+            padding-top: 22px;
+
+            cursor: pointer;
+            position: relative;
+
+            .app-name {
+                text-align: center;
+
+            }
+
+            .selected-icon {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 32px;
+                height: 32px;
+                margin-left: -16px;
+                margin-top: 15px;
+                border-radius: 50%;
+                text-align: center;
+                color: white;
+
+                i {
+                    line-height: 32px !important;
+                }
+            }
+
+            &.add-new-app {
+                opacity: 0.6;
+            }
+        }
+    }
+
+
+
+    .editable-click {
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        border-bottom: none;
+    }
+
+    .editable-wrap {
+        display: block;
+        position: relative;
+
+        .editable-controls {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+
+            .editable-input {
+                width: inherit;
+                background-color: white;
+                padding: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+            .editable-buttons {
+                display: inherit;
+
+                .md-button {
+                    margin: 0;
+
+                    &:first-of-type {
+                        padding-right: 0;
+                    }
+
+                    .icon-cancel {
+                        color: rgba(0, 0, 0, 0.32);
+                    }
+                }
+            }
+        }
+    }
+
+    .app-selector-backdrop {
+        z-index: 47;
+    }
+}
+
+#appheader-reports {
+    background-color:#E3E5E6;
+    height: 100%;
+    padding-bottom:65px;
+
+
+    > .header {
+        position: relative;
+        height: 66px;
+        min-height: 66px;
+        max-height: 66px;
+        width: 100%;
+
+        z-index: 49;
+
+        .header-content {
+
+            .header-apps-button {
+                margin-right: 5;
+
+
+            }
+
+            .header-app-name {
+                font-size: 16px;
+
+                .app-subscribe {
+                    margin-right: 8px;
+                }
+
+                .editable-buttons {
+
+                    md-icon {
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+
+            .right-side {
+
+                > .md-button:last-child {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    #app-selector {
+        position: absolute;
+        top: 96px;
+        right: 0;
+        left: 0;
+        height: 108px;
+        z-index: 48;
+        padding: 14px;
+        opacity: 40;
+
+        .app-list-item {
+            width: 128px;
+            height: 128px;
+            padding-top: 22px;
+
+            cursor: pointer;
+            position: relative;
+
+            .app-name {
+                text-align: center;
+
+            }
+
+            .selected-icon {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 32px;
+                height: 32px;
+                margin-left: -16px;
+                margin-top: 15px;
+                border-radius: 50%;
+                text-align: center;
+                color: white;
+
+                i {
+                    line-height: 32px !important;
+                }
+            }
+
+            &.add-new-app {
+                opacity: 0.6;
+            }
+        }
+    }
+
+
+
+    .editable-click {
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        border-bottom: none;
+    }
+
+    .editable-wrap {
+        display: block;
+        position: relative;
+
+        .editable-controls {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+
+            .editable-input {
+                width: inherit;
+                background-color: white;
+                padding: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+            .editable-buttons {
+                display: inherit;
+
+                .md-button {
+                    margin: 0;
+
+                    &:first-of-type {
+                        padding-right: 0;
+                    }
+
+                    .icon-cancel {
+                        color: rgba(0, 0, 0, 0.32);
+                    }
+                }
+            }
+        }
+    }
+
+    .app-selector-backdrop {
+        z-index: 47;
+    }
+}
+
+
+
+
+#appcontent {
+
+
+
+
+    .content {
+
+
+
+    }
+}
+
+
+.highlight {
+    color: #fff;
+    background-color: #039be5;
+}
+
+
+// RESPONSIVE
+@media screen and (max-width: $layout-breakpoint-xs) {
+
+    #appheader {
+
+        .header {
+            height: 120px;
+            max-height: 120px;
+            min-height: 120px;
+
+        }
+
+        #app-selector {
+            top: 120px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FIC_6206-PV",
+    "Id": 2,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FIC_6206-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  }
+]

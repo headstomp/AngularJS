@@ -1,0 +1,58 @@
+
+.dataTable {
+  border-collapse: collapse !important;
+}
+
+.date-search-bar{
+  margin: 20px;
+  float: left;
+}
+
+.action{
+position: relative;
+padding: 4px;
+text-align: left;
+border: 5px bottom #ddd;
+}
+
+.md-whiteframe-4dp, .md-whiteframe-z2 {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    // overflow-x: scroll;
+}
+
+#form-entry{
+  width:100%;
+  border-collapse: collapse;
+   tr{
+      height: 20px;
+      border-bottom: 1px solid #ddd;
+  }
+    th, td {
+        padding: 5px;
+        text-align: left;
+        width: auto;
+  }
+ tr:hover{
+    background-color:#f5f5f5
+}
+
+  tr td input[type="text"]{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+  }
+  tr td input:focus {
+    border-color: rgba(0, 0, 255, 0.25);
+    background-color: rgba(0, 0, 255, 0.025);
+}
+
+  tr td input[type="text"].ng-dirty{
+    color: #00f !important;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+  thead th {
+    padding-left: 11px !important;
+  }
+}

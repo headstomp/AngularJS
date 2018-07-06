@@ -1,0 +1,75 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="1">
+                <md-button ng-class="vm.applicationId==2 && 'md-raised' || 'md-accent md-raised'" 
+                           ng-click="vm.applicationId=2; vm.refreshDatabase()"
+                           aria-label="apps button" translate-attr-aria-label="ARC.NEW">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.NAV_DEV">Nav dev</span>
+                </md-button>
+                <md-button ng-class="vm.applicationId==1 && 'md-raised' || 'md-accent md-raised'" 
+                           ng-click="vm.applicationId=1; vm.refreshDatabase()"
+                           aria-label="apps button" translate-attr-aria-label="ARC.NEW">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.NAV_PROD">Nav prod</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+            <!-- DESIGN NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="3" flex-order-xs="3"
+                 flex-xs="50">
+                <span ng-if="vm.applicationId==2" translate="ARC.NAVISION_DEV">Navision DEV</span>
+                <span ng-if="vm.applicationId==1" translate="ARC.NAVISION_PROD">Navision PROD</span>
+            </div>
+            <!-- / DESIGN NAME -->
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+                <!-- SETTINGS BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.toggleSidenav('settings-sidenav')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-cog"></md-icon>
+                    <md-tooltip><span translate="ARC.SETTINGS">Settings</span></md-tooltip>
+                </md-button>
+                <!-- / SETTINGS BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+        </div>
+    </div>
+    <!-- / HEADER -->
+    <!-- CONTENT -->
+
+    <md-content id="appcontent" class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content">
+            <div class="white-bg md-whiteframe-4dp">
+       
+
+
+                
+                    <div id="data_tables">
+                        <style type="text/css">
+                        </style>
+                        <script type="text/javascript">
+                        </script>
+                        <table id="data_table-list" datatable="" class="table row-border hover dataTable" dt-instance="vm.navSessionsDTInstance" dt-options="vm.navSessionsDTOptions" dt-columns="vm.navSessionsColumns" dt-disable-deep-watchers="true">
+                        </table>
+                    </div>
+                
+
+
+
+            </div>
+        </div>
+    </md-content>
+
+    <!-- / CONTENT -->
+  
+</div>

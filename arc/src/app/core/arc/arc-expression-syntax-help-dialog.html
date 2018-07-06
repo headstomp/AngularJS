@@ -1,0 +1,237 @@
+<md-dialog flex="80">
+    <md-toolbar class="md-accent md-hue-2">
+        <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+            <span class="title" flex>
+                <span class="fa fa-fw fa-calculator"></span>
+                <span>Expression Syntax Help</span>
+            </span>
+            <span flex="nogrow">
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </span>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div class="line-heightened">
+            <h1>Syntax</h1>
+            
+            <p>The syntax used by the calculated tag expression builder loosely follows general arithmetic form. You may use:</p>
+
+            <ul>
+                <li>Numeric constants, such as <code>42</code> or <code>1.23</code></li>
+                <li>Variable references, such as <code>x</code>, <code>tank</code> or <code>volume_level</code></li>
+                <li>Most arithmetic operators, such as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+            </ul>
+
+            <h2>Simple Arithmetic Expressions</h2>
+
+            <p>Calculated tag expressions support most arithmetic operations, for example:</p>
+
+            <div class="code-block">
+                <code>
+                    <span><var>a</var> + (<var>b</var> / 100)</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('a + (b / 100)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <p>You are not limited to using 1-character variable names, though they must begin with a letter, and consist of letters, numbers, and underscores.</p>
+
+            <p>Underscores change the visual representation of the variable name, and can be useful for denoting aspects.</p>
+
+            <div class="code-block">
+                <code>
+                    <span>(<var>tank1_min</var> + <var>silo2_avg</var>) / 123</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('(tank1_min + silo2_avg) / 123')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <h2>Conditional Expressions</h2>
+            <p>Conditional expressions, which use the syntax <code><var>sub_expression</var> ? <var>if_true</var> : <var>if_false</var></code>, can be used to toggle between results depending on the result of a sub-expression.</p>
+            <p>The result is the value of <code><var>if_true</var></code> when <code><var>sub_expression</var></code> is true, and <code><var>if_false</var></code> otherwise.</p>
+
+            <div class="code-block">
+                <code>
+                    <span><var>sub_expression</var> ? <var>if_true</var> : <var>if_false</var></span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('sub_expression ? if_true : if_false')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <p>For example, to create a calculated tag that produces <code>1.0</code> if a tank level is greater than <code>120.5</code>, and <code>0.0</code> otherwise, you would use the expression:</p>
+            <div class="code-block">
+                <code>
+                    <span>(<var>tank_level</var> &gt; 120.5) ? 1.0 : 0.0</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('(tank_level > 120.5) ? 1.0 : 0.0')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <p>This is useful in creating calculated tags that quickly indicate whether the value of a tag is above, or has fallen below a certain threshold.</p>
+
+            <p>You are not limited to constant values in the results; each of the <code><var>if-true</var></code> and <code><var>if-false</var></code> parts can map to other tags as well. For example, to create a calculated tag that uses the value of <code><var>silo_1</var></code>        if the <code><var>tank_level</var></code> is greater than <code>120.5</code>, and the value of <code><var>silo_2</var></code> otherwise, you would use the expression:</p>
+
+            <div class="code-block">
+                <code>
+                    <span>(<var>tank_level</var> &gt; 120.5) ? <var>silo_1</var> : <var>silo_2</var></span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('(tank_level > 120.5) ? silo_1 : silo_2')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <br />
+
+            <h2>Supported Functions</h2>
+
+            <p><code><var class="function">sqrt</var>( <var>x</var> )</code> Returns the square root of the argument <code><var>x</var></code>.</p>
+            <div class="code-block">
+                <code>
+                    <span><var class="function">sqrt</var>( <var>x</var> )</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('sqrt(x)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            
+            <br />
+            
+            <p>
+            <code><var class="function">cbrt</var>( <var>x</var> )</code> Returns the cube root of the argument: <code><var>x</var></code>.</p>
+            <div class="code-block">
+                <code>
+                    <span><var class="function">cbrt</var>( <var>x</var> )</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('cbrt(x)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            
+            <br />
+            
+            <p><code><var class="function">floor</var>( <var>x</var> )</code> Rounds the argument <code><var>x</var></code> downward to its nearest integer<code><var>x</var></code>.</p>
+            <div class="code-block">
+                <code>
+                    <span><var class="function">floor</var>( <var>x</var> )</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('floor(x)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <br />
+            
+            <p><code><var class="function">ceil</var>( <var>x</var> )</code> Rounds the argument <code><var>x</var></code> upward to its nearest integer.</p>
+            <div class="code-block">
+                <code>
+                    <span><var class="function">ceil</var>( <var>x</var> )</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('ceil(x)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <br />
+            
+            <p><code><var class="function">round</var>( <var>x</var> )</code> Rounds the argument <code><var>x</var></code> up or down to its nearest integer.</p>
+            <div class="code-block">
+                <code>
+                    <span><var class="function">round</var>( <var>x</var> )</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('round(x)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            
+            <br />
+            
+            <p><code><var class="function">pow</var>( <var>x</var>, <var>y</var> )</code> Returns the value of the argument <code><var>x</var></code> to the power of argument <code><var>y</var></code>.</p>
+            <div class="code-block">
+                <code>
+                    <span><var class="function">pow</var>(<var>x</var>, <var>y</var>)</span>
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('pow(x, y)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+
+            <br />
+            
+            <p>
+            <code><var class="function">abs</var>( <var>x</var> )</code> Returns the absolute value of the argument <code><var>x</var></code>.</p>
+            <div class="code-block">
+                <code>
+                    <var class="function">abs</var>( <var>x</var> )
+                </code>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('abs(x)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+        </div>
+
+        <style type="text/css">
+            .line-heightened {
+                line-height: 200%;
+            }
+            
+            .code-block {
+                position: relative;
+            }
+            
+            .code-block > code {
+                display: block;
+                text-align: center;
+                font-size: 125%;
+                padding: 20px;
+            }
+            
+            .code-block > code:hover {
+                background-color: rgba(0, 0, 0, 0.085);
+            }
+
+            .code-block > a {
+                position: absolute;
+                line-height: 100%;
+                right: 8px;
+                bottom: 8px;
+            }
+
+            code * {
+                line-height: 125%;
+            }
+
+            code var {
+            color: #090;
+                font-size: 125%;
+            }
+
+            code var.function {
+                color: #900;
+            }
+
+            .md-whiteframe-4dp,
+            .md-whiteframe-z2 {
+                overflow-x: auto !important;
+            }
+        </style>
+
+    </md-dialog-content>
+</md-dialog>

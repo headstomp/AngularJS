@@ -1,0 +1,694 @@
+/** design for calulator stuff**/
+
+
+
+.calculator-tag{
+position: relative;
+width: 100%;
+margin-bottom: 2px;
+margin-left: -4px;
+min-height: 45px;
+color:white;
+background-color: #38A2D6;
+&:hover {
+  background-color: #208ABE;
+}
+
+}
+
+.calculator-tag-name{
+  font-weight: bold;
+  }
+
+.calculator-tag-listitem{
+      width: 400px;
+}
+
+.calculated-list-item{
+  color:white;
+  background-color: #38A2D6;
+}
+
+
+/*     ends *************/
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    /*transition: all 0.4s ease;*/
+  /*  padding: 0.3em 0.8em; */
+    background: #D6D6D6;
+    border: 1px solid transparent;
+}
+
+// slider
+
+.radio-range{
+  margin-top:15px;
+}
+.rzslider .rz-tick-legend {
+    position: absolute;
+    top: 18px;
+    max-width: 50px;
+    white-space: normal;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.rzslider .rz-bubble {
+    bottom: 16px;
+    padding: 1px 3px;
+    color: #55637d;
+    cursor: default;
+    font-size: smaller;
+}
+//slider ends
+
+#board {
+    position: absolute;
+    top: 0;
+    right: 0;// slider
+
+    .radio-range{
+      margin-top:0px;
+
+    }
+
+    .slider-margin{
+      margin-top: 15px;
+    }
+
+    .save-margin{
+      margin-top: 20px;
+    }
+    .rzslider .rz-tick-legend {
+        position: absolute;
+        top: 25px;
+        max-width: 50px;
+        white-space: normal;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+
+    .rzslider .rz-bubble {
+        bottom: 18px;
+        padding: 1px 3px;
+        color: #55637d;
+        cursor: default;
+        font-size: smaller;
+    }
+    //slider ends
+
+#board {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #E5E7E8;
+    padding: 24px;
+    min-height: 300px;
+
+
+    .tag-list-wrapper {
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+        padding-right: 24px;
+        height: 100%;
+
+        .list {
+            height: 100%;
+            background-color: #EEF0F2;
+            color: #000;
+            border-radius: 2px;
+            transition: box-shadow 150ms ease;
+
+            .list-header {
+                height: 54px;
+                min-height: 54px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+                .list-header-name {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                .list-header-option-button {
+
+                    .md-button {
+                    }
+                }
+            }
+            .list-menu {
+                height: 50px;
+                min-height: 50px;
+                max-height: 50px;
+                .list-menu-name {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+
+            .list-content {
+                position: relative;
+                overflow: hidden;
+                min-height: 0;
+
+                .list-cards {
+                    position: relative;
+                    min-width: 225px;
+                    padding: 0 16px;
+                    overflow-y: auto;
+
+                    .list-card {
+                        position: relative;
+                        width: 100%;
+                        margin-left: -4px;
+                        margin-top: 4px;
+                        margin-bottom: 2px;
+                        background-color: white;
+                        overflow: hidden;
+                        cursor: grabbing;
+                        height: 53px;
+                        min-height: 53px;
+                        max-height: 53px;
+
+                            &:hover {
+                                background-color: #BBDEFB;
+                            }
+                        .name {
+                            position: relative;
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 4px;
+                                left: 6px;
+                            overflow: hidden;
+                        }
+                        .strike {
+                            position: relative;
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 4px;
+                                left: 6px;
+                            overflow: hidden;
+                            text-decoration: line-through;
+                        }
+                        .description {
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 10px;
+                            line-height: 9px;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 20px;
+                                left: 6px;
+                                height: 30px;
+                            overflow: hidden;
+                        }
+                        .edit {
+                            z-index: 100;
+                            color: #607D8B;
+                            position: absolute;
+                                top: 37px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                        .goto {
+                            z-index: 100;
+                            color: #607D8B;
+                            position: absolute;
+                                top: 4px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                        .preview {
+                            z-index: 100;
+                            color: #607D8B;
+                            position: absolute;
+                                top: 20px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                        .preview_null {
+                            z-index: 100;
+                            color: grey;
+                            position: absolute;
+                                top: 20px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .list-footer {
+                display: flex;
+                flex-direction: column;
+                flex: 1 0 auto;
+                min-height: 28px;
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+        }
+    }
+    .data-list-wrapper {
+        width: 100%;
+        min-width: 900px;
+        max-width: 100%;
+        height: 100%;
+
+
+
+        .list {
+            height: 100%;
+            background-color: #EEF0F2;
+            color: #000;
+            border-radius: 2px;
+            transition: box-shadow 150ms ease;
+
+            .list-header {
+                height: 54px;
+                min-height: 54px;
+                padding: 0 0 0 16px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+                .list-header-name {
+                    max-width: 80%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                .list-header-option-button {
+                    .md-button {
+                    }
+                }
+            }
+            .list-menu {
+                height: 50px;
+                min-height: 50px;
+                max-height: 50px;
+            }
+
+            .list-content {
+                position: relative;
+                overflow: auto;
+                height: 100%;
+
+                .list-card {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100%;
+                }
+
+            }
+            .list-publish {
+                position: relative;
+                overflow: auto;
+
+                .list-card {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100%;
+                }
+
+            }
+
+
+            .list-footer {
+                display: flex;
+                flex-direction: column;
+                flex: 1 0 auto;
+                min-height: 28px;
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+        }
+    }
+
+}
+
+
+.selectdemoSelectHeader {
+    padding-right: 50px;
+  /* Please note: All these selectors are only applied to children of elements with the 'selectdemoSelectHeader' class */ }
+  .selectdemoSelectHeader .demo-header-searchbox {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0; }
+  .selectdemoSelectHeader .demo-select-header {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+    padding-left: 10.667px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto; }
+  .selectdemoSelectHeader md-content._md {
+    max-height: 240px; }
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #E5E7E8;
+    padding: 24px;
+    min-height: 300px;
+
+
+    .tag-list-wrapper {
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+        padding-right: 24px;
+        height: 100%;
+
+        .list {
+            height: 100%;
+            background-color: #EEF0F2;
+            color: #000;
+            border-radius: 2px;
+            transition: box-shadow 150ms ease;
+
+            .list-header {
+                height: 54px;
+                min-height: 54px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+                .list-header-name {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                .list-header-option-button {
+
+                    .md-button {
+                    }
+                }
+            }
+            .list-menu {
+                height: 50px;
+                min-height: 50px;
+                max-height: 50px;
+                .list-menu-name {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+
+            .list-content {
+                position: relative;
+                overflow: hidden;
+                min-height: 0;
+
+                .list-cards {
+                    position: relative;
+                    min-width: 225px;
+                    padding: 0 16px;
+                    overflow-y: auto;
+
+                    .list-card {
+                        position: relative;
+                        width: 100%;
+                        margin-left: -4px;
+                        margin-top: 4px;
+                        margin-bottom: 2px;
+                        background-color: white;
+                        overflow: hidden;
+                        cursor: grabbing;
+                        height: 53px;
+                        min-height: 53px;
+                        max-height: 53px;
+
+                            &:hover {
+                                background-color: #BBDEFB;
+                            }
+                        .name {
+                            position: relative;
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 4px;
+                                left: 6px;
+                            overflow: hidden;
+                        }
+                        .strike {
+                            position: relative;
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 4px;
+                                left: 6px;
+                            overflow: hidden;
+                            text-decoration: line-through;
+                        }
+                        .description {
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 10px;
+                            line-height: 9px;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 20px;
+                                left: 6px;
+                                height: 30px;
+                            overflow: hidden;
+                        }
+                        .edit {
+                            z-index: 100;
+                            color: #607D8B;
+                            position: absolute;
+                                top: 37px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                        .goto {
+                            z-index: 100;
+                            color: #607D8B;
+                            position: absolute;
+                                top: 4px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                        .preview {
+                            z-index: 100;
+                            color: #607D8B;
+                            position: absolute;
+                                top: 20px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                        .preview_null {
+                            z-index: 100;
+                            color: grey;
+                            position: absolute;
+                                top: 20px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .list-footer {
+                display: flex;
+                flex-direction: column;
+                flex: 1 0 auto;
+                min-height: 28px;
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+        }
+    }
+    .data-list-wrapper {
+        width: 100%;
+        min-width: 900px;
+        max-width: 100%;
+        height: 100%;
+
+
+
+        .list {
+            height: 100%;
+            background-color: #EEF0F2;
+            color: #000;
+            border-radius: 2px;
+            transition: box-shadow 150ms ease;
+
+            .list-header {
+                height: 54px;
+                min-height: 54px;
+                padding: 0 0 0 16px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+                .list-header-name {
+                    max-width: 80%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                .list-header-option-button {
+                    .md-button {
+                    }
+                }
+            }
+            .list-menu {
+                height: 50px;
+                min-height: 50px;
+                max-height: 50px;
+            }
+
+            .list-content {
+                position: relative;
+                overflow: auto;
+                height: 100%;
+
+                .list-card {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100%;
+                }
+
+            }
+            .list-chart {
+                position: relative;
+                overflow: auto;
+                height: 100%;
+
+                .report-chart {
+                    position: relative;
+
+                    width: 100%;
+
+                    .reportcharts {
+
+                        padding-top:20px;
+
+                        .reportchart {
+
+                            height: 500px;
+                        }
+                    }
+                }
+
+            }
+            .list-publish {
+                position: relative;
+                overflow: auto;
+                height: 100%;
+
+                .list-card {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100%;
+                }
+
+            }
+             .list-custom {
+                position: relative;
+                overflow: auto;
+                height: 100%;
+
+
+
+            }
+
+            .list-footer {
+                display: flex;
+                flex-direction: column;
+                flex: 1 0 auto;
+                min-height: 28px;
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+        }
+    }
+
+}
+
+
+.selectdemoSelectHeader {
+    padding-right: 50px;
+  /* Please note: All these selectors are only applied to children of elements with the 'selectdemoSelectHeader' class */ }
+  .selectdemoSelectHeader .demo-header-searchbox {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0; }
+  .selectdemoSelectHeader .demo-select-header {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+    padding-left: 10.667px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto; }
+  .selectdemoSelectHeader md-content._md {
+    max-height: 240px; }
+
+
+
+.tabs {
+    border-top: none;
+    margin-top:0.2em;
+    margin-bottom: 0.2em;
+    span {
+      margin-right: 0.1em;
+      cursor: pointer;
+      position: relative;
+      padding: 1.3em 1.1em 1.3em;
+      display: inline-block;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #494E5D;
+      -webkit-transition: all .3s ease-in-out;
+         -moz-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out;
+      &:hover {
+        color: #0091EA;
+      }
+    }
+    .active {
+      color: #0091EA;
+      text-decoration: underline;
+      &:hover {
+        color: #0091EA;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        z-index: 100;
+        width: 0;
+        height: 0;
+        left: 42%;
+        margin-left: -10px;
+        border-style: solid;
+        border-width: 0 18px 18px 18px;
+        border-color: transparent transparent #FAFAFA transparent;
+      }
+    }
+  }

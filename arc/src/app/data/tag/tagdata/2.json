@@ -1,0 +1,682 @@
+{
+    "lastValue": {
+        "title": "Last Value",
+        "data": {
+            "date": "2016-09-01 23:22:21",
+            "value": 345.56,
+            "unit": "Litres" 
+        },
+        "detail": ""
+    },
+
+    "total": {
+        "title": "Data Set Info",
+        "data": {
+            "startdate": "2007-01-01",
+            "enddate": "2016-09-01",
+            "value": 1987313,
+            "unit": "Total Values"
+        },
+        "detail": ""
+    },
+    "lastWeek": {
+        "title": "One Day Reduction",
+        "ranges": {
+            "TW": "This Week",
+            "LW": "Last Week",
+            "2W": "Two Weeks"
+        },
+        "mainChart": [
+            {
+                "key": "Last Value",
+                "values": {
+                    "2W": [
+                        {"x": "Mon", "y": 9},
+                        {"x": "Tue", "y": 12},
+                        {"x": "Wed", "y": 9},
+                        {"x": "Thu", "y": 12},
+                        {"x": "Fri", "y": 7},
+                        {"x": "Sat", "y": 8},
+                        {"x": "Sun", "y": 16}
+                    ],
+                    "LW": [
+                        {"x": "Mon", "y": 12},
+                        {"x": "Tue", "y": 8},
+                        {"x": "Wed", "y": 7},
+                        {"x": "Thu", "y": 13},
+                        {"x": "Fri", "y": 7},
+                        {"x": "Sat", "y": 6},
+                        {"x": "Sun", "y": 10}
+                    ],
+                    "TW": [
+                        {"x": "Mon", "y": 11},
+                        {"x": "Tue", "y": 10},
+                        {"x": "Wed", "y": 8},
+                        {"x": "Thu", "y": 11},
+                        {"x": "Fri", "y": 8},
+                        {"x": "Sat", "y": 10},
+                        {"x": "Sun", "y": 17}
+                    ]
+                }
+            }
+        ],
+        "supporting": {
+            "average": {
+                "label": "AVERAGE",
+                "count": {
+                    "2W": 48,
+                    "LW": 46,
+                    "TW": 54
+                },
+                "chart": {
+                    "key": "Average",
+                    "values": {
+                        "2W": [
+                            {"x": 0, "y": 5},
+                            {"x": 1, "y": 8},
+                            {"x": 2, "y": 5},
+                            {"x": 3, "y": 6},
+                            {"x": 4, "y": 7},
+                            {"x": 5, "y": 8},
+                            {"x": 6, "y": 7}
+                        ],
+                        "LW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 3},
+                            {"x": 2, "y": 7},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ],
+                        "TW": [
+                            {"x": 0, "y": 3},
+                            {"x": 1, "y": 2},
+                            {"x": 2, "y": 1},
+                            {"x": 3, "y": 4},
+                            {"x": 4, "y": 8},
+                            {"x": 5, "y": 8},
+                            {"x": 6, "y": 4}
+                        ]
+                    }
+                }
+            },
+            "minimum": {
+                "label": "MIN",
+                "count": {
+                    "2W": 27,
+                    "LW": 31,
+                    "TW": 26
+                },
+                "chart": {
+                    "key": "Minimum",
+                    "values": {
+                        "2W": [
+                            {"x": 0, "y": 3},
+                            {"x": 1, "y": 2},
+                            {"x": 2, "y": 1},
+                            {"x": 3, "y": 4},
+                            {"x": 4, "y": 8},
+                            {"x": 5, "y": 8},
+                            {"x": 6, "y": 4}
+                        ],
+                        "LW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 5},
+                            {"x": 2, "y": 4},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 7},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ],
+                        "TW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 3},
+                            {"x": 2, "y": 7},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ]
+                    }
+                }
+            },
+            "maximum": {
+                "label": "MAX",
+                "count": {
+                    "2W": 4,
+                    "LW": 5,
+                    "TW": 2
+                },
+                "chart": {
+                    "key": "Maximum",
+                    "values": {
+                        "2W": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 3},
+                            {"x": 2, "y": 7},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ],
+                        "LW": [
+                            {"x": 0, "y": 5},
+                            {"x": 1, "y": 7},
+                            {"x": 2, "y": 8},
+                            {"x": 3, "y": 8},
+                            {"x": 4, "y": 6},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 1}
+                        ],
+                        "TW": [
+                            {"x": 0, "y": 3},
+                            {"x": 1, "y": 2},
+                            {"x": 2, "y": 1},
+                            {"x": 3, "y": 4},
+                            {"x": 4, "y": 8},
+                            {"x": 5, "y": 8},
+                            {"x": 6, "y": 4}
+                        ]
+                    }
+                }
+            },
+            "count": {
+                "label": "COUNT",
+                "count": {
+                    "2W": 6,
+                    "LW": 3,
+                    "TW": 4
+                },
+                "chart": {
+                    "key": "Count",
+                    "values": {
+                        "2W": [
+                            {"x": 0, "y": 5},
+                            {"x": 1, "y": 7},
+                            {"x": 2, "y": 4},
+                            {"x": 3, "y": 6},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 3},
+                            {"x": 6, "y": 2}
+                        ],
+                        "LW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 3},
+                            {"x": 2, "y": 7},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ],
+                        "TW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 5},
+                            {"x": 2, "y": 4},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 7},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ]
+                    }
+                }
+            },
+            "total": {
+                "label": "TOTAL",
+                "count": {
+                    "2W": 10,
+                    "LW": 7,
+                    "TW": 8
+                },
+                "chart": {
+                    "key": "Total",
+                    "values": {
+                        "2W": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 5},
+                            {"x": 2, "y": 4},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 7},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ],
+                        "LW": [
+                            {"x": 0, "y": 5},
+                            {"x": 1, "y": 7},
+                            {"x": 2, "y": 8},
+                            {"x": 3, "y": 8},
+                            {"x": 4, "y": 6},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 1}
+                        ],
+                        "TW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 3},
+                            {"x": 2, "y": 7},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ]
+                    }
+                }
+            },
+            "last": {
+                "label": "LAST",
+                "count": {
+                    "2W": 21,
+                    "LW": 17,
+                    "TW": 14
+                },
+                "chart": {
+                    "key": "Last",
+                    "values": {
+                        "2W": [
+                            {"x": 0, "y": 5},
+                            {"x": 1, "y": 7},
+                            {"x": 2, "y": 8},
+                            {"x": 3, "y": 8},
+                            {"x": 4, "y": 6},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 1}
+                        ],
+                        "LW": [
+                            {"x": 0, "y": 6},
+                            {"x": 1, "y": 5},
+                            {"x": 2, "y": 4},
+                            {"x": 3, "y": 5},
+                            {"x": 4, "y": 7},
+                            {"x": 5, "y": 4},
+                            {"x": 6, "y": 7}
+                        ],
+                        "TW": [
+                            {"x": 0, "y": 5},
+                            {"x": 1, "y": 7},
+                            {"x": 2, "y": 4},
+                            {"x": 3, "y": 6},
+                            {"x": 4, "y": 5},
+                            {"x": 5, "y": 3},
+                            {"x": 6, "y": 2}
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "exports": {
+        "title": "Exports",
+        "data": [
+            {"id": 1, "name": "export name here", "owner":"Paul Kazmir"},
+            {"id": 2, "name": "Distilation Summary of crap that didnt happen", "owner":"Dave"},
+            {"id": 3, "name": "export name here", "owner":"Joe"}
+        ]
+    },
+    "forms": {
+        "title": "Forms",
+        "data": [
+            {"id": 1, "name": "form name here", "owner":"Paul Kazmir"},
+            {"id": 2, "name": "form name here", "owner":"Paul Kazmir"},
+            {"id": 3, "name": "form name here", "owner":"Paul Kazmir"}
+        ]
+    },
+
+    "tenMin": {
+        "title": "10 Minute Reduction",
+        "table": {
+            "columns": [
+                {
+                    "title": "Date / Time"
+                },
+                {
+                    "title": "Last"
+                },
+                {
+                    "title": "Average"
+                },
+                {
+                    "title": "Min"
+                },
+                {
+                    "title": "Max"
+                }
+            ],
+            "rows": [
+                [
+                    {
+                        "value": "2016-09-10 00:00",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 00:10",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 00:20",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 00:30",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 00:40",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 00:50",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 01:00",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 01:10",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 01:20",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 01:30",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 01:40",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 01:50",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 02:00",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 02:10",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 02:20",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 02:30",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 02:40",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 02:50",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 03:00",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 03:10",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 03:20",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 03:30",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 03:40",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 03:50",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 04:00",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 04:10",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ],
+                [
+                    {
+                        "value": "2016-09-10 04:20",
+                        "classes": "text-bold"
+                    },
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 1.23456},
+                    {"value": 2.12345}
+                ]
+            ]
+        }
+    },
+    "widget8": {
+        "title": "Yesterdays Data",
+        "activities": [
+            {
+                "process" : "queueprocd",
+                "type": "Input",
+                "value": "50KB"
+            },
+            {
+                "process" : "queueprocd",
+                "type": "Input",
+                "value": "24.5Mb"
+            },
+            {
+                "process" : "queueprocd",
+                "type": "Output",
+                "value": "887Kb"
+            },
+            {
+                "process" : "sshd",
+                "type": "Output",
+                "value": "441B"
+            },
+            {
+                "process" : "queueprocd",
+                "type": "Input",
+                "value": "6.27Kb"
+            },
+            {
+                "process" : "init",
+                "type": "Output",
+                "value": "13.8Kb"
+            },
+            {
+                "process" : "queueprocd",
+                "type": "Output",
+                "value": "5.6Mb"
+            },
+            {
+                "process" : "init",
+                "type": "Output",
+                "value": "44.6Kb"
+            },
+            {
+                "process" : "queueprocd",
+                "type": "Input",
+                "value": "5Mb"
+            },
+            {
+                "process" : "tailwatchd",
+                "type": "Output",
+                "value": "1.1Kb"
+            },
+            {
+                "process" : "pure-authd",
+                "type": "Input",
+                "value": "5.3Kb"
+            },
+            {
+                "process" : "init",
+                "type": "Output",
+                "value": "176Kb"
+            }
+        ]
+    }
+}

@@ -1,0 +1,306 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="2">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                           ui-sref="app.formslist"
+                           aria-label="apps button" translate-attr-aria-label="ARC.LIST">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.LIST">List</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+            <!-- TAG NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1"
+                 flex-xs="100">
+                <span>{{vm.importerDetails.Description}}</span>
+            </div>
+            <!-- / TAG NAME -->
+
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="4">
+
+                <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('formDetail')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+            </div>
+            <!-- / TOOLBAR -->
+        </div>
+    </div>
+    <!-- / HEADER -->
+
+
+
+    <!-- PAGE CONTENT -->
+    <div id="appcontent" class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content">
+
+            <!-- ROW 1-->
+            <div layout="row" flex="100" layout-wrap>
+                 <!-- COLUMN 1-->
+                <div layout="column" flex="100" flex-gt-md="25" flex-gt-xs="100" layout-wrap>
+                    <!-- ROW 1-->
+                    <div class="white-bg md-whiteframe-4dp margin-right-10 margin-bottom-10" layout="row" layout-wrap>
+                        <div class="detail-title height-32 border-top border-bottom pl-5" flex="100">
+                            <span class="pl-5" translate="ARC.TAG_DETAILS">Tag Details</span>
+                        </div>
+                        <div class="details-container">
+                            <table id="detail-table">
+                                <tr>
+                                    <td translate="ARC.ID" width="125px">Id</td>
+                                    <td>{{vm.importerDetails.Id}}</td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.NAME">Name</td>
+                                    <td>{{vm.importerDetails.DisplayName}}</td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.DESCRIPTION">Description</td>
+                                    <td>{{vm.importerDetails.Description}}</td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.LOCATION">Location</td>
+                                    <td>{{vm.locationMap[vm.importerDetails.LocationId]}}</td>
+                                </tr>
+                            </table>
+
+                            <div class="detail-title height-32 md-grey-50-bg border-top border-bottom pl-5 pt-5" flex="100">
+                            <span class="pl-5" translate="ARC.RUN_DETAILS">Run Details</span>
+                            </div>
+                            <table id="detail-table">
+                                 <tr>
+                                    <td translate="ARC.LAST_RUN" width="125px">Start Date</td>
+                                    <td>{{vm.importerDetails.LastRun | date:'yyyy-MM-dd hh:mm a' : 'UTC' }}</td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.LAST_DATA" >End Date</td>
+                                    <td>{{vm.importerDetails.LastData | date:'yyyy-MM-dd hh:mm a' : 'UTC'}}</td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.QV_RELOAD">Reload</td>
+                                    <td>
+                                        <span ng-if="vm.tagType == 'raw'">{{vm.importerDetails.QvReload}}</span>
+                                        <span ng-if="vm.tagType == 'red'"></span>
+                                    </td>
+
+                                </tr>
+                            </table>
+                            <div class="detail-title height-32 md-grey-50-bg border-top border-bottom pl-5 pt-5" flex="100">
+                            <span class="pl-5" translate="ARC.DATA_DETAILS">Data Details</span>
+                            </div>
+                            <table id="detail-table">
+                                <tr>
+                                    <td translate="ARC.QVD" width="75px">QVD</td>
+                                    <td>
+                                        <span ng-if="vm.tagType == 'raw'"><a href="gfsa://openfolder?path=\\tf-qvds\QVD\arc\Forms\QVD">\\tf-qvds\QVD\arc\Forms\QVD\</a></span>
+                                        <span ng-if="vm.tagType == 'red'" translate="ARC.NO_FULL_QVD_FOR_DCS">No full QVD's for DCS data</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.CSV">CSV</td>
+                                    <td>
+                                        <span ng-if="vm.tagType == 'raw'"><a href="gfsa://openfolder?path=\\tf-qvds\QVD\arc\Forms\CSV">\\tf-qvds\QVD\arc\Forms\CSV\</a></span>
+                                        <span ng-if="vm.tagType == 'red'" translate="ARC.NO_FULL_CSV_FOR_DCS">No full CSV's for DCS data</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td translate="ARC.REPORTS">Reports</td>
+                                    <td>
+                                        <span class="link" ui-sref="app.design({ id: -1, sourceId: vm.importerDetails.Id })" translate="ARC.CREATE_REPORT">Take me to reports</span>
+                                    </td>
+
+                                </tr>
+                            </table>
+                            <div class="detail-title height-32 md-grey-50-bg border-top border-bottom pl-5 pt-5" flex="100">
+                            <span class="pl-5" translate="ARC.DATA_ENTRY">Data</span>
+                            </div>
+                            <table id="detail-table">
+                                 <tr>
+                                    <td translate="ARC.JAVA_FORM" width="75px">java</td>
+                                    <td>
+                                        <span style="cursor: pointer;"><a ng-href="gfsa://arcforms?application_id={{vm.importerDetails.ApplicationId}}&form_tab_id={{vm.importerDetails.FormTabId}}">App - {{ vm.importerDetails.Name }}</a></span>
+                                    </td>
+
+                                </tr>
+                                 <tr>
+                                    <td translate="ARC.WEB_FORM">Web</td>
+                                    <td>
+                                        <span class="link" ui-sref="app.formentry({id:vm.importerDetails.Id})">Web - {{ vm.importerDetails.Id }}</span>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /ROW 1-->
+
+                </div>
+                <!-- / COLUMN 1-->
+                <!-- COLUMN 2-->
+                <div class="white-bg md-whiteframe-4dp" layout="column" flex="100" flex-gt-md="75" flex-gt-xs="100" layout-wrap>
+                    <!-- ROW 1-->
+                    <div layout="row">
+                        <div layout="column" flex="100" layout-wrap>
+                            <div class="height-40 md-grey-50-bg border-top border-bottom pl-25" layout="row">
+                                <!-- MENU -->
+                                <div class="aspect-btn-group" layout="column" flex="100" flex-gt-md="100" flex-gt-xs="100" layout-wrap>
+                                    <span class=" link h3 ml-8 blue-600-fg font-weight-500 text-truncate" ui-sref="app.tagdetail({id:vm.tagId})">{{ vm.tagId }} - {{ vm.tagName }}</span>
+                                </div>
+                            </div>
+                            <!-- / MENU -->
+                        </div>
+                    </div>
+                    <!-- / ROW 1-->
+
+
+                    <!-- ROW 2-->
+                    <div id="importers" layout="columns" layout-wrap>
+                        <div layout="row" flex="100" class="p-10">
+
+                        <div layout="column" flex="25" layout-wrap class="tag-list-wrapper pr-5">
+
+                                <div class="list" layout="column">
+
+                                   <!-- CONTENT -->
+                                    <div class="list-content border" layout="column" >
+                                         <div class="list-header grey-50-bg" layout="row" layout-align="start center">
+                                            <!-- SEARCH -->
+                                            <div class=" border white-bg p-5" layout="row">
+                                                <div class="search white-bg" flex layout="row" layout-align="start center">
+                                                    <md-icon md-font-icon="icon-magnify" class="icon s18">
+                                                    </md-icon>
+                                                    <input ng-change="vm.limit=500" class="p-15 white-bg" flex ng-model="vm.tagSearch" ng-model-options="{ debounce: 400 }" type="text" placeholder="Search Tags" translate="" translate-attr-placeholder="ARC.SEARCH_TAGS">
+                                                </div>
+                                            </div>
+                                            <!-- / SEARCH -->
+                                        </div>
+                                        <div class="list-cards" ms-scroll>
+                                            <div ng-repeat="tag in vm.tagSet | filter: vm.tagSearch track by $index"
+                                                        ng-class="vm.tagName == tag.Name && 'list-card-selected' || 'list-card md-whiteframe-2dp'"
+                                                        ng-click="vm.getTagResults(tag.Id, tag.Name)"
+                                                        >
+                                                <span class="name text-truncate" md-highlight-text="vm.tagSearch" md-highlight-flags="i">{{ tag.Name }}</span>
+                                                <span class="description" md-highlight-text="vm.tagSearch" md-highlight-flags="i">{{ tag.Description }}</span>
+                                                <span class="edit fa fa-edit" ng-click="vm.openEditTagDialog($event, tag)">
+                                                    <md-tooltip>edit tag details</md-tooltip>
+                                                </span>
+                                                <span class="goto fa fa-external-link" ui-sref="app.tagdetail({id:tag.Id})">
+                                                    <md-tooltip>goto tag details page</md-tooltip>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div ng-if="!vm.tagSet[0]">
+                                            <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+                                            <md-list-item ng-if="vm.tagSet < 1" style="max-height:100px;">loading tags...</md-list-item>
+                                        </div>
+                                        <div class="list-footer">
+                                        </div>
+                                    </div>
+                                    <!-- / CONTENT -->
+
+                                </div>
+
+
+                        </div>
+                        <div layout="column" flex="75" layout-wrap>
+
+                            <div layout="row" flex>
+                                <div layout="column" flex="100">
+                                    <div class="result-wrapper bl br bb" layout="row">
+                                        <table id="tagTable-values" class="dataTable row-border hover" datatable="ng" dt-options="vm.dtOptions">
+                                            <thead>
+                                                <tr ng-if="vm.tagType == 'red'">
+                                                    <th ng-repeat="value in vm.redAspects" class="secondary-text">
+                                                        <div class="table-header">
+                                                            <span class="column-title">{{ value }}</span>
+                                                        </div>
+                                                    </th>
+
+                                                    <th ng-if="vm.tagType != 'red'" class="secondary-text">
+                                                      <div class="table-header" ><span class="column-title" >Comment</span></div>
+                                                    </th>
+
+                                                </tr>
+                                                <tr ng-if="vm.tagType == 'raw'">
+                                                    <th ng-repeat="value in vm.rawAspects" class="secondary-text">
+                                                        <div class="table-header">
+                                                            <span class="column-title">{{ value }}</span>
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="value in vm.tagResultSet">
+                                                    <td>
+                                                        {{value.DateTime | date:'yyyy-MM-dd HH:mm'}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'raw'">
+                                                        <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'N'">{{ value.Value | number:4}}</span>
+                                                        <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'I'">{{ value.Value | number:0 }}</span>
+                                                        <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'S'">{{ value.Value }}</span>
+                                                        <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'F'">
+                                                            <a ng-href="{{ BASE_URL }}/File/{{value.MD5}}?filename={{value.Value}}" target="_blank">
+                                                                {{value.Value}}
+                                                            </a>
+                                                        </span>
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'raw'">
+                                                        <span style="cursor: pointer;"  ng-click="vm.openEditDialog($event, value)" class="trash fa fa-pencil fa-lg"></span>
+                                                        <span style="cursor: pointer;"  ng-click="vm.deleteTagValue($event,value)" class="trash fa fa-trash-o fa-lg"></span>
+
+                                                        <span  id="comment"><span ng-if="vm.commentCounts[value.GroupId || value.DateTime]==undefined" class="fa fa-comment-o" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>Add Comment</md-tooltip></span></span>
+                                                        <span  ng-if="vm.commentCounts[value.GroupId || value.DateTime]!==undefined" class="fa fa-comment" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>{{vm.commentCounts[value.GroupId|| value.DateTime]}} Comments</md-tooltip></span>
+
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.LastValue | number:2}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.Minimum | number:2}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.Maximum | number:2}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.Average | number:2}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.WeightedAverage | number:2}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.Variance | number:2}}
+                                                    </td>
+                                                    <td ng-if="vm.tagType == 'red'">
+                                                        {{value.StandardDeviation | number:2}}
+                                                    </td>
+
+                                                    <td ng-if="vm.tagType == 'red'">
+
+                                                      <span  id="comment"><span ng-if="vm.commentCounts[value.GroupId || value.DateTime]==undefined" class="fa fa-comment-o " ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>Add Comment</md-tooltip></span></span>
+                                                      <span  ng-if="vm.commentCounts[value.GroupId || value.DateTime]!==undefined" class="fa fa-comment" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>{{vm.commentCounts[value.GroupId|| value.DateTime]}} Comments</md-tooltip></span>
+
+                                                    </td>
+
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

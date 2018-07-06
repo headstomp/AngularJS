@@ -1,0 +1,29 @@
+<md-input-container>
+    <md-select
+        multiple="false"
+        placeholder="Search for a Location &hellip;"
+        ng-model="vm.location"
+        ng-disabled="vm.disabled"
+        ng-required="vm.required"
+        md-on-open="vm.updateLocationSet()">
+        <div>
+            <md-select-header>
+                <input 
+                    type="search"
+                    placeholder="Search for a Location &hellip;"
+                    ng-model="vm.search"
+                    ng-model-options="{ debounce: 250 }"
+                    ng-keydown="$event.stopPropagation()" />
+            </md-select-header>
+            <md-option
+                ng-repeat="location in vm.locationSet track by location.Id" 
+                ng-value="location"
+                ng-selected="vm.location.Id === location.Id">
+                <div>
+                    <span class="fa fa-fw fa-map-marker"></span>
+                    <span ng-bind="vm.formatLocation(location)"></span>
+                </div>
+            </md-option>
+        </div>
+    </md-select>
+</md-input-container>

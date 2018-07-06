@@ -1,0 +1,50 @@
+md-dialog {
+
+    &.used-on-dialog {
+        max-width: 900px;
+        //width: 720px;
+
+        md-dialog-content {
+            display: block;
+            position: relative;
+        }
+
+        md-toolbar {
+
+            .value {
+                font-size: 17px;
+            }
+        }
+
+        md-d-content {
+
+           
+ 
+
+        
+        }
+
+       
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: $layout-breakpoint-md) {
+
+    md-dialog {
+
+        &.edit-dialog {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: $layout-breakpoint-sm) {
+
+    md-dialog {
+
+        &.edit-dialog {
+            width: 90%;
+        }
+    }
+}

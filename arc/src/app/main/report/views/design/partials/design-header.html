@@ -1,0 +1,159 @@
+<div class="list" layout="column">
+
+    <!-- HEADER -->
+    <div class="list-header" layout="row" layout-align="space-between center">
+
+        <div class="list-header-name pr-10">
+            <span translate="ARC.DETAILS">Details</span>
+        </div>
+    </div>
+    <!-- / HEADER -->
+    <!-- CONTENT -->
+    <div class="list-content" layout="column">
+        <md-content layout-padding>
+            <form name="vm.DetailForm">
+                <span class="md-subhead" translate="ARC.REPORT_INFO">Report Info</span>
+                <md-input-container class="container pb-10">
+                    <label translate="ARC.REPORT_NAME">Report Name</label>
+                    <input required minlength="5" md-maxlength="60" no-special-char name="Name" ng-model="vm.designdetail.Name" />
+                    <div ng-messages="vm.DetailForm.Name.$error" role="alert">
+                        <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
+                            <span translate="ARC.REQUIRED_AND_MUST_BE_5_60_CHARACTERS">Desc. is required and must be 5-60 characters.</span>
+                        </div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="container  pb-10">
+                    <label translate="ARC.REPORT_OWNER">Report Owner</label>
+                    <input ng-if="vm.isAdmin === false" disabled name="Owner" ng-model="vm.designdetail.Owner">
+                    <input ng-if="vm.isAdmin === true" name="Owner" ng-model="vm.designdetail.Owner">
+                </md-input-container>
+                <md-input-container class="container  pb-10">
+                    <label translate="ARC.DESCRIPTION">Description</label>
+                    <textarea max-rows="3" required minlength="5" md-maxlength="110" name="ShortDescription" ng-model="vm.designdetail.ShortDescription"></textarea>
+                    <div ng-messages="vm.DetailForm.ShortDescription.$error" role="alert">
+                        <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
+                            <span translate="ARC.REQUIRED_AND_MUST_BE_5_110_CHARACTERS">Desc. is required and must be 5-110 characters.</span>
+                        </div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="container pb-20">
+                    <label translate="ARC.LONG_DESCRIPTION">Long Description</label>
+                    <textarea max-rows="5" md-maxlength="500" ng-model="vm.designdetail.LongDescription"></textarea>
+                </md-input-container>
+                <md-input-container class="container">
+                    <label translate="ARC.LOCATION">Location</label>
+                    <md-select class="simplified" ng-model="vm.designdetail.LocationId" aria-label="Location" translate-attr-placeholder="ARC.LOCATION">
+                        <md-option ng-repeat="location in vm.locationSet" ng-value="location.Id">
+                            {{location.Name}}
+                            </md-option>
+                    </md-select>
+                </md-input-container>
+
+
+                <div class="link-padding">&nbsp</div><div class="link-padding">&nbsp</div>
+                <span class="md-subhead" translate="ARC.DATE_RANGE">Report Date Range</span><br>
+
+                <input type="radio" aria-label="" ng-model="vm.designdetail.ReportRangeId" value=1> Fixed</input>
+                <input type="radio" aria-label="" ng-model="vm.designdetail.ReportRangeId" value=2> Rolling</input><br><br>
+
+                <div ng-show="vm.designdetail.ReportRangeId == 1">
+                    <div class="container-date flex-gt-xs">
+                        <label translate="ARC.START_AT">Start at:</label>
+                        <!--
+                          vm.todate(vm.designdetail.StartAt);
+                          vm.todate(vm.designdetail.EndAt);
+                        -->
+                      <md-datepicker ng-init="vm.sdate = vm.todate(vm.designdetail.StartAt)" ng-model="vm.sdate" ng-change="vm.designdetail.StartAt = vm.sdate.toISOString()"></md-datepicker>
+                    </div>
+                    <div class="container-date">
+                        <label translate="ARC.END_AT">End at:&nbsp;&nbsp;</label>
+                        <md-datepicker ng-init="vm.edate = vm.todate(vm.designdetail.EndAt)" ng-model="vm.edate" ng-change="vm.designdetail.EndAt = vm.edate.toISOString()"></md-datepicker><br><br><br>
+                    </div>
+                </div>
+                <div ng-show="vm.designdetail.ReportRangeId == 2">
+                   <span class="md-subhead" translate="ARC.START">Start</span>
+                    <!--slider code -->
+
+                <!--  <div class = "radio-range">
+                      <label><input type="radio" ng-model="value" value="2" ng-checked="vm.designdetail.RollingOffsetUnitId==2" ng-click="vm.getRangeflag(value)">Hours</label>
+                      <label><input type="radio" ng-model="value" value="3" ng-checked="vm.designdetail.RollingOffsetUnitId==3" ng-click="vm.getRangeflag(value)">Days</label>
+                      <label><input type="radio" ng-model="value" value="4" ng-checked="vm.designdetail.RollingOffsetUnitId==4" ng-click="vm.getRangeflag(value)">Months</label>
+                      <label><input type="radio" ng-model="value" value="5" ng-checked="vm.designdetail.RollingOffsetUnitId==5" ng-click="vm.getRangeflag(value)">Years</label>
+                    </div>
+
+                    <div class="slider-margin">
+                      <rzslider rz-slider-model="vm.slider.minValue"
+                      rz-slider-high="vm.slider.maxValue"
+                        rz-slider-options="vm.slider.options"></rzslider>
+                      </div>  -->
+
+
+
+                  <!-- slider code -->
+                    <div layout-gt-sm="row">
+                        <md-input-container flex="20">
+                            <label>#</label>
+                            <input class="simplified" type="number" step="1" min="0" ng-model="vm.designdetail.RollingStartOffset" />
+                        </md-input-container>
+                        <md-input-container flex="30">
+                            <label translate="ARC.UNITS">Units</label>
+                            <md-select width="2" class="simplified" ng-model="vm.designdetail.RollingOffsetUnitId"
+                                       translate-attr-placeholder="ARC.UNITS">
+                                <md-option value="2" translate="ARC.HOURS">Hours</md-option>
+                                <md-option value="3" translate="ARC.DAYS">Days</md-option>
+                                <md-option value="4" translate="ARC.MONTHS">Weeks</md-option>
+                                <md-option value="5" translate="ARC.YEARS">Months</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container flex="50">
+                            <label translate="ARC.SINCE">SINCE</label>
+                            <md-select width="1" class="simplified" ng-model="vm.designdetail.RollingStartOffsetOptionId"
+                                       translate-attr-placeholder="ARC.NOW">
+                                <md-option value="1" translate="ARC.BEFORE_NOW">Before Now</md-option>
+                                <md-option value="2" translate="ARC.AFTER_NOW">After Now</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <span class="md-subhead" translate="ARC.END">End</span>
+                    <div layout-gt-sm="row">
+                        <md-input-container flex="20">
+                            <label>#</label>
+                            <input class="simplified" type="number" step="1" min="0" ng-model="vm.designdetail.RollingEndOffset" />
+                        </md-input-container>
+                        <md-input-container flex="30">
+                            <label translate="ARC.UNITS">Units</label>
+                            <md-select width="2" class="simplified" ng-model="vm.designdetail.RollingOffsetUnitId"
+                                       translate-attr-placeholder="ARC.UNITS">
+                                <md-option value="2" translate="ARC.HOURS">Hours</md-option>
+                                <md-option value="3" translate="ARC.DAYS">Days</md-option>
+                                <md-option value="4" translate="ARC.MONTHS">Weeks</md-option>
+                                <md-option value="5" translate="ARC.YEARS">Months</md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <md-input-container flex="50">
+                            <label translate="ARC.SINCE">Since</label>
+                            <md-select width="1" class="simplified" ng-model="vm.designdetail.RollingEndOffsetOptionId"
+                                       translate-attr-placeholder="ARC.NOW">
+                                <md-option value="1" translate="ARC.BEFORE_NOW">Before Now</md-option>
+                                <md-option value="2" translate="ARC.AFTER_NOW">After Now</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                </div>
+                <div class="save-margin">
+                    <md-button type="submit" md-offset="0 48px" class="md-raised"
+                               ng-click="vm.putReportDetails()">
+                        <md-icon class="blue-500-fg" md-font-icon="icon-content-save-all"></md-icon>
+                        <span class="blue-500-fg" translate="ARC.SAVE">Save</span>
+                    </md-button>
+                </div>
+            </form>
+        </md-content>
+    </div>
+    <!-- / CONTENT -->
+    <!-- FOOTER-->
+    <div class="list-footer">
+    </div>
+    <!-- / FOOTER-->
+</div>

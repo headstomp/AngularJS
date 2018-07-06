@@ -1,0 +1,161 @@
+
+#tag-values{
+overflow: scroll;
+}
+
+#tag-values tbody th, #tag-values tbody td {
+    padding: 5px 10px; 
+}
+
+#tag-values thead th {
+    padding-top: 6px; 
+    padding-bottom: 6px;
+
+}
+
+
+.container{
+    margin-bottom: -20px;
+    width: 98%;
+}
+
+.container-date{
+    float: right;
+    width: 98%;
+}
+
+
+.result-wrapper{
+    background-color: #FAFAFA;
+    .tag-data-header{
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+}
+
+
+.tag-list-wrapper {
+    width: 240px;
+    min-width: 240px;
+    max-width: 240px;
+    height: 475px;
+
+    .list {
+        height: 100%;
+        background-color: #FAFAFA;
+        color: #000;
+        border-radius: 2px;
+        transition: box-shadow 150ms ease;
+
+        .list-header {
+            height: 10px;
+            min-height: 10px;
+            padding: 0 0 0 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+            .list-header-name {
+                max-width: 80%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .list-header-option-button {
+
+                .md-button {
+                }
+            }
+        }
+        .list-menu {
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+        }
+
+        .list-content {
+            position: relative;
+            overflow: hidden;
+            min-height: 0;
+
+            .list-cards {
+                position: relative;
+                min-width: 225px;
+                padding: 0 16px;
+                overflow-y: auto;
+
+                .list-card {
+                    position: relative;
+                    width: 100%;
+                    margin-left: -4px;
+                    margin-top: 4px;
+                    margin-bottom: 2px;
+                    margin-right: 5px;
+                    background-color: white;
+                    overflow: hidden;
+                  
+                    cursor: grabbing;
+                    height: 53px;
+                    min-height: 53px;
+                    max-height: 53px;
+
+                        &:hover {
+                            background-color: #BBDEFB;
+                        }
+                         &:checked {
+                            background-color: #BBDEFB;
+                        }
+                    .name {
+                       
+                        position: relative;
+                        text-transform: uppercase;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: bold;
+                        padding-right: 20px;
+                        position: absolute;
+                            top: 4px;
+                            left: 6px;
+                        overflow: hidden;
+                    }
+                    .description {
+                        text-transform: uppercase;
+                        color: black;
+                        font-size: 10px;
+                        line-height: 9px;
+                        padding-right: 20px;
+                        position: absolute;
+                            top: 20px;
+                            left: 6px;
+                        overflow: hidden;     
+                    }
+                    .edit {
+                            z-index: 100;
+                            color: grey;
+                            position: absolute;
+                                top: 4px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                    .goto {
+                        z-index: 100;
+                        color: grey;
+                        position: absolute;
+                            top: 20px;
+                            right: 4px;
+                            cursor: pointer;
+                    }
+                }
+            }
+        }
+        .list-footer {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto;
+            min-height: 10px;
+            border-top: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+    }
+}

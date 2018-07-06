@@ -1,0 +1,26 @@
+{
+  "Area": "area info goes here",
+  "DataLocationId": 1,
+  "Description": "this is the description field, maximum chars allowed is this 105 that is exactly this length and i ran ou",
+  "Id": 1,
+  "IsActive": true,
+  "Location": {
+    "Code": 220,
+    "Description": "Varennes Plant",
+    "Id": 5,
+    "Name": "Varennes"
+  },
+  "LocationId": 5,
+  "Name": "TT_7204-AVGa",
+  "ParentTagId": "FIC_6206-PV",
+  "RawTableName": "raw.va_dcs_analog_history",
+  "ReducedTableName": "extract.va_dcs_analog_history",
+  "TagSource": {
+    "Description": "DCS Import from va-historian",
+    "Id": 1,
+    "Name": "Varennes DCS Importer",
+    "QvReload": null
+  },
+  "TagSourceId": 1
+}
+

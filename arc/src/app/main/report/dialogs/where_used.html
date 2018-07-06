@@ -1,0 +1,91 @@
+<md-dialog aria-label="{{vm.values.Name}}">
+    <md-toolbar class="md-accent md-hue-2">
+        <div class="md-toolbar-tools">
+            <h2>Where Used for Report Id: {{ vm.whereUsedValues.reportId}}</h2>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <!-- VALUE LIST -->
+            <ms-widget flippable="false" class="result-wrapper" layout="column" flex="100">
+                <!-- Front -->
+                <ms-widget-front class="white-bg">
+                    <div class="tag-data-header pl-16 grey-50-bg border-bottom" layout="row" layout-align="start center">
+                        <span class="h4 secondary-text">Report:</span>
+                        <span class="h3 ml-8 blue-600-fg font-weight-500 text-truncate">{{vm.whereUsedValues.reportName}}</span>
+
+                        <span class="h4 pl-24 secondary-text">Description:</span>
+                        <span class="h3 ml-8 grey-600-fg font-weight-500 text-truncate">{{vm.whereUsedValues.reportDescription}}</span>
+                    </div>
+
+
+                    <table id="tag-values" class="dataTable row-border hover" datatable="ng"
+                           dt-options="vm.dtOptions">
+                        <thead>
+                            <tr>
+                                <th ng-repeat="value in vm.tableHeader " class="secondary-text">
+                                    <div class="table-header">
+                                        <span class="column-title">{{ value }}</span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="value in vm.reportResults track by $index">
+                                <td>{{value[1].Value}}</td>
+                                <td>{{value[2].Value}}</td>
+                                <td>{{value[3].Value}}</td>
+                                <td>{{value[4].Value}}</td>
+                                <td>{{value[5].Value}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ms-widget-front>
+                <!-- / Front -->
+            </ms-widget>
+            <!-- / VALUE LIST -->
+        </div>
+        <div layout="column" ng-cloak class="md-inline-form">
+            <md-content layout-padding>
+                <div>
+                    <form name="userForm">
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>File Type</label>
+                                <md-select ng-model="vm.addNew.type" required>
+                                    <md-option ng-repeat="type in vm.types" value="{{type}}">
+                                    {{type}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm  >
+                                <label>File Link</label>
+                                <input ng-model="vm.addNew.link" required >
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>File Name</label>
+                                <input ng-model="vm.addNew.name" required>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>File Owner</label>
+                                <input ng-model="vm.addNew.owner" required>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Id</label>
+                                <input hidden ng-model="vm.addNew.id" required>
+                            </md-input-container>
+                            <md-button ng-disabled="userForm.$invalid" ng-click="vm.postWhereUsedForm(vm.addNew)">Add</md-button>
+                        </div>
+                    </form>
+                </div>
+            </md-content>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+        <span flex></span>
+        <md-button ng-click="vm.closeDialog()">Close</md-button>
+    </md-dialog-actions>
+
+</md-dialog>

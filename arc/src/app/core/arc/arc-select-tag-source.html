@@ -1,0 +1,54 @@
+<md-input-container>
+    <md-select
+        multiple="false"
+        placeholder="Search for a Tag Source &hellip;"
+        ng-model="vm.tagSource"
+        ng-disabled="vm.disabled"
+        ng-required="vm.required"
+        md-on-open="vm.updateTagSourceSet()">
+        <div>
+            <md-select-header layout="row">
+                <input
+                    type="search"
+                    placeholder="Search for a Tag Source &hellip;"
+                    ng-model="vm.search"
+                    ng-model-options="{ debounce: 250 }"
+                    ng-keydown="$event.stopPropagation()" />
+                <span ng-if="vm.dataLocationId === 0" class="fa fa-fw fa-asterisk"></span>
+                <span ng-if="vm.dataLocationId === 2" class="fa fa-fw fa-cog"></span>
+                <span ng-if="vm.dataLocationId === 3" class="fa fa-fw fa-pencil"></span>
+                <span ng-if="vm.dataLocationId === 4" class="fa fa-fw fa-database"></span>
+                <select ng-model="vm.dataLocationId">
+                    <option ng-value="0">All Sources</option>
+                    <option ng-value="2">Data</option>
+                    <option ng-value="3">Form</option>
+                    <option ng-value="4">DCS</option>
+                </select>
+            </md-select-header>
+            <md-option
+                ng-repeat="tagSource in (vm.tagSourceSet | orderBy : ['DataLocationId', 'Name']) track by tagSource.Id"
+                ng-value="tagSource"
+                ng-selected="vm.tagSource.Id === tagSource.Id">
+                <div>
+                    <span ng-if="tagSource.DataLocationId === 2" class="fa fa-fw fa-cog"></span>
+                    <span ng-if="tagSource.DataLocationId === 3" class="fa fa-fw fa-pencil"></span>
+                    <span ng-if="tagSource.DataLocationId === 4" class="fa fa-fw fa-database"></span>
+                    <span ng-bind="vm.formatTagSource(tagSource)"></span>
+                </div>
+            </md-option>
+        </div>
+    </md-select>
+    <style type="text/css">
+        md-select-menu md-select-header { padding-right: 10.667px }
+        md-select-menu md-select-header select {
+            border: none;
+            outline: none;
+            height: 100%;
+            width: auto;
+            padding: 0;
+        }
+        md-select-menu md-select-header select > option {
+            text-align: center;
+        }
+    </style>
+</md-input-container>

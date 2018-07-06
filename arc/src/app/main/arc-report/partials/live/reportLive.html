@@ -1,0 +1,141 @@
+<!-- MENU -->
+
+<div class="live-view">
+<div class="list-menu md-grey-50-bg border pl-25" layout="row">
+  <div>
+      <div>
+          <md-button ng-class="vm.activeView == 'table' && 'md-accent' || 'md-primary md-hue-1'"
+              ng-click="vm.activeView = 'table'"
+              translate="ARC.Table">Table
+          </md-button>
+        </div>
+  </div>
+    <div>
+        <div>
+            <md-button ng-class="vm.activeView == 'line' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.activeView = 'line'"
+                translate="ARC.LINE_CHART">Line Chart
+            </md-button>
+        </div>
+    </div>
+     <div>
+        <div>
+            <md-button ng-class="vm.activeView == 'bar' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.activeView = 'bar'"
+                translate="ARC.BAR_CHART">Bar Chart
+            </md-button>
+        </div>
+    </div>
+
+
+</div>
+    <div class="list-content"
+         layout="column">
+        <div class="list-card" ms-scroll>
+          <div class="list-card" ng-show = "vm.activeView=='table'">
+          <table id="tag-data"
+                 class="dataTable row-border hover"
+                 datatable="ng"
+                 dt-options="vm.arcReportTagDataDTOptions">
+              <thead>
+
+                  <tr>
+                      <th class="secondary-text">
+                          <div class="table-header">
+                              <span class="column-title"
+                                    translate="ARC.TAG_NAME">Tag Name</span>
+                          </div>
+                      </th>
+                      <th
+                          class="secondary-text"
+                          ng-class=" {'md-blue-100-bg': vm.calculatedTagClass(detail)}"
+                          ng-repeat="value in vm.tagNames"
+                          colspan="{{value.count}}">
+                          <div class="table-header">
+
+                              <span class="column-title">
+                            {{value.name}}
+
+                              </span>
+                          </div>
+                      </th>
+                  </tr>
+
+                  <tr>
+                      <th class="secondary-text">
+                          <div class="table-header">
+                              <span class="column-title"
+                                    translate="ARC.DATE">Date</span>
+                          </div>
+                      </th>
+                      <th class="secondary-text"
+                          ng-repeat="aspect in ::vm.aspect track by $index"
+                          ng-model="key">
+                          <div style="width:100px" class="table-header" layout="row">
+                              <span style="width:10px">{{ aspect  }}</span>
+                          </div>
+                      </th>
+
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr ng-repeat="(key, dataObj) in vm.designTableData">
+                      <th ng-bind="key | date:'yyyy-MM-dd HH:mm'">
+                      </th>
+                      <th ng-repeat = "(key, value) in dataObj">
+                          {{value  | number:vm.designDetail.Precision}}
+                      </th>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <div class="list-card" ng-show="vm.activeView=='line'">
+          <div ng-hide="vm.chartType == 'bar'" class="list-content white-bg" layout="row">
+              <div class="report-chart">
+                  <div layout="row">
+                    <div class="reportcharts">
+                      <div  class="reportchart">
+                              <div class="card">
+                                    <hc-stock-chart-report options="vm.chartConfig || {}">Placeholder for generic chart</hc-stock-chart-report>
+
+                              </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div  class="list-card" ng-show="vm.activeView=='bar'">
+          <div  class="list-content white-bg" layout="row">
+              <div class="report-chart">
+                  <div layout="row">
+                      <div class="reportcharts">
+                          <div class="reportchart">
+                              <div class="card">
+                                  <hc-bar-chart-report options="vm.chartConfig1 || {}">Placeholder for generic chart</hc-bar-chart-report>
+
+                              </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+           </div>
+            <!-- DATA TABLE  datatable="ng" dt-instance="vm.arcReportTagDataDTInstance"
+             dt-options="vm.arcReportTagDataDTOptions" -->
+
+
+
+
+    <!-- <pre ng-bind="vm.designTableData | json"></pre>-->
+</div>
+
+
+<!-- / CONTENT -->

@@ -1,0 +1,64 @@
+/* Ensure that the data table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {
+    
+    }
+
+
+.search {
+        position: relative;
+        // padding-right: 120px;
+        max-width: 480px;
+
+        .search-icon {
+            margin: 0 -24px 0 0;
+        }
+
+        .search-input {
+            margin: 0 0 0 32px;
+            background: none;
+            font-size: 16px;
+            line-height: 40px;
+            height: 40px;
+            color: #FFFFFF;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            transition: border-color 300ms ease;
+
+            &:focus {
+                border-color: rgba(255, 255, 255, 1);
+            }
+
+            &::-webkit-input-placeholder {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+
+
+
+
+#navsessions
+{
+    .dataTable input.filter-input
+    {
+        border: 1px dotted #cacaca;
+        padding: 5px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        //font-style: italic;
+        background-color: #F8F8F8;
+        color: red;
+    }
+
+
+}
+
+
+#nav-sessions tbody th, #nav-sessions tbody td {
+    padding: 4px 10px; 
+    cursor:pointer;
+}
+#nav-sessions thead th {
+    padding: 10px 10px; 
+}

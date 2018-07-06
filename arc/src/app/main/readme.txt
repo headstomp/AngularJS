@@ -1,0 +1,1 @@
+- links for left menu are in main.module.js

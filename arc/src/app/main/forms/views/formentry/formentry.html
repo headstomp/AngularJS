@@ -1,0 +1,99 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="1">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                    ng-class="''+vm.settings.color+'-700-bg'"
+                    ui-sref="app.formslist"
+                    aria-label="apps button" translate-attr-aria-label="ARC.NEW">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.LIST">List</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+
+
+
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+                <div class="search" layout="row" layout-align="start center">
+                    <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                    <input id="design-search" class="search-input" type="text" placeholder="Search" translate-attr-placeholder="ARC.SEARCH_TRANSLATIONS" ng-model="vm.search" />
+                </div>
+
+                  <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('formEntry')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+
+            </div>
+            <!-- / TOOLBAR -->
+
+        </div>
+
+    </div>
+    <!-- / HEADER -->
+    <!-- PAGE CONTENT -->
+     <!-- PAGE CONTENT -->
+
+    <div class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+        <div class="content">
+            <div class="white-bg md-whiteframe-4dp" >
+            <md-toolbar class="md-grey-50-bg blue-500-fg border-top border-bottom">
+              <div class="md-toolbar-tools">
+                <h2 md-truncate flex>
+                    {{vm.formDetails.Description}}
+                </h2>
+                <md-button class="md-fab md-mini" ng-click="vm.addTagRow()">
+                    <md-icon md-font-icon="icon-plus"></md-icon>
+                    <md-tooltip><span translate="ARC.ADD">Add</span></md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-mini" ng-click="vm.saveTagData()">
+                    <md-icon md-font-icon="icon-floppy"></md-icon>
+                    <md-tooltip><span translate="ARC.SAVE">Save</span></md-tooltip>
+                </md-button>
+              </div>
+            </md-toolbar>
+
+
+
+                <table id="form-entry" >
+                    <thead class="secondary-text">
+                        <tr>
+                          <th>Date</th>
+                            <th ng-repeat="tag in vm.tagList">
+                                {{tag.Name}}
+                            </th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                       <tr ng-visible="vm.tagData" ng-model="prop" ng-repeat = "(key,tagValue) in (vm.tagResolvedData| reducedDataSearch: vm.search)" >
+                          <td><input  type="text" ng-model="key" date-format="yyyy-MM-dd HH:mm:ss" /></td>
+                         <td ng-repeat = "(i, value) in tagValue">
+                          <input type="text" ng-model="vm.tagResolvedData[key][i]" ng-change="vm.markForUpdate(key)" /></td>
+                         <td>
+                           <div >
+                               <md-icon md-font-icon="icon-delete" ng-click="vm.deleteTagRow(key)"></md-icon>
+                               <md-tooltip><span translate="ARC.DELETE">Delete</span></md-tooltip>
+                             </div>
+                         </td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+                    <h1 ng-show="vm.noData">No Data Available</h1>
+
+          </div>
+        </div>
+    </div>
+    <!-- / PAGE CONTENT -->
+</div>

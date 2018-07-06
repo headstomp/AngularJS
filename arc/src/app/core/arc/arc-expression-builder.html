@@ -1,0 +1,159 @@
+<div>
+    <div layout="row" layout-align="space-around center" ng-form="vm.expressionForm">
+        <md-input-container flex class="container pb-10">
+            <input
+                type="text"
+                name="expression"
+                class="expression-input"
+                placeholder="Expression"
+                ng-model="vm.expression" />
+        </md-input-container>
+        <div flex="nogrow" layout="column" layout-align="space-between center">
+            <a href="javascript:void(0);" ng-init="isClicked = false" ng-class="{ 'pulsing': !isClicked }" ng-click="vm.showExpressionSyntaxHelpDialog(); isClicked = true;" flex>
+                <md-tooltip>Open Expression Syntax Help</md-tooltip>
+                <span class="fa fa-fw fa-2x fa-question-circle"></span>
+            </a>
+            <a href="javascript:void(0);" ng-click="vm.showExpressionCatalogDialog()" flex>
+                <md-tooltip>Open Expression Catalog</md-tooltip>
+                <span class="fa fa-fw fa-2x fa-book"></span>
+            </a>
+        </div>
+    </div>
+    <div style="color: #990; text-align: center; margin-bottom: 10px; font-size: 16px;" ng-if="!vm.isValid && vm.expressionForm.$dirty">
+        <div>
+            <span class="fa fa-fw fa-warning"></span>
+            <span>Your expression or mappings are not valid</span>
+        </div>
+        <div ng-if="vm.currentError">
+            <span ng-bind="vm.currentError"></span>
+        </div>
+    </div>
+    
+    <arc-expression-viewer mvel="vm.mvel"></arc-expression-viewer>
+
+    <table class="symbol-table" ng-if="vm.nameSet.length > 0">
+        <tbody>
+            <tr ng-repeat="name in vm.nameSet">
+                <th class="col-symbol-name">
+                    <span class="fa fa-lg fa-calculator"></span>
+                    <span ng-bind="name"></span>
+                </th>
+                <td class="col-tag-source">
+                    <arc-select-tag-source
+                        ng-required="true"
+                        tag-source="vm.mapping[name].tagSource"
+                        where-set="vm.tagSourceWhereSet">
+                    </arc-select-tag-source>
+                </td>
+                <td class="col-tag">
+                    <arc-select-tag
+                        ng-disabled="!vm.mapping[name].tagSource.Id"
+                        ng-required="true"
+                        tag="vm.mapping[name].tag"
+                        where-set="vm.mapping[name].tagWhereSet"
+                        format="%Name, %Description">
+                    </arc-select-tag>
+                </td>
+                <td class="col-aspect">
+                    <md-input-container>
+                        <md-select
+                            multiple="false"
+                            ng-required="true"
+                            ng-disabled="!vm.mapping[name].tag.Id"
+                            ng-model="vm.mapping[name].aspect">
+                            <div>
+                                <md-option
+                                    placeholder="Aspect"
+                                    ng-if="vm.mapping[name].tag.TagTypeId !== 8"
+                                    ng-repeat="(aspectKey, aspectValue) in vm.aspectMap"
+                                    ng-value="aspectKey">
+                                    <span ng-bind="aspectValue"></span>
+                                </md-option>
+                                <md-option
+                                    placeholder="Aspect"
+                                    ng-if="vm.mapping[name].tag.TagTypeId === 8"
+                                    ng-value="'lst'">
+                                    <span>Last Value</span>
+                                </md-option>
+                            </div>
+                        </md-select>
+                    </md-input-container>
+                </td>
+                <td class="col-default">
+                    <md-checkbox ng-model="vm.mapping[name].hasIfNull">
+                        <md-tooltip>Use a default value</md-tooltip>
+                    </md-checkbox>
+                    <md-input-container>
+                        <input 
+                            type="number"
+                            placeholder="Value If Null"
+                            ng-required="vm.mapping[name].hasIfNull"
+                            ng-disabled="!vm.mapping[name].hasIfNull"
+                            ng-model="vm.mapping[name].ifNull"></input>
+                    </md-input-container>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <style type="text/css">
+
+        .symbol-table th,
+        .symbol-table td {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .symbol-table .col-symbol-name {
+            width: 1%;
+            font-size: 150%;
+            white-space: nowrap;
+        }
+
+        .symbol-table .col-tag-source { width: 30%; }
+        .symbol-table .col-tag { width: 40%; }
+        .symbol-table .col-aspect { width: 15%; }
+        .symbol-table .col-default { width: 15%; }
+
+        .symbol-table md-input-container {
+            width: 100%;
+        }
+
+        .expression-input {
+            font-size: 300%;
+            font-family: monospace;
+            padding: 1em !important;
+            padding-left: 2em !important;
+            padding-right: 2em !important;
+            text-align: center;
+        }
+
+        .katex-container {
+            cursor: default;
+            text-align: center;
+            font-size: 350%;
+            padding: 1em;
+        }
+        
+        @keyframes pulsing-animation {
+            0%   { color: #039be5; }
+            50%  { color: #014a6d; }
+            100% { color: #039be5; }
+        }
+
+        .pulsing {
+            color: #039be5;
+            animation: pulsing-animation 1s infinite;
+        }
+        
+        .col-default md-input-container {
+            width: 100%;
+            padding-right: 30px;
+        }
+        
+        .col-default md-input-container .md-errors-spacer {
+            min-height: 0;
+        }
+        
+    </style>
+<div>

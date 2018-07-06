@@ -1,0 +1,83 @@
+<!-- datatable="ng" dt-instance="vm.arcTagDataDTInstance" dt-options="vm.arcTagDataDTOptions" -->
+<div layout="row" layout-wrap>
+
+        <div layout="column" flex="100">
+
+            <div class="tag-chart white-bg">
+
+                <table id="tagTable-values"  class="dataTable row-border hover" datatable="ng" dt-options="vm.arcTagDataDTOptions" dt-instance = "vm.dtInstanceCallback" >
+                    <thead>
+                      <tr>
+                          <th  ng-repeat = "aspect in vm.aspects" class="secondary-text">
+                            <div class="table-header" ng-if="aspect !='GroupId' && aspect!='TagId'">
+                                <span class="column-title">{{ aspect }}</span>
+                            </div>
+                          </th>
+                          <th ng-if="vm.meta.tagType == 'red' || vm.meta.tagType == 'cal'" class="secondary-text">
+                            <div class="table-header" ><span class="column-title">Comment</span></div>
+                          </th>
+                          <th ng-if="vm.meta.tagType == 'raw'" class="secondary-text">
+                            <div class="table-header" ><span class="column-title" >Actions</span></div>
+                          </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat = "(index,tagData) in vm.data">
+                        <td ng-if="vm.meta.tagType == 'red' || vm.meta.tagType == 'cal'" ng-repeat ="(key,value) in tagData" ng-class="vm.meta.chartType == key && 'md-blue-100-bg' || ''">
+                          <span ng-if="key=='DateTime'">
+                              {{value | date:'yyyy-MM-dd HH:mm:ss' }} <!-- | date:'yyyy-MM-dd HH:mm:ss'-->
+                          </span>
+                          <span ng-if="key!='DateTime'&& key!='GroupId' && key!='TagId'">
+                            {{ value | number:2 }}
+                          </span>
+                        </td>
+
+                        <td ng-if="vm.meta.tagType == 'raw'" >
+                            {{tagData.DateTime | date:'yyyy-MM-dd HH:mm:ss'}}
+                        </td>
+                        <td ng-if="vm.meta.tagType == 'raw'" ng-class="vm.meta.chartType == key && 'md-blue-100-bg' || ''">
+                            {{tagData.Value}}
+                        </td>
+
+                        <td ng-if="vm.meta.tagType == 'rawLive'" >
+                            {{tagData.DateTime | date:'yyyy-MM-dd HH:mm:ss'}}
+                        </td>
+                        <td ng-if="vm.meta.tagType == 'rawLive'" ng-class="vm.meta.chartType == key && 'md-blue-100-bg' || ''">
+                            {{tagData.Value}}
+                        </td>
+
+                        <td ng-if="vm.meta.tagType == 'raw'">
+                          <span style="cursor: pointer;" ng-click="vm.openEditTagValueDialog($event, tagData)" class="trash fa fa-pencil fa-lg" aria-hidden="true"></span>
+                          <span style="cursor: pointer;" ng-click="vm.deleteTagValue($event,tagData)" class="trash fa fa-trash-o fa-lg" aria-hidden="true"></span>
+                          <span id="comment"><span ng-if="vm.commentCounts[tagData.GroupId || tagData.DateTime]==undefined" class="fa fa-comment-o" ng-click="vm.showCommentPrompt($event,tagData,'')"><md-tooltip>Add Comment</md-tooltip></span></span>
+                          <span ng-if="vm.commentCounts[tagData.GroupId || tagData.DateTime]!==undefined" class="fa fa-comment" ng-click="vm.showCommentPrompt($event,tagData,'')"><md-tooltip>{{vm.commentCounts[tagData.GroupId|| tagData.DateTime]}} Comments</md-tooltip></span>
+                        </td>
+                        <td ng-if="vm.meta.tagType == 'red' || vm.meta.tagType == 'cal'">
+                          <span id="comment"><span ng-if="vm.commentCounts[tagData.GroupId || tagData.DateTime]==undefined" class="fa fa-comment-o" ng-click="vm.showCommentPrompt($event,tagData,'')"><md-tooltip>Add Comment</md-tooltip></span></span>
+                          <span ng-if="vm.commentCounts[tagData.GroupId || tagData.DateTime]!==undefined" class="fa fa-comment" ng-click="vm.showCommentPrompt($event,tagData,'')"><md-tooltip>{{vm.commentCounts[tagData.GroupId|| tagData.DateTime]}} Comments</md-tooltip></span>
+                        </td>
+                      </tr>
+                      </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+<!--<table class="dataTable row-border hover"
+       datatable="ng"
+       dt-instance = "vm.dtInstanceCallback">
+    <thead>
+            <tr>
+                <th ng-repeat = "aspect in vm.aspects">
+                  {{aspect}}
+                </th>
+
+            </tr>
+</thead>
+    <tbody>
+        <tr ng-repeat = "(key,tagData) in vm.data">
+          <td ng-repeat ="value in tagData" >
+              {{value}}
+          </td>
+        </tr>
+    </tbody>
+</table> -->

@@ -1,0 +1,152 @@
+<div class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+    <div id="board" layout="column" layout-xs="column" layout-align="space-between">
+        
+            <!--
+            <arc-table-tag></arc-table-tag>
+            
+            <arc-table-tag-source></arc-table-tag-source>
+            
+            <arc-table-report></arc-table-report>
+            -->
+            
+            <input type="number" ng-model="vm.reportId" />
+            
+            <table>
+                <tbody>
+                    <tr ng-repeat="rowIndex in vm.rowIndexSet">
+                        <td ng-repeat="colIndex in vm.colIndexSet">
+                            <span ng-bind="vm.data[rowIndex][colIndex]"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        
+    </div>
+</div>
+
+<style type="text/css">
+    #board {
+        position: relative !important;
+    }
+</style>
+
+<script type="text/ng-template" id="testing.html/select-tag-source-example">
+    <md-dialog>
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">Tag Source Selection Example</span>
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content ms-scroll>
+            
+            <arc-select-tag-source tag-source="vm.tagSource"></arc-select-tag-source>
+            
+            <br />
+            
+            <arc-select-tag-source tag-source="vm.tagSource" format="%DisplayName"></arc-select-tag-source>
+            
+            <br />
+            
+            <arc-select-tag-source tag-source="vm.tagSource" format="%Id &mdash; %Name &mdash; %DisplayName &mdash; %Description"></arc-select-tag-source>
+            
+            <pre ng-bind="vm.tagSource | json"></pre>
+            
+        </md-dialog-content>
+    </md-dialog>
+</script>
+
+<script type="text/ng-template" id="testing.html/select-tag-example">
+    <md-dialog>
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">Tag Source Selection Example</span>
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content ms-scroll>
+        
+            <arc-select-tag-source tag-source="vm.tagSource"></arc-select-tag-source>
+            <pre ng-bind="vm.tagSource | json"></pre>
+            
+            <arc-select-tag tag="vm.tag" where-set="vm.tagWhereSet"></arc-select-tag>
+            <pre ng-bind="vm.tag | json"></pre>
+          
+        </md-dialog-content>
+    </md-dialog>
+</script>
+
+<script type="text/ng-template" id="testing.html/expression-builder-example">
+    <md-dialog flex="80">
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">Tag Source Selection Example</span>
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content ms-scroll ng-init="mvel = {}; mvelJson = ''; isValid = false;">
+        
+            <arc-expression-builder
+                mvel="mvel" 
+                mvel-json="mvelJson"
+                is-valid="isValid">
+            </arc-expression-builder>
+            
+            <pre ng-bind="isValid | json"></pre>
+            <pre ng-bind="mvel | json"></pre>
+            <pre ng-bind="mvelJson | json"></pre>
+            
+        </md-dialog-content>
+    </md-dialog>
+</script>
+
+<script type="text/ng-template" id="testing.html/select-tag-list-example">
+    <md-dialog>
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">Tag Selection List Example</span>
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content ms-scroll>
+        
+            <arc-select-tag-source tag-source="vm.tagSource"></arc-select-tag-source>
+            <pre ng-bind="vm.tagSource | json"></pre>
+            
+            <md-list>
+                <md-list-item ng-repeat="tag in vm.tagSet">
+                    <span ng-bind="tag.Name"></span>
+                </md-list-item>
+            </md-list>
+            
+        </md-dialog-content>
+    </md-dialog>
+</script>
+
+<script type="text/ng-template" id="testing.html/select-location-example">
+    <md-dialog>
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">Location Selection Example</span>
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content ms-scroll>
+        
+            <arc-select-location location="vm.location"></arc-select-location>
+            <pre ng-bind="vm.location | json"></pre>
+            
+        </md-dialog-content>
+    </md-dialog>
+</script>

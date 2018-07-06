@@ -1,0 +1,280 @@
+<!-- MENU -->
+<div class="list-menu md-grey-50-bg border pl-25" layout="row">
+    <div width="200px">
+        <div>
+            <md-input-container>
+                <label translate="ARC.PRECISION">Precision</label>
+                <md-select class="simplified" ng-model="vm.designdetail.Precision" placeholder="Precision"
+                translate-attr-placeholder="ARC.PRECISION">
+                    <md-option ng-value="0">No Decimals</md-option>
+                    <md-option ng-value="1">1 Decimal</md-option>
+                    <md-option ng-value="2">2 Decimal</md-option>
+                    <md-option ng-value="3">3 Decimal</md-option>
+                    <md-option ng-value="4">4 Decimal</md-option>
+                    <md-option ng-value="5">5 Decimal</md-option>
+                    <md-option ng-value="6">6 Decimal</md-option>
+                    <md-option ng-value="7">7 Decimal</md-option>
+                    <md-option ng-value="8">8 Decimal</md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+    </div>
+    <div width="200px">
+        <div ng-if="vm.disableLiveButton==false">
+            <md-input-container>
+                <label translate="ARC.GAP_FILL">Gap Fill</label>
+                <md-select class="simplified" ng-model="vm.designdetail.GapFillMethodId" placeholder="Gap Fill Method"
+                           translate-attr-placeholder="ARC.GAP_FILL">
+                    <md-option ng-value="4" translate="ARC.SHOW_BLANK">Show Blank Space</md-option>
+                    <md-option ng-value="3" translate="ARC.SHOW_ZERO">Show a Zero</md-option>
+                    <md-option ng-value="1" translate="ARC.CARRY_LAST">Carry Last value</md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+    </div>
+    <div width="200px">
+        <div ng-if="vm.disableLiveButton==false">
+            <md-input-container ng-hide="vm.importerType == 1">
+                <label translate="ARC.LABEL_PERIOD">Label Period</label>
+                <md-select class="simplified" ng-model="vm.designdetail.LabelPeriodStart"
+                           translate-attr-placeholder="ARC.LABEL_PERIOD">
+                    <md-option ng-value="true" translate="ARC.START_TIME">Start Time</md-option>
+                    <md-option ng-value="false" translate="ARC.END_TIME">End Time</md-option>
+                </md-select>
+            </md-input-container>
+        </div>
+    </div>
+    <div>
+        <div ng-if="vm.disableLiveButton==false">
+            <md-input-container ng-hide="vm.importerType == 1">
+                <label translate="ARC.BUCKET_TYPE">Bucket Type</label>
+                <md-select class="simplified" ng-model="vm.designdetail.BucketTypeId"
+                           translate-attr-placeholder="ARC.BUCKET_TYPE">
+                    <div ng-if="vm.importerType == 1">
+                        <md-option ng-value="1" translate="ARC.RAW">Raw Data</md-option>
+                    </div>
+                    <div ng-hide="vm.importerType == 4 || vm.disableLiveButton==true">
+                        <md-option ng-value="1" translate="ARC.RAW">Raw Data</md-option>
+                    </div>
+                    <div ng-if="vm.importerType == 4">
+                        <md-option ng-value="4" translate="ARC.TEN_MINUTE">10 minute</md-option>
+                        <md-option ng-value="5" translate="ARC.30_MINUTE">30 Minute</md-option>
+                        <md-option ng-value="6" translate="ARC.60_MINUTE">60 Minute</md-option>
+                        <md-option ng-value="7" translate="ARC.12_HOUR">12 Hour</md-option>
+                        <md-option ng-value="8" translate="ARC.24_HOUR">24 Hour</md-option>
+                    </div>
+                    <div ng-if="vm.importerType == 0">
+                        <md-option ng-value="9" translate="ARC.SELECT_TAGS_FIRST">Select some tags first</md-option>
+                    </div>
+                </md-select>
+            </md-input-container>
+        </div>
+    </div>
+    <div>
+    <md-input-container>
+      <div class="where_used">
+
+          </div>
+          </md-input-container>
+        </div>
+    <div>
+      <div class="where_used">
+            <md-button class="md-accent" ng-click="vm.whereUsedDialog($event, vm.designdetail)" translate="ARC.WHERE_USED">where used</md-button>
+        </div>
+    </div>
+</div>
+
+<!--
+<div ng-hide="vm.loadingFlag" id="loadingDiv">
+  <div class="loading-img" align="middle">
+      <img src="assets/images/loading/Loading.gif" align="middle"/>
+  </div>
+</div>
+-->
+
+<!-- / MENU -->
+
+<!-- CONTENT -->
+<div class="list-content" layout="column">
+    <div class="list-card" ms-scroll>
+        <!-- DATA TABLE -->
+        <table id="tag-data" class="dataTable row-border hover" datatable="ng" dt-instance="vm.arcReportTagDataDTInstance" dt-options="vm.arcReportTagDataDTOptions">
+            <thead>
+                <tr ng-hide="vm.importerType == 1">
+                    <th class="secondary-text">
+                        <div class="table-header">
+                            <span class="column-title" translate="ARC.ASPECT">Aspect</span>
+                    </th>
+                    <th ng-class=" {'md-blue-100-bg': detail.TagTypeId==8} " colspan="{{vm.updateColumnSpan(detail.Tag.Id)}}" ng-repeat="detail in ::vm.designdetail.ReportDataItemSet">
+                        <md-select class="simplified" ng-model="vm.aspect" placeholder="aspect">
+                            <fieldset class="standard">
+                                <legend><span translate="ARC.ASPECTS_FOR">aspects for</span>{{ detail.Heading }}</legend>
+                                <div layout="row" layout-wrap flex>
+                                    <div flex="250" > <!--ng-if="vm.designdetail.IsBucketed == true"-->
+                                      <md-checkbox aria-label="" ng-hide="vm.isBucketed" ng-checked="!vm.isBucketed" >
+                                          <span translate="ARC.RAW">RAW</span>
+                                      </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed" ng-model="detail.ShowLastValue" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.LAST">last</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-model="detail.ShowWeightedAverage" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.WAVG">wAvg</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed  || detail.Tag.TagTypeId==8" ng-model="detail.ShowAverage" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.AVG">Avg</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed  || detail.Tag.TagTypeId==8" ng-model="detail.ShowMinimum" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.MIN">min </span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed  || detail.Tag.TagTypeId==8"  ng-model="detail.ShowMaximum" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.MAX">max</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-model="detail.ShowTotal" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.TOTAL">total</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-model="detail.ShowCount" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.COUNT">count</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-model="detail.ShowRange" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.RANGE">range</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-model="detail.ShowVariance" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.VAR">var</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-model="detail.ShowStandardDeviation" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.STDDEV">stddev</span>
+                                        </md-checkbox>
+                                        <md-checkbox aria-label="" ng-disabled="!vm.totalizerBucketFlag || detail.Tag.TagTypeId==8" ng-model="detail.ShowTotalizer" ng-change="vm.updateStuff()">
+                                            <span translate="ARC.TOTALIZER"> totalizer </span>
+
+                                    </md-checkbox>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                        </md-select>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="secondary-text">
+                        <div class="table-header">
+                            <span class="column-title" translate="ARC.TAG_NAME">Tag Name</span>
+                        </div>
+                    </th>
+                    <th  colspan="{{vm.updateColumnSpan(detail.Tag.Id)}}" class="secondary-text" ng-class=" {'md-blue-100-bg': vm.calculatedTagClass(detail)}" ng-repeat="detail in vm.designdetail.ReportDataItemSet">
+                        <div class="table-header">
+
+                            <span class="column-title">
+                              <span ng-if="detail.Tag.TagTypeId==8" class="fa fa-calculator" aria-hidden="true"></span>
+                              {{detail.Tag.Name}}
+                                <a ui-sref="app.tagdetail({id:detail.Tag.Id})" target="height=600,width=800" md-autofocus>
+                                    <span class="goto-on-list fa fa-external-link">
+                                        <md-tooltip><span translate="ARC.OPEN_TAG_DETAILS_PAGE">open tag details page</span></md-tooltip>
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="secondary-text">
+                        <div class="table-header">
+                            <span class="column-title" translate="ARC.LABEL">Label</span>
+                        </div>
+                    </th>
+                    <th  colspan="{{vm.updateColumnSpan(detail.Tag.Id)}}" class="secondary-text" ng-repeat="detail in vm.designdetail.ReportDataItemSet">
+                        <!--ng-class=" {'md-blue-100-bg': detail.Tag.TagTypeId==8}" -->
+                        <div layout="row">
+
+                            <input flex ng-model="detail.HeadingValue" ng-init="detail.HeadingValue" ng-if="detail.ShowValue == true"></input>
+                            <input flex ng-model="detail.HeadingLastValue" ng-init="detail.HeadingLastValue" ng-if="detail.ShowLastValue == true"></input>
+
+                            <input flex ng-model="detail.HeadingWeightedAverage" ng-init=" detail.HeadingWeightedAverage" ng-if="detail.ShowWeightedAverage == true"></input>
+                            <input flex ng-model="detail.HeadingAverage" ng-init=" detail.HeadingAverage" ng-if="detail.ShowAverage == true"></input>
+
+                            <input flex ng-model="detail.HeadingMinimum" ng-init="detail.HeadingMinimum" ng-if="detail.ShowMinimum == true"></input>
+                            <input flex ng-model="detail.HeadingMaximum" ng-init="detail.HeadingMaximum" ng-if="detail.ShowMaximum == true"></input>
+                            <input flex ng-model="detail.HeadingTotal" ng-init="detail.HeadingTotal" ng-if="detail.ShowTotal == true"></input>
+
+                            <input flex ng-model="detail.HeadingCount" ng-init="detail.HeadingCount" ng-if="detail.ShowCount == true"></input>
+
+                            <input flex ng-model="detail.HeadingRange" ng-init="detail.HeadingRange" ng-if="detail.ShowRange == true"></input>
+
+                            <input flex ng-model="detail.HeadingVariance" ng-init=" detail.HeadingVariance" ng-if="detail.ShowVariance == true"></input>
+                            <input flex ng-model="detail.HeadingStandardDeviation" ng-init=" detail.HeadingStandardDeviation" ng-if="detail.ShowStandardDeviation == true"></input>
+                            <input flex ng-model="detail.HeadingTotalizer" ng-init=" detail.HeadingTotalizer" ng-if="detail.ShowTotalizer == true"></input>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="secondary-text">
+                        <div class="table-header">
+                            <span class="column-title" translate="ARC.DATE">Date</span>
+                        </div>
+                    </th>
+                    <th class="secondary-text" ng-repeat="aspect in ::vm.updateAspectHeader() track by $index" ng-model="key">
+                        <div class="table-header" layout="row">
+                            <span style="width:10px">{{ aspect  }}</span>
+                        </div>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="(key, Value) in vm.aspectData" ng-model="key">
+                    <td>
+                        {{ key | date:'yyyy-MM-dd HH:mm'}}
+                        <!-- -->
+                    </td>
+                    <!--ng-class=" {'md-blue-100-bg': vm.calculatedTagClass(val)}"-->
+                    <td  ng-repeat="val in ::Value" ng-model="key">
+                        <div layout="row">
+
+                            <span flex style="cursor: pointer;" ng-click="vm.openEditDialog($event, val)" class="pr-5 report-editable" ng-if="vm.typeCheck(val.Value, val.hash) == 'N' && val.Raw == 1">
+                                {{ val.Value | number:vm.designdetail.Precision }}
+                            </span>
+                            <span flex class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'N' && val.Raw != 1">
+                                {{ val.Value | number:vm.designdetail.Precision }}
+                            </span>
+
+                            <span flex style="cursor: pointer;" ng-click="vm.openEditDialog($event, val)" class="pr-5 report-editable" ng-if="vm.typeCheck(val.Value, val.hash) == 'I' && val.Raw == 1">
+                                {{ val.Value | number:0  }}
+                            </span>
+                            <span flex class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'I' && val.Raw != 1">
+                                {{ val.Value | number:0 }}
+                            </span>
+
+                            <span flex style="cursor: pointer;" ng-click="vm.openEditDialog($event, val)" class="pr-5 report-editable" ng-if="vm.typeCheck(val.Value, val.hash) == 'S' && val.Raw == 1">
+                                {{ val.Value }}
+                            </span>
+                            <span flex class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'S'&& val.Raw != 1" ><!--  -->
+                                {{ val.Value }}
+                            </span>
+
+                            <span flex class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'F'">
+                                <a ng-href="{{ BASE_URL }}/File/{{val.hash}}?filename={{val.Value}}" target="_blank">
+                                    {{val.Value}}
+                                </a>
+                            </span>
+                            <div ng-hide="val.Value==undefined">
+                                <span ng-if="vm.commentCounts[val.TagId][val.GroupId || key ]" class = "fa fa-comment" ng-click="vm.showCommentPrompt($event, val, key)">
+                                    <md-tooltip>{{vm.commentCounts[val.TagId][val.GroupId || key].length}} Comments</md-tooltip>
+                                </span>
+
+                                <span id="comment">
+                                    <span ng-if="vm.commentCounts[val.TagId][val.GroupId || key]===undefined" class = "fa fa-comment-o comment-editable" ng-click="vm.showCommentPrompt($event,val, key)">
+                                        <md-tooltip>Add Comment</md-tooltip>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- / DATA TABLE -->
+    </div>
+</div>
+<!-- / CONTENT -->

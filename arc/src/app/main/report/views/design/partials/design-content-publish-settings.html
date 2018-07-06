@@ -1,0 +1,251 @@
+<!-- MENU -->
+<div class="list-menu md-grey-50-bg border pl-25" layout="row">
+    <div width="200px">
+    </div>
+    <div width="200px">
+    </div>
+    <div>
+        <div class="where_used">
+            <md-button class="md-accent" ng-click="vm.whereUsedDialog($event, vm.designdetail)" translate="ARC.WHERE_USED">where used</md-button>
+        </div>
+    </div>
+</div>
+<!-- / MENU -->
+<!-- CONTENT -->
+<div class="list-content white-bg" layout="row">
+  
+    <!-- IS PUBLISHED BOX -->
+    <div layout="column" flex="25" class="m-5 pr-5 b md-grey-A100-bg">
+        <div class="md-padding" layout="row">
+            <div layout="column">
+                <div>
+                    <label>
+                        <input class="aspect" type="checkbox" aria-label="" ng-model="vm.designdetail.IsPublished" ng-change="vm.toggleResultSet()" />
+                        <strong translate="ARC.IS_PUBLISHED">Is Published</strong>
+                    </label>
+                </div>
+
+                <br />
+                <md-divider class="link-padding"></md-divider>
+                <br />
+
+                <div ng-if="vm.designdetail.IsPublished">
+                    <div>
+                        <label>
+                            <input type="checkbox" class="link-padding" aria-label="" ng-model="vm.designdetail.ShowQvdCsv" />
+                            <span translate="ARC.CREATE_QVD">create qvd</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="link-padding" aria-label="" ng-model="vm.designdetail.ShowQvdCsv" />
+                            <span translate="ARC.CREATE_CSV">create csv</span>
+                        </label>
+                    </div>
+
+                    <div ng-if="vm.designdetail.ShowQvdCsv == true" class="link-padding">
+                        <br />
+                        <span translate="ARC.UPDATE_QVD_AND_CSV_EVERY">update</span>
+                        <br />
+                        <div>
+                            <label>
+                                <input type="radio" aria-label="" ng-model="vm.designdetail.QvReload" value="10Minute" />
+                                <span translate="ARC.TEN_MINUTE">10 minutes</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" aria-label="" ng-model="vm.designdetail.QvReload" value="Daily" />
+                                <span translate="ARC.HOURLY">hourly</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" aria-label="" ng-model="vm.designdetail.QvReload" value="Weekly" />
+                                <span translate="ARC.DAILY">daily</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" aria-label="" ng-model="vm.designdetail.QvReload" value="Never"  />
+                                <span translate="ARC.NEVER">never</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <br />
+                    <md-divider class="link-padding"></md-divider>
+                    <br />
+
+                    <div>
+                        <label>
+                            <input type="checkbox" class="link-padding" aria-label="" ng-model="vm.designdetail.ShowDetail" />
+                            <span translate="ARC.SHOW_DETAILS">show details</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="link-padding" aria-label="" ng-model="vm.designdetail.ShowChart" />
+                            <span translate="ARC.SHOW_CHART">show chart</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="link-padding" aria-label="" ng-model="vm.designdetail.ShowTable" />
+                            <span translate="ARC.SHOW_RESULT_SET">show result set</span>
+                        </label>
+                    </div>
+                    <div ng-if="vm.designdetail.ShowTable == true">
+                        <label>
+                            <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.IsHorizontal">
+                            <span translate="ARC.SHOW_TABLE_HORIZONTALY">show table horizontaly</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" class="link-padding" aria-label="" ng-model="vm.ShowBlock">
+                            <span translate="ARC.SHOW_SUMMARY">show summary</span>
+                        </label>
+                    </div>
+                    <div ng-if="vm.ShowBlock == true">
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryCount">
+                                <span translate="ARC.COUNT">count</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryRange">
+                                <span translate="ARC.RANGE">range</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryTotal">
+                                <span translate="ARC.TOTAL">total</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryMaximum">
+                                <span translate="ARC.MAX">max</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryMinimum">
+                                <span translate="ARC.MIN">min</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryWeightedAverage">
+                                <span translate="ARC.AVG">avg</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="link-padding-l" aria-label="" ng-model="vm.designdetail.ShowSummaryLastValue">
+                                <span translate="ARC.LAST">last</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / IS PUBLISHED BOX -->
+    
+    <div layout="column" flex="25" class="m-5 pr-5 b md-grey-A100-bg" style="overflow-y: scroll;">
+        <div class="md-padding">
+            <input type="checkbox" hidden ng-disabled="true" aria-label="" ng-model="vm.ShowPreview" />
+            <b><span translate="ARC.PREVIEW">preview</span></b>
+            <br />
+            <md-divider class="link-padding"></md-divider>
+            <br />
+            <div class="preview-images">
+                <div ng-if="vm.designdetail.ShowDetail == true" class="m-5 md-grey-A300-bg">
+                    <img src="assets/images/report-blocks/part_details.png" alt="details" />
+                </div>
+                <div ng-if="vm.designdetail.ShowChart == true" class="m-5 md-grey-A300-bg">
+                    <img src="assets/images/report-blocks/part_chart.png" alt="details" />
+                </div>
+                <div ng-if="vm.ShowBlock == true" class="m-5 md-grey-A100-bg">
+                    <img src="assets/images/report-blocks/part_summary.png" alt="details">
+                </div>
+                <div ng-if="vm.designdetail.ShowTable == true" class="m-5 md-grey-A300-bg">
+                    <img src="assets/images/report-blocks/part_resultset.png" alt="details" />
+                </div>
+            </div>
+            <style type="text/css" scoped="scoped">
+                .preview-images img {
+                    width: 100%;
+                    max-width: 100%;
+                    /*
+                    width: 25%;
+                    height: 25%;
+                    */
+                }
+            </style>
+        </div>
+    </div>
+    
+    <!-- LINK BOX -->
+    <div ng-if="vm.designdetail.ShowQvdCsv == true || vm.designdetail.ShowTable == true || vm.ShowBlock == true" layout="column" flex="50" class="m-5 pr-5 b md-grey-A100-bg">
+        <div class="md-padding">
+            <div>
+                <input type="checkbox" hidden ng-disabled="true" aria-label="" ng-model="vm.designdetail.IsPublished"><b><span translate="ARC.LINKS">links</span></b></input><br>
+                <md-divider class="link-padding"></md-divider>
+                <br />
+                <div ng-if="vm.designdetail.ShowQvdCsv == true">
+                    <div class="link-padding">
+                        <a href="gfsa://openfolder?path=\\tf-qvds\QVD\arc\Reports\QVD">\\tf-qvds\QVD\arc\Reports\QVD\{{vm.designdetail.Id}} - {{vm.designdetail.Name}}.qvd</a>
+                    </div>
+                </div>
+                <div ng-if="vm.designdetail.ShowQvdCsv == true">
+                    <div class="link-padding">
+                        <a href="gfsa://openfolder?path=\\tf-qvds\QVD\arc\Reports\CSV">\\tf-qvds\QVD\arc\Reports\CSV\{{vm.designdetail.Id}} - {{vm.designdetail.Name}}.csv</a>
+                    </div>
+                </div>
+                <div ng-if="vm.designdetail.ShowTable == true">
+                    <div class="link-padding">
+                        <a ng-href="{{ BASE_URL }}/ReportResult/{{vm.designdetail.Id}}/Html?isLegacy=false" target="_blank">
+                            <span>{{ BASE_URL }}/ReportResult/{{vm.designdetail.Id}}/Html</span>
+                        </a>
+                    </div>
+                    <div class="link-padding">
+                        <a ng-href="{{ BASE_URL }}/ReportResult/{{vm.designdetail.Id}}/Html?isLegacy=true" target="_blank">
+                            <span>{{ BASE_URL }}/ReportResult/{{vm.designdetail.Id}}/Html?isLegacy=true</span>
+                        </a>
+                    </div>
+                </div>
+                <div ng-if="vm.designdetail.ShowTable != true">
+                    <div class="link-padding">&nbsp;</div>
+                    <div class="link-padding">&nbsp;</div>
+                </div>
+                <div ng-if="vm.designdetail.ShowSummary == true" class="link-padding">
+                    <br />
+                    <span translate="ARC.USER_DEFINED_SCREEN_WILL_BE USED_FOR_AUTO_EMAILED_REPORTS">** User Defined screen will be used for automatically emailed reports</span>
+                    <br />
+                    <span translate="ARC.BUILD_THE_REPORT_USING_THE_USER_DEFINED_LINK_ABOVE">** Build the report using the "user defined" link above</span>
+                </div>
+                <div ng-if="vm.designdetail.ShowTable == true">
+                    <br />
+                    <div class="link-padding">
+                    <br />
+                    <span translate="ARC.TABLES_WILL_UPDATE_INSTANTLY_AS_CALLED">** tables will update instantly as called</span>
+                </div>
+                </div>
+                <div ng-if="vm.designdetail.ShowQvdCsv == true">
+                    <div class="link-padding"><span translate="ARC.QLIKVIEW_AND_CSV_WILL_UPDATE_BASED_ON_UPDATE_EVERY_SETTING">** Qlikview and CSV will update based on "Update Every" setting</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / LINK BOX -->
+    <!-- PREVIEW BOX -->
+</div>
+<!-- / CONTENT -->
+

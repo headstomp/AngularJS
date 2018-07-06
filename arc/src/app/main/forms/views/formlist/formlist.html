@@ -1,0 +1,93 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="1">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                    ng-class="''+vm.settings.color+'-700-bg'"
+                    ng-href="gfsa://arcformsstudio"
+                    aria-label="apps button" translate-attr-aria-label="ARC.NEW">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.NEW">New</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+
+            <!-- TAG NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1"
+                 flex-xs="100">
+
+                <span translate="ARC.FORMS_LIST">Data Source List</span>
+            </div>
+            <!-- / TAG NAME -->
+
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+                <!-- SEARCH -->
+                <div class="search" layout="row" layout-align="start center">
+                    <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                    <input id="design-search" class="search-input" type="text" placeholder="Search"
+                           translate-attr-placeholder="ARC.SEARCH_FORM_LIST">
+                    </input>
+                </div>
+                <!-- / SEARCH -->
+
+                <!-- HELP BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('formList')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+                <!-- / HELP BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+
+        </div>
+
+    </div>
+    <!-- / HEADER -->
+
+
+
+   <!-- PAGE CONTENT -->
+    <div class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content fullpage-datatable">
+            <div class="white-bg md-whiteframe-4dp">
+
+                <div id="data_tables">
+                    <style type="text/css">
+                    </style>
+                    <script type="text/javascript">
+                    </script>
+                    <table id="data_table-list" datatable="" class="table row-border hover dataTable" dt-instance="vm.arcFromsDTInstance" dt-options="vm.arcFormsDTOptions" dt-columns="vm.arcFormsColumns" dt-disable-deep-watchers="true">
+                        <thead>
+                        <tr>
+                            <th><span translate="ARC.ID">ID</span></th>
+                            <th><span translate="ARC.NAME">NAME</span></th>
+                            <th><span translate="ARC.DESCRIPTION">DESCRIPTION</span></th>
+                            <th><span translate="ARC.LOCATION">LOCATION</span></th>
+                            <th><span translate="ARC.LAST_RUN">LAST RUN</span></th>
+                            <th><span translate="ARC.LAST_DATA">LAST DATA</span></th>
+                            <th><span translate="ARC.OPEN_APP">APP</span></th>
+                            <th><span translate="ARC.OPEN_WEB">WEB</span></th>
+                        </tr>
+                        
+                        </thead>
+                    </table>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- / PAGE CONTENT -->
+</div>

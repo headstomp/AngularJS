@@ -1,0 +1,428 @@
+{
+   "2016-10-04T00:00:00": {
+      "3309": [
+         {
+            "Average": null,
+            "Count": 1145,
+            "LastValue": 409.379180908203,
+            "Maximum": 413.196105957031,
+            "Minimum": 407.622192382813,
+            "Range": 5.573913574218,
+            "Total": 469711.955078125,
+            "WeightedAverage": 410.210982077913,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3309
+         }
+      ],
+      "3323": [
+         {
+            "Average": null,
+            "Count": 117,
+            "LastValue": 5528.02880859375,
+            "Maximum": 5545.96875,
+            "Minimum": 5343.310546875,
+            "Range": 202.658203125,
+            "Total": 641067.487792969,
+            "WeightedAverage": 5481.00922058944,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3323
+         }
+      ],
+      "3330": [
+         {
+            "Average": null,
+            "Count": 276,
+            "LastValue": 141.831680297852,
+            "Maximum": 142.316375732422,
+            "Minimum": 140.478591918945,
+            "Range": 1.837783813477,
+            "Total": 39033.7424316406,
+            "WeightedAverage": 141.416303070747,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3330
+         }
+      ],
+      "3332": [
+         {
+            "Average": null,
+            "Count": 952,
+            "LastValue": 16.826171875,
+            "Maximum": 16.947265625,
+            "Minimum": 16.392578125,
+            "Range": 0.5546875,
+            "Total": 15867.349609375,
+            "WeightedAverage": 16.6682921815089,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3332
+         }
+      ],
+      "3344": [
+         {
+            "Average": null,
+            "Count": 1384,
+            "LastValue": 186.304046630859,
+            "Maximum": 187.65185546875,
+            "Minimum": 184.535034179688,
+            "Range": 3.116821289062,
+            "Total": 257814.515914917,
+            "WeightedAverage": 186.278469258496,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3344
+         }
+      ],
+      "3401": [
+         {
+            "Average": null,
+            "Count": 1786,
+            "LastValue": 116.23046875,
+            "Maximum": 118.0078125,
+            "Minimum": 115.556640625,
+            "Range": 2.451171875,
+            "Total": 208491.103515625,
+            "WeightedAverage": 116.739002554878,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3401
+         }
+      ],
+      "3532": [
+         {
+            "Average": null,
+            "Count": 745,
+            "LastValue": 20301.2578125,
+            "Maximum": 20544.005859375,
+            "Minimum": 20082.431640625,
+            "Range": 461.57421875,
+            "Total": 15116017.4179688,
+            "WeightedAverage": 20288.2650228028,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3532
+         }
+      ],
+      "3558": [
+         {
+            "Average": null,
+            "Count": 9,
+            "LastValue": 12.26513671875,
+            "Maximum": 12.4681634902954,
+            "Minimum": 12.05859375,
+            "Range": 0.4095697402954,
+            "Total": 110.380954742432,
+            "WeightedAverage": 12.2140501688091,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 3558
+         }
+      ],
+      "4310": [
+         {
+            "Average": null,
+            "Count": 1800,
+            "LastValue": 5094.3955078125,
+            "Maximum": 222143.265625,
+            "Minimum": 0,
+            "Range": 222143.265625,
+            "Total": 4804689.6105659,
+            "WeightedAverage": 2670.47853199284,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 4310
+         }
+      ],
+      "4313": [
+         {
+            "Average": null,
+            "Count": 173,
+            "LastValue": 164.579696655273,
+            "Maximum": 164.579696655273,
+            "Minimum": 0,
+            "Range": 164.579696655273,
+            "Total": 14733.2012015581,
+            "WeightedAverage": 88.4952844193372,
+            "DateTime": "2016-10-04T00:00:00",
+            "TagId": 4313
+         }
+      ]
+   },
+   "2016-10-03T00:00:00": {
+      "3309": [
+         {
+            "Average": null,
+            "Count": 41337,
+            "LastValue": 410.712066650391,
+            "Maximum": 432.300872802734,
+            "Minimum": 238.930740356445,
+            "Range": 193.370132446289,
+            "Total": 16611532.845047,
+            "WeightedAverage": 402.222472929609,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3309
+         }
+      ],
+      "3323": [
+         {
+            "Average": null,
+            "Count": 4137,
+            "LastValue": 5343.310546875,
+            "Maximum": 5633.89794921875,
+            "Minimum": 4581.84716796875,
+            "Range": 1052.05078125,
+            "Total": 22325622.0708008,
+            "WeightedAverage": 5396.95533196,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3323
+         }
+      ],
+      "3330": [
+         {
+            "Average": null,
+            "Count": 10575,
+            "LastValue": 140.720932006836,
+            "Maximum": 148.314376831055,
+            "Minimum": 129.270202636719,
+            "Range": 19.044174194336,
+            "Total": 1489378.70010376,
+            "WeightedAverage": 140.858709829358,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3330
+         }
+      ],
+      "3332": [
+         {
+            "Average": null,
+            "Count": 18835,
+            "LastValue": 16.6640625,
+            "Maximum": 17.1640625,
+            "Minimum": 15.70703125,
+            "Range": 1.45703125,
+            "Total": 312757.03515625,
+            "WeightedAverage": 16.5151281826893,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3332
+         }
+      ],
+      "3344": [
+         {
+            "Average": null,
+            "Count": 47971,
+            "LastValue": 185.43505859375,
+            "Maximum": 196.48356628418,
+            "Minimum": 177.423553466797,
+            "Range": 19.060012817383,
+            "Total": 8974517.02630615,
+            "WeightedAverage": 187.134978657778,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3344
+         }
+      ],
+      "3401": [
+         {
+            "Average": null,
+            "Count": 64273,
+            "LastValue": 117.314453125,
+            "Maximum": 118.02734375,
+            "Minimum": 92.900390625,
+            "Range": 25.126953125,
+            "Total": 7406937.71484375,
+            "WeightedAverage": 115.236650782032,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3401
+         }
+      ],
+      "3532": [
+         {
+            "Average": null,
+            "Count": 26606,
+            "LastValue": 20382.763671875,
+            "Maximum": 20762.83203125,
+            "Minimum": 19604.912109375,
+            "Range": 1157.919921875,
+            "Total": 537938495.371094,
+            "WeightedAverage": 20212.1635087824,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3532
+         }
+      ],
+      "3558": [
+         {
+            "Average": null,
+            "Count": 235,
+            "LastValue": 11.95751953125,
+            "Maximum": 11.95751953125,
+            "Minimum": 8.24589824676514,
+            "Range": 3.71162128448486,
+            "Total": 2283.29028320313,
+            "WeightedAverage": 9.79103594295793,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 3558
+         }
+      ],
+      "4310": [
+         {
+            "Average": null,
+            "Count": 86398,
+            "LastValue": 222140.484375,
+            "Maximum": 222140.484375,
+            "Minimum": 0,
+            "Range": 222140.484375,
+            "Total": 9499641436.15465,
+            "WeightedAverage": 109953.743903812,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 4310
+         }
+      ],
+      "4313": [
+         {
+            "Average": null,
+            "Count": 20784,
+            "LastValue": 639023.25,
+            "Maximum": 639023.25,
+            "Minimum": 0,
+            "Range": 639023.25,
+            "Total": 6884189332.29528,
+            "WeightedAverage": 342313.528466831,
+            "DateTime": "2016-10-03T00:00:00",
+            "TagId": 4313
+         }
+      ]
+   },
+   "2016-10-02T00:00:00": {
+      "3309": [
+         {
+            "Average": null,
+            "Count": 49002,
+            "LastValue": 398.231384277344,
+            "Maximum": 428.706085205078,
+            "Minimum": 389.062713623047,
+            "Range": 39.643371582031,
+            "Total": 19864348.7464294,
+            "WeightedAverage": 405.346213819406,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3309
+         }
+      ],
+      "3323": [
+         {
+            "Average": null,
+            "Count": 4236,
+            "LastValue": 5312.5244140625,
+            "Maximum": 5715.6259765625,
+            "Minimum": 5278.1943359375,
+            "Range": 437.431640625,
+            "Total": 23083368.6308594,
+            "WeightedAverage": 5443.60553826143,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3323
+         }
+      ],
+      "3330": [
+         {
+            "Average": null,
+            "Count": 9309,
+            "LastValue": 141.488357543945,
+            "Maximum": 145.567810058594,
+            "Minimum": 137.913787841797,
+            "Range": 7.654022216797,
+            "Total": 1311642.81022644,
+            "WeightedAverage": 140.890485972376,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3330
+         }
+      ],
+      "3332": [
+         {
+            "Average": null,
+            "Count": 6797,
+            "LastValue": 16.798828125,
+            "Maximum": 17.1015625,
+            "Minimum": 16.408203125,
+            "Range": 0.693359375,
+            "Total": 113797.705078125,
+            "WeightedAverage": 16.7385112775149,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3332
+         }
+      ],
+      "3344": [
+         {
+            "Average": null,
+            "Count": 46397,
+            "LastValue": 189.642532348633,
+            "Maximum": 203.182739257813,
+            "Minimum": 173.24267578125,
+            "Range": 29.940063476563,
+            "Total": 8688890.59747314,
+            "WeightedAverage": 187.288994412039,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3344
+         }
+      ],
+      "3401": [
+         {
+            "Average": null,
+            "Count": 64573,
+            "LastValue": 116.09375,
+            "Maximum": 119.84375,
+            "Minimum": 113.076171875,
+            "Range": 6.767578125,
+            "Total": 7488541.9140625,
+            "WeightedAverage": 115.965616128308,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3401
+         }
+      ],
+      "3532": [
+         {
+            "Average": null,
+            "Count": 26162,
+            "LastValue": 19740.458984375,
+            "Maximum": 20615.765625,
+            "Minimum": 19317.8671875,
+            "Range": 1297.8984375,
+            "Total": 525383412.416016,
+            "WeightedAverage": 20071.405482433,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3532
+         }
+      ],
+      "3558": [
+         {
+            "Average": null,
+            "Count": 147,
+            "LastValue": 10.0001955032349,
+            "Maximum": 11.8669919967651,
+            "Minimum": 9.61699199676514,
+            "Range": 2.24999999999996,
+            "Total": 1530.11774158478,
+            "WeightedAverage": 10.3806292785462,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 3558
+         }
+      ],
+      "4310": [
+         {
+            "Average": null,
+            "Count": 86400,
+            "LastValue": 215443.09375,
+            "Maximum": 219576.25,
+            "Minimum": 0,
+            "Range": 219576.25,
+            "Total": 9328986742.01178,
+            "WeightedAverage": 107975.621933334,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 4310
+         }
+      ],
+      "4313": [
+         {
+            "Average": null,
+            "Count": 21309,
+            "LastValue": 622831.375,
+            "Maximum": 622831.375,
+            "Minimum": 0,
+            "Range": 622831.375,
+            "Total": 7907752624.49105,
+            "WeightedAverage": 404261.609724492,
+            "DateTime": "2016-10-02T00:00:00",
+            "TagId": 4313
+         }
+      ]
+   }
+}

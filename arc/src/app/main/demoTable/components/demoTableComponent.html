@@ -1,0 +1,21 @@
+<!-- datatable="ng" dt-instance="vm.arcTagDataDTInstance" dt-options="vm.arcTagDataDTOptions" -->
+
+<table class="dataTable row-border hover"
+       datatable="ng"
+       dt-instance = "vm.dtInstanceCallback">
+    <thead>
+            <tr>
+                <th ng-repeat = "aspect in vm.aspects" ng-click="vm.getSortOrder(aspect)" >
+                  {{aspect}}
+                </th>
+
+            </tr>
+</thead>
+    <tbody>
+        <tr ng-repeat = "(key,tagData) in vm.data">
+          <td ng-repeat ="value in tagData" >
+              {{value}}
+          </td>
+        </tr>
+    </tbody>
+</table>

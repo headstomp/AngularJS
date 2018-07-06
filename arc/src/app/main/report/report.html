@@ -1,0 +1,40 @@
+<!-- REPORT -->
+<div id="apps" class="md-accent-bg" layout="column" flex>
+    <!-- APP SELECTION--> 
+    <div id="app-selector" layout="column" layout-align="start center" flex>
+
+        <H1 translate="ARC.REPORT_APPS">Reporting Apps</H1>
+
+        <!-- APPLICATIONS LIST -->
+        <div class="app-list" layout="row" layout-align="center center" layout-wrap>
+
+            <!-- BUTTON -->
+            <div class="app-list-item add-new-report" layout="column" layout-align="center center"
+                 ui-sref="app.designlist">
+                <md-icon md-font-icon="icon-library" class="icon s64"></md-icon>
+                <div class="app-name" translate="ARC.MY_DESIGNS">My Designs</div>
+            </div>
+            <!-- / BUTTON -->
+            <!-- BUTTON -->
+            <div class="app-list-item add-new-report" layout="column" layout-align="center center"
+                 ui-sref="app.design({id:'-1'})">
+                <md-icon md-font-icon="icon-plus-circle" class="icon s64"></md-icon>
+                <div class="app-name" translate="ARC.NEW_DESIGN">New Design</div>
+            </div>
+            <!-- / BUTTON -->
+            <!-- BUTTON -->
+            <div class="app-list-item add-new-report" layout="column" layout-align="center center"
+                 ui-sref="app.publishedlist">
+                <md-icon md-font-icon="icon-bulletin-board" class="icon s64"></md-icon>
+                <div class="app-name" translate="ARC.PUBLISHED_REPORTS">Published Reports</div>
+            </div>
+            <!-- / BUTTON -->
+
+        </div>
+        <!-- / APPLICATIONS LIST -->
+
+    </div>
+    <!-- / APP SELECTION -->
+
+</div>
+<!-- / REPORT -->

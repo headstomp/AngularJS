@@ -1,0 +1,43 @@
+<!-- SIDENAV HEADER -->
+<md-toolbar class="md-accent" ng-class="'md-'+vm.app.settings.color+'-bg'">
+    <div class="md-toolbar-tools">
+
+        <md-button ng-hide="vm.selectedMenu === 'TAG.SETTINGS'" class="md-icon-button"
+                   ng-click="vm.selectedMenu = 'TAG.SETTINGS'" aria-label="back"
+                   translate-attr-aria-label="ARC.BACK">
+            <md-icon md-font-icon="icon-arrow-left"></md-icon>
+        </md-button>
+
+        <span flex class="menu-title" translate="{{vm.selectedMenu}}">{{vm.selectedMenu}}</span>
+
+    </div>
+</md-toolbar>
+<!-- / SIDENAV HEADER -->
+
+<!-- SETTINGS -->
+<md-content ng-show="vm.selectedMenu === 'TAG.SETTINGS'" class="animate-slide-right settings" ms-scroll ms-sidenav-helper>
+    <md-list>
+
+        <md-list-item class="item" ng-click="vm.selectedMenu = 'TAG.LAYOUT'">
+            <md-icon md-font-icon="icon-format-color-fill" class="s18"></md-icon>
+            <p class="title" translate="ARC.LAYOUT">Layout</p>
+        </md-list-item>
+
+        
+
+    </md-list>
+</md-content>
+<!-- / SETTINGS -->
+
+<!-- LAYOUT -->
+<md-content ng-show="vm.selectedMenu === 'TAG.LAYOUT'" class="animate-slide-left app-color-selection">
+    <div layout="column" layout-fill
+         ng-include="'app/main/tag/views/designlist/sidenavs/settings/menus/layout/layout-menu.html'"
+         ng-controller="taglistController as vm">
+    </div>
+</md-content>
+<!-- LAYOUT -->
+
+
+
+

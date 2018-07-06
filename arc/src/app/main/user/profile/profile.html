@@ -1,0 +1,197 @@
+<div id="appheader" class="page-layout simple left-sidenav inner-sidenav">
+
+     <!-- HEADER -->
+     <div class="header md-accent-bg" layout="column">
+          <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+          <!-- TAG NAME -->
+          <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1"
+          flex-xs="100">
+               <span translate="ARC.PROFILE">PROFILE</span>
+          </div>
+          <!-- / TAG NAME -->
+
+          <!-- TOOLBAR -->
+          <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+               <!-- SEARCH -->
+               <div class="search" layout="row" layout-align="start center">
+                    <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                    <input id="design-search" class="search-input" type="text" placeholder="Search"
+                    translate-attr-placeholder="ARC.SEARCH_TAG_LIST" ng-model="vm.optionMap.query" ng-change="vm.search()" />
+               </div>
+               <!-- / SEARCH -->
+               <!-- HELP BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('profile')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+                <!-- / HELP BUTTON -->
+               </div>
+          <!-- / TOOLBAR -->
+          </div>
+     <!-- / HEADER -->
+     </div>
+
+     <!-- CONTENT -->
+     <md-content id="profile" class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+          <div class="content">
+               <div>
+                    <!-- WIDGETS -->
+                    <div layout="row">
+                         <!-- WIDGET COLUMN 1-->
+                         <div class="infoPanel" layout="column" layout-wrap>
+
+                              <div class="grey-50-bg md-whiteframe-2dp">
+                                   <!-- SIDENAV HEADER -->
+                                   <div class="header border-bottom md-padding" layout="row" layout-align="start center">
+                                       <!-- USER -->
+                                       <img ng-src="{{vm.widgetIcons.accountIcon}}" class="md-avatar avatar mr-16"
+                                            alt="{{vm.user.name}}"/>
+                                       <span class="font-weight-500 font-size-16">{{vm.master.DisplayName}}</span>
+                                       <!-- / USER -->
+                                   </div>
+                                   <!-- / SIDENAV HEADER -->
+                                   <md-divider></md-divider>
+
+                                   <!-- SIDENAV CONTENT -->
+                                   <div class="content white-bg">
+                                        <md-list>
+                                             <md-subheader class="labeltop md-no-sticky">User Name</md-subheader>
+                                                  <md-list-item class="list">
+                                                       <p>{{vm.master.Username}}</p>
+                                                  </md-list-item>
+                                             <md-subheader class="label md-no-sticky">Email</md-subheader>
+                                                  <md-list-item class="list">
+                                                       <p>{{vm.master.EmailAddress}}</p>
+                                                  </md-list-item>
+                                             <md-subheader class="label md-no-sticky">Phone Number</md-subheader>
+                                                  <md-list-item class="list">
+                                                       <p>{{vm.master.PhoneNumber }}</p>
+                                                  </md-list-item>
+                                             <md-subheader class="label md-no-sticky">Last Activity</md-subheader>
+                                                  <md-list-item class="list">
+                                                       <p>{{vm.master.LastActivity | date : format : timezone}} @ {{vm.master.LastActivity | date:'HH:mm a'}}</p>
+                                             </md-list-item>
+                                        </md-list>
+
+                                        <md-divider></md-divider>
+
+                                        <md-subheader class="settings md-no-sticky">Settings</md-subheader>
+                                        <form name="basicForm" class="md-inline-form" novalidate>
+                                             <div class="pl-24 pr-24">
+                                                  <div layout="row">
+                                                       <md-input-container flex>
+                                                            <input type="text" name="firstname" ng-model="vm.user.DisplayName"
+                                                                   placeholder="Display name"
+                                                                   required>
+                                                            <div ng-messages="basicForm.firstname.$error" role="alert">
+                                                                 <div ng-message="required" translate="ARC.DISPLAY_NAME_IS_REQUIRED">
+                                                                      <span>Dispaly Name is required.</span>
+                                                                 </div>
+                                                            </div>
+                                                       </md-input-container>
+                                                  </div>
+                                                  <div layout="row">
+                                                       <md-input-container class="inputcontainer" flex>
+                                                          <label translate="ARC.LOCATION">Location</label>
+                                                          <md-select class="simplified" ng-model="vm.user.LocationId">
+                                                            <md-option ng-repeat="location in vm.locationSet" ng-value="location.Id">
+                                                              {{location.Name}}
+                                                            </md-option>
+                                                          </md-select>
+                                                       </md-input-container>
+                                                  </div><br>
+                                                  <div layout="row">
+                                                       <md-input-container class="inputcontainer" flex>
+                                                            <label translate="ARC.PREFERED_LANGUAGE">Prefered Language</label>
+                                                            <md-select ng-model="vm.user.LanguageCode" ng-change="vm.update(vm.user.LanguageCode)">
+                                                                 <md-option  ng-repeat="lang in vm.langs" value="{{lang}}"  >
+                                                                      {{lang}}
+                                                                 </md-option>
+                                                            </md-select>
+                                                       </md-input-container>
+                                                  </div>
+                                             </div>
+                                        <!-- / SIDENAV CONTENT -->
+                                        </div>
+                                        <md-divider></md-divider>
+                                        <md-button type="submit" class="md-raised md-accent" aria-label="Save"
+                                                 ng-disabled="basicForm.$invalid || basicForm.$pristine" translate="ARC.SAVE" ng-click="vm.updateUser(vm.user)">
+                                             SAVE
+                                        </md-button>
+                                   </form>
+                              </div>
+                         <!--  /WIDGET COLUMN 1-->
+                         </div>
+
+                         <!-- WIDGET COLUMN 2-->
+                         <div layout="column" flex="100">
+                              <div layout="row">
+
+                                   <ms-widget flippable="false" class="usedCard" layout="column" flex="100">
+                                        <!-- Front -->
+                                        <ms-widget-front class="white-bg">
+                                             <div class="header pl-16 grey-50-bg border-bottom" layout="row" layout-align="start center">
+                                                  <span class="font-weight-500 font-size-14" translate="ARC.MY_DESIGNS">My Reports</span>
+                                             </div>
+
+                                             <table id="reportlist" class="dataTable row-border hover" datatable="ng" dt-instance="vm.arcProfileDTInstance" dt-options="vm.arcProfileDTOptions">
+                                                  <thead>
+                                                       <tr>
+                                                            <th class="secondary-text">
+                                                                 <div class="table-header">
+                                                                      <span class="column-title" translate="ARC.ID">ID</span>
+                                                                 </div>
+                                                            </th>
+                                                            <th class="secondary-text">
+                                                                 <div class="table-header">
+                                                                      <span class="column-title" translate="ARC.NAME">Name</span>
+                                                                 </div>
+                                                            </th>
+                                                            <th class="secondary-text">
+                                                                 <div class="table-header">
+                                                                      <span class="column-title" translate="ARC.DESCRIPTION">Description</span>
+                                                                 </div>
+                                                            </th>
+                                                            <th class="secondary-text">
+                                                                 <div class="table-header">
+                                                                      <span class="column-title" translate="ARC.LONG_DESCRIPTION">Long Description</span>
+                                                                 </div>
+                                                            </th>
+                                                       </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                       <tr ng-repeat="report in vm.user.ReportSet"
+                                                           ui-sref="app.design({id:report.Id})"
+                                                           style="cursor: pointer;">
+                                                            <td>{{ report.Id}}</td>
+                                                            <td>{{ report.Name }}</td>
+                                                            <td>{{ report.ShortDescription }}</td>
+                                                            <td>{{ report.LongDescription }}</td>
+                                                       </tr>
+                                                  </tbody>
+                                             </table>
+
+                                             <div class="header pl-16 grey-50-bg border-bottom" layout="row" layout-align="start center">
+                                                  <span class="font-weight-500 font-size-14" translate="ARC.COMMENTS"></span>
+                                             </div>
+
+                                             <arc-comment-table where-set="vm.commentWhereSet"></arc-comment-table>
+
+                                        </ms-widget-front>
+                                        <!-- / Front -->
+                                   </ms-widget>
+                              </div>
+                         <!-- / WIDGET COLUMN 2-->
+                         </div>
+                    <!-- / WIDGETS -->
+                    </div>
+               </div>
+          </div>
+     <!-- / CONTENT -->
+     </md-content>
+
+</div>

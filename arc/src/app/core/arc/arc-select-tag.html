@@ -1,0 +1,29 @@
+<md-input-container>
+    <md-select
+        multiple="false"
+        placeholder="Search for a Tag &hellip;"
+        ng-model="vm.tag"
+        ng-disabled="vm.disabled"
+        ng-required="vm.required"
+        md-on-open="vm.updateTagSet()">
+        <div>
+            <md-select-header>
+                <input
+                    type="search"
+                    placeholder="Search for a Tag &hellip;"
+                    ng-model="vm.search"
+                    ng-model-options="{ debounce: 250 }"
+                    ng-keydown="$event.stopPropagation()" />
+            </md-select-header>
+            <md-option
+                ng-repeat="tag in vm.tagSet track by tag.Id"
+                ng-value="tag"
+                ng-selected="tag.Id === vm.tag.Id">
+                <span>
+                    <span class="fa fa-fw fa-tag"></span>
+                    <span ng-bind="vm.formatTag(tag)"></span>
+                </span>
+            </md-option>
+        </div>
+    </md-select>
+</md-input-container>

@@ -1,0 +1,71 @@
+<md-dialog class="edit-tag-dialog" aria-label="Edit">
+    <form name="valueForm" class="md-inline-form" novalidate>
+        
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title" translate="ARC.EDIT_TAG_ID">Edit Tag Id # {{ vm.value.Id}}</span>
+                <md-button class="md-icon-button" ng-click="vm.closeDialog()">
+                    <md-icon md-font-icon="icon-close" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        
+        <md-dialog-content>
+            <br />
+            <md-input-container class="md-block">
+                <label translate="ARC.TAG_NAME">Tag Name</label>
+                <input name="value" ng-model="vm.value.Name" disabled />
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label translate="ARC.DESCRIPTION">Description</label>
+                <textarea max-rows="3" md-maxlength="150" name="ShortDescription" ng-model="vm.value.Description"></textarea>
+                <div ng-messages="valueForm.ShortDescription.$error" role="alert">
+                    <div ng-message-exp="['md-maxlength']">
+                        <span>Description cannot exceed 150 characters.</span>
+                    </div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label translate="ARC.AREA">Area</label>
+                <input name="value" ng-model="vm.value.Area" />
+            </md-input-container>
+            <label>Special Properties</label>
+            <div layout-gt-sm="row" space-between>
+                <section layout="row" layout-sm="row" layout-align="center center">
+                    <md-button class="md-accent" ng-class="{'custom': vm.active=='normal'}" ng-click="vm.makeTotalizer('normal')">Normal Tag</md-button>
+                    <md-button class="md-accent" ng-class="{'custom': vm.active == 'DCS'}" ng-click="vm.makeTotalizer('DCS')" >DCS Totalizer</md-button>
+                    <md-button class="md-accent" ng-class="{'custom': vm.active == 'flow'}" ng-click="vm.makeTotalizer('flow')" >Flow Meter</md-button>
+                </section>
+            </div>
+            <div layout-gt-sm="row" layout-align="center right" >
+                <md-input-container  ng-hide="!vm.showFlow" flex="40" >
+                      <label translate="ARC.UNITS">Units</label>
+                      <md-select width="2" class="simplified" ng-model="vm.value.MinutesPerFlowMeasurement" translate-attr-placeholder="ARC.UNITS">
+                          <md-option value="60">Hours</md-option>
+                          <md-option value="1">Minutes</md-option>
+                          <md-option value="0.0166666666666667">Seconds</md-option>
+                      </md-select>
+                </md-input-container>
+                <md-input-container ng-hide="!vm.showDCS" flex="40">
+                    <label >DCS Totalizer Time</label>
+                    <input ng-hide="!vm.showDCS" type="time" id="exampleInput" name="time" ng-model="vm.value.ResetTotalizerAt" required />
+                </md-input-container>
+            </div>
+            <arc-comment service="vm.commentService"></arc-comment>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="vm.closeDialog()">
+                <span class="fa fa-fw fa-times"></span>
+                <span>Close</span>
+            </md-button>
+            <span flex></span>
+            <md-button type="submit" ng-click="vm.saveTagDetails(vm.value)" class="send-button md-accent md-raised" ng-disabled="taskForm.$invalid || taskForm.$pristine" aria-label="SAVE">
+                <span class="fa fa-fw fa-save"></span>
+                <span>Save</span>
+            </md-button>
+        </md-dialog-actions>
+        
+    </form>
+    
+</md-dialog>

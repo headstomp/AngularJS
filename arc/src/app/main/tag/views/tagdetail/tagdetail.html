@@ -1,0 +1,304 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+  <!-- HEADER -->
+  <div class="header md-accent-bg" layout="column">
+    <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+      <!-- APP SELECTION BUTTON -->
+      <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="2">
+        <md-button class="md-accent md-raised md-hue-2 header-apps-button" ui-sref="app.taglist" aria-label="apps button" translate-attr-aria-label="ARC.LIST">
+          <md-icon md-font-icon="icon-format-list-bulleted" class="icon"></md-icon>
+          <span translate="ARC.LIST">List</span>
+        </md-button>
+
+        <md-button class="md-accent md-raised md-hue-2 header-apps-button" ng-click="vm.openEditTagDialog($event, vm.tagDetail)" aria-label="apps button" translate-attr-aria-label="ARC.LIST">
+          <md-icon md-font-icon="icon-pencil" class="icon"></md-icon>
+          <span translate="ARC.EDIT">Edit</span>
+        </md-button>
+        <md-button class="md-accent md-raised md-hue-2 header-apps-button" ng-click="vm.openUsedOnDialog($event, vm.tagDetail)" aria-label="apps button" translate-attr-aria-label="ARC.LIST">
+          <md-icon md-font-icon="icon-file-find" class="icon"></md-icon>
+          <span translate="ARC.USED_ON">Used On</span>
+        </md-button>
+
+        <md-button class="md-accent md-raised md-hue-2 header-apps-button" ui-sref="app.comments({ tagId: vm.tagDetail.Id })" aria-label="apps button" translate-attr-aria-label="ARC.LIST">
+          <md-icon md-font-icon="icon-comment" class="icon"></md-icon>
+          <span translate="ARC.COMMENTS">Comments</span>
+
+        </md-button>
+
+      </div>
+      <!-- / APP SELECTION BUTTON -->
+      <!-- TAG NAME -->
+      <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1" flex-xs="100">
+        <span>{{vm.tagDetail.Name}}</span>
+      </div>
+
+      <div class="progress-bar" layout="row" layout-sm="column" layout-align="center center" flex-order="3" flex-order-xs="1" flex-xs="100">
+        <md-progress-circular ng-disabled="vm.progressBarHide" md-mode="indeterminate"></md-progress-circular>
+      </div>
+      <!-- / TAG NAME -->
+
+      <!-- TOOLBAR -->
+      <div class="toolbar" layout="row" layout-align="space-between center" flex-order="4">
+
+        <!-- HELP BUTTON -->
+        <md-button class="md-icon-button" ng-click="vm.gotoHelp('tagDetails')" aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+          <md-icon md-font-icon="icon-help-circle"></md-icon>
+          <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+        </md-button>
+        <!-- / HELP BUTTON -->
+      </div>
+      <!-- / TOOLBAR -->
+    </div>
+  </div>
+  <!-- / HEADER -->
+
+<!--
+  <div ng-hide="vm.loadingFlag" id="loadingDiv">
+    <div class="loading-img" align="middle">
+      <img src="assets/images/loading/Loading.gif" align="middle" />
+    </div>
+  </div> 
+-->
+
+  <!-- PAGE CONTENT -->
+  <div id="appcontent" class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+
+    <style type="text/css">
+      .katex-container {
+        font-size: 200%;
+        text-align: center;
+      }
+    </style>
+
+    <div class="content">
+
+      <!-- ROW 1-->
+      <div layout="row" flex="100" layout-wrap>
+        <!-- COLUMN 1-->
+        <div layout="column" flex="100" flex-gt-md="25" flex-gt-xs="100" layout-wrap>
+          <!-- ROW 1-->
+          <div class="white-bg md-whiteframe-4dp margin-right-10 margin-bottom-10" flex="none">
+            <div class="detail-title height-32 border-top border-bottom pl-5">
+              <span class="pl-5" translate="ARC.TAG_DETAILS">Tag Details</span>
+            </div>
+
+            <table>
+              <tr>
+                <td translate="ARC.ID" width="125px">Id</td>
+                <td>{{vm.tagDetail.Id}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.NAME">Name</td>
+                <td>{{vm.tagDetail.Name}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.DESCRIPTION">Description</td>
+                <td>{{vm.tagDetail.Description}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.AREA">Area</td>
+                <td>{{vm.tagDetail.Area}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.LOCATION">Location</td>
+                <td>{{vm.tagDetail.Location.Description}}</td>
+              </tr>
+
+              <tr ng-if="vm.tagDetail.TagSource.DataLocationId==3">
+                <td translate="ARC.SOURCE">Source</td>
+                <td>
+                  <span class="pub-link" ui-sref="app.formsdetail({id:vm.tagDetail.TagSource.Id})">{{vm.tagDetail.TagSource.DisplayName}}</span>
+                </td>
+              </tr>
+              <tr ng-if="vm.tagDetail.TagSource.DataLocationId!=3">
+                <td translate="ARC.SOURCE">Source</td>
+                <td>
+                  <span class="pub-link" ui-sref="app.importerdetail({id:vm.tagDetail.TagSource.Id})">{{vm.tagDetail.TagSource.DisplayName}}</span>
+                </td>
+              </tr>
+              <tr>
+                <td translate="ARC.TYPE">Type</td>
+                <td>{{vm.tagDetail.TagType.Name}}</td>
+              </tr>
+            </table>
+
+            <div class="detail-title height-32 md-grey-50-bg border-top border-bottom pl-5 pt-5" flex="100">
+              <span class="pl-5" translate="ARC.DATA_DETAILS">Data Details</span>
+            </div>
+
+            <table>
+              <tr>
+                <td translate="ARC.START_DATE" width="125px">Start Date</td>
+                <td>{{vm.tagDetail.FirstDataAt | date:'yyyy-MM-dd HH:mm' }}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.END_DATE">End Date</td>
+                <td>{{vm.tagDetail.LastDataAt | date:'yyyy-MM-dd HH:mm'}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.LAST_VALUE">last Value</td>
+                <td>{{vm.tagDetail.LastValue}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.VALUE_COUNT">Value Count</td>
+                <td>{{vm.tagDetail.ValueCount | number}}</td>
+
+              </tr>
+            </table>
+
+            <div class="detail-title height-32 md-grey-50-bg border-top border-bottom pl-5 pt-5" flex="100" ng-if="vm.mvel">
+              <span class="pl-5" translate="ARC.EXPRESSION_DETAILS">Expression Details</span>
+            </div>
+
+            <div style="padding: 5px;" ng-if="vm.mvel">
+
+              <arc-expression-viewer mvel="vm.mvel"></arc-expression-viewer>
+
+              <table style="width: 100%;" ng-if="vm.mvel">
+                <tr ng-repeat="(symbol, expression) in vm.mvelMappings">
+                  <td>
+                    <span class="fa fa-fw fa-calculator"></span>
+                    <strong ng-bind="symbol"></strong>
+                  </td>
+                  <td style="text-align: right;">
+                    <a ui-sref="app.tagdetail({ id: expression.tag.Id })">
+                                            <span class="fa fa-fw fa-tag"></span>
+                                            <span ng-bind="expression.tag.Name"></span>
+                            </a>
+                    <br />
+                    <span>using aspect</span>
+                    <strong ng-bind="expression.aspect"></strong><br>
+                    <span>Null replacement <b>{{vm.ifNullsForCalculatedTags[symbol]}}</b></span>
+
+                  </td>
+                </tr>
+              <!--  <tr ng-repeat="(key, value) in vm.ifNullsForCalculatedTags">
+                <td><b>{{key}}</b></td>
+                <td style="text-align: right;">{{value}}</td>
+              </tr> -->
+                <tr>
+                  <td>Status</td>
+                  <td style="text-align: center;">
+                    <div style="margin-top: 10px">
+                      <md-checkbox ng-model="vm.tagDetail.IsActive" aria-label="Finished?" ng-click="vm.deactivateTag($event)">Active</md-checkbox>
+                    </div>
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+
+            <div class="detail-title height-32 md-grey-50-bg border-top border-bottom pl-5 pt-5" flex="100" ng-if="vm.tagDetail.IsTotalizer">
+              <span class="pl-5" translate="ARC.TOTALIZER_DETAILS">Totalizer Details</span>
+            </div>
+
+            <table ng-if="vm.tagDetail.IsTotalizer">
+              <tr>
+                <td translate="ARC.DCS_TOATALIZER" width="125px">DCS Totalizer</td>
+                <td ng-bind="!!vm.tagDetail.ResetTotalizerAt"></td>
+              </tr>
+              <tr>
+                <td translate="ARC.TOTALIZER_RESET">Totalizer Reset</td>
+                <td ng-bind="vm.tagDetail.ResetTotalizerAt ? vm.tagDetail.ResetTotalizerAt : 'N/A'">{{vm.tagDetail.ResetTotalizerAt}}</td>
+              </tr>
+              <tr>
+                <td translate="ARC.ARC_TOTALIZER">arc Totalizer</td>
+                <td ng-bind="!!vm.tagDetail.MinutesPerFlowMeasurement"></td>
+              </tr>
+              <tr>
+                <td translate="ARC.FLOW_RATE">Flow Rate</td>
+                <td ng-if="vm.tagDetail.MinutesPerFlowMeasurement == 1">Minute</td>
+                <td ng-if="vm.tagDetail.MinutesPerFlowMeasurement == 60">Hour</td>
+                <td ng-if="vm.tagDetail.MinutesPerFlowMeasurement < 1 && vm.tagDetail.MinutesPerFlowMeasurement > 0">Second</td>
+                <td ng-if="!vm.tagDetail.MinutesPerFlowMeasurement">N/A</td>
+              </tr>
+            </table>
+
+          </div>
+          <!-- /ROW 2-->
+        </div>
+        <!-- / COLUMN 1-->
+        <!-- COLUMN 2-->
+
+        <div class="white-bg md-whiteframe-4dp" layout="column" flex="100" flex-gt-md="75" flex-gt-xs="100" layout-wrap>
+          <!-- ROW 1-->
+          <div layout="column" flex="100" layout-wrap>
+            <div class="height-40 md-grey-50-bg border-top border-bottom pl-25" layout="row">
+              <!-- MENU -->
+              <div class="aspect-btn-group" layout="column" flex="45" layout-wrap>
+                <div ng-if="vm.tagType == 'red'" class="button-group">
+                  <div class="button title pill" translate="ARC.ASPECTS">aspects</div>
+                  <div ng-click="vm.getChartData('totalizer')" ng-show="vm.totalizerFlag" ng-class="vm.chartType == 'totalizer' && 'button pill active' || 'button pill'" translate="ARC.TTLZ">tlz</div>
+                  <div ng-click="vm.getChartData('lst')" ng-class="vm.chartType == 'lst' && 'button pill active' || 'button pill'" translate="ARC.LAST">lst</div>
+                  <div ng-click="vm.getChartData('min')" ng-class="vm.chartType == 'min' && 'button pill active' || 'button pill'" translate="ARC.MIN">min</div>
+                  <div ng-click="vm.getChartData('max')" ng-class="vm.chartType == 'max' && 'button pill active' || 'button pill'" translate="ARC.MAX">max</div>
+                  <div ng-click="vm.getChartData('wavg')" ng-class="vm.chartType == 'wavg' && 'button pill active' || 'button pill'" translate="ARC.WAVG">wvg</div>
+                  <div ng-click="vm.getChartData('var')" ng-class="vm.chartType == 'var' && 'button pill active' || 'button pill'" translate="ARC.VAR">var</div>
+                  <div ng-click="vm.getChartData('std')" ng-class="vm.chartType == 'std' && 'button pill active' || 'button pill'" translate="ARC.STD">std</div>
+                  <div ng-click="vm.getChartData('cnt')" ng-class="vm.chartType == 'cnt' && 'button pill active' || 'button pill'" translate="ARC.COUNT">cnt</div>
+                  <div ng-click="vm.getChartData('tot')" ng-class="vm.chartType == 'tot' && 'button active' || 'button'" translate="ARC.TOTAK">tot</div>
+                </div>
+
+                <div ng-if="vm.tagType == 'raw' || vm.tagType == 'rawLive'" class="button-group">
+                  <div class="button title pill" translate="ARC.ASPECTS">aspects</div>
+                  <div ng-click="vm.chartType = 'raw'" ng-class="vm.chartType == 'raw' && 'button active' || 'button'" translate="ARC.RAW">raw</div>
+                </div>
+              </div>
+              <div class="aspect-btn-group" layout="column" flex="40" layout-wrap>
+                <div ng-if="vm.tagType == 'red' || vm.tagType=='cal'" class="button-group">
+                  <div class="button title pill" translate="ARC.BUCKET">bucket</div>
+                  <div ng-click="vm.tagResult(4)" ng-class="vm.aspectTitle == '10 Minute Reduction' && 'button pill active' || 'button pill'" translate="ARC.10_MINUTE">10</div>
+                  <div ng-click="vm.tagResult(5)" ng-class="vm.aspectTitle == '30 Minute Reduction' && 'button pill active' || 'button pill'" translate="ARC.30_MINUTE">30</div>
+                  <div ng-click="vm.tagResult(6)" ng-class="vm.aspectTitle == '1 Hour Reduction' && 'button pill active' || 'button pill'" translate="ARC.60_MINUTE">60</div>
+                  <div ng-click="vm.tagResult(7)" ng-class="vm.aspectTitle == '12 Hour Reduction' && 'button pill active' || 'button pill'" translate="ARC.12_HOUR">12</div>
+                  <div ng-click="vm.tagResult(8)" ng-class="vm.aspectTitle == '1 Day Reduction' && 'button active' || 'button'" translate="ARC.24_HOUR">24</div>
+                </div>
+                <div ng-if="vm.tagType == 'raw' || vm.tagType == 'rawLive'" class="button-group">
+                  <div class="button title pill" translate="ARC.BUCKET">bucket</div>
+                  <div ng-class="vm.aspectTitle == 'Raw' && 'button active' || 'button'" translate="ARC.RAW">Raw</div>
+                </div>
+              </div>
+              <div class="aspect-btn-group" layout="column" flex="15" layout-wrap>
+                <div class="button-group">
+
+                  <div ng-hide="vm.tagType=='raw' || vm.tagDetail.TagTypeId==8" ng-click="vm.getTagResultsLive(vm.tagDetail.Id)" ng-class="vm.live == true && 'button pill active' || 'button pill'" translate="ARC.LIVE">live</div>
+                  <div ng-hide="vm.tagType=='raw' || vm.tagDetail.TagTypeId==8" ng-click="vm.refreshTagResults(vm.tagDetail.Id)" ng-class="vm.live == false && 'button pill active' || 'button pill'" translate="ARC.SAVED">save</div>
+                </div>
+              </div>
+            </div>
+            <!-- / MENU -->
+            <!-- / ROW 1-->
+            <!-- ROW 2-->
+            <div layout="row" layout-wrap ng-if="[1, 2, 4, 5, 8].indexOf(vm.tagDetail.TagTypeId) > -1">
+              <!-- CHART-->
+              <div layout="row" flex="100">
+                <!-- Front -->
+                <div class="tag-chart white-bg" layout="column" flex="100">
+                  <hc-stock-charts options="vm.chartConfig || {}"></hc-stock-charts>
+                </div>
+                <style type="text/css">
+                  hc-stock-charts {
+                    display: block;
+                    width: 100% !important;
+                    height: 250px;
+                  }
+                </style>
+              </div>
+            </div>
+            <dt-tag-detail aspects="vm.aspects" data="vm.dataMap" meta = "vm.meta" onrefresh = 'vm.refreshTagResults(id)' ng-cloak >
+            </dt-tag-detail>
+
+            <!-- /ROW 2-->
+
+
+
+          </div>
+          <!-- / COLUMN 2-->
+        </div>
+        <!-- / ROW 1-->
+      </div>
+    </div>
+    <!-- / PAGE CONTENT -->
+  </div>
+</div>

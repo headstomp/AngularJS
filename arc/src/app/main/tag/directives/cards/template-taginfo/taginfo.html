@@ -1,0 +1,19 @@
+<div class="taginfo p-16" layout="row" layout-align="space-between">
+    <div layout="column" layout-align="space-between">
+        <div class="info">
+            <div class="title secondary-text h3" ng-if="card.tagname">
+                {{card.tagname}}
+            </div>
+
+            <div class="subtitle h3" ng-if="card.tagdescription">
+                {{card.tagdescription}}
+            </div><br>
+            <div class="subtitle h4" ng-if="card.taglocation">
+                Location : {{card.taglocation}}
+            </div>
+            <div class="subtitle h4" ng-if="card.tagarea">
+                Area : {{card.tagarea}}
+            </div>
+        </div>
+    </div>
+</div>

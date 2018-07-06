@@ -1,0 +1,69 @@
+<md-dialog class="edit-tag-dialog" aria-label="Edit">
+    <form name="vm.editTagForm" class="md-inline-form" novalidate>
+
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title" >
+                    <span translate="EDIT_TAG">Edit Tag</span>
+                    <span style="font-size: 0.6em" ng-bind="vm.value.Name"></span>
+                </span>
+                <md-button class="md-icon-button" ng-click="vm.closeDialog()">
+                    <md-icon md-font-icon="icon-close" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            
+
+            <md-input-container class="md-block">
+                <label translate="ARC.DESCRIPTION">Description</label>
+                <textarea max-rows="3" md-maxlength="150" name="ShortDescription" ng-model="vm.value.Description"></textarea>
+                <div ng-messages="vm.editTagForm.ShortDescription.$error" role="alert">
+                    <div ng-message-exp="['md-maxlength']"><span translate="DESCRIPTION_LIMIT_100_CHARS"> Description cannot exceed 150 characters</span></div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label translate="ARC.AREA">Area</label>
+                <input name="Area" ng-model="vm.value.Area" />
+            </md-input-container>
+
+            <label ng-hide="vm.disableSpecialProperties" style="font-size:0.7em" disabled>Special Properties</label>
+            <div ng-hide="vm.disableSpecialProperties" layout-gt-sm="row" space-between>
+                <section layout="row" layout-sm="row" layout-align="center center">
+                    <md-button ng-hide="vm.disableSpecialProperties" class="md-accent" ng-class="{'custom': vm.active=='normal'}" ng-click="vm.makeTotalizer('normal')">Normal Tag</md-button>
+                    <md-button ng-hide="vm.disableSpecialProperties" class="md-accent " ng-class="{'custom': vm.active == 'DCS'}" ng-click="vm.makeTotalizer('DCS')">DCS Totalizer</md-button>
+                    <md-button ng-hide="vm.disableSpecialProperties" class="md-accent " ng-class="{'custom': vm.active == 'flow'}" ng-click="vm.makeTotalizer('flow')" >Flow Meter</md-button>
+                </section>
+            </div>
+            <div ng-hide="vm.disableSpecialProperties" layout-gt-sm="row" layout-align="center right">
+                <md-input-container ng-if="vm.showFlow" flex="40">
+                    <label translate="ARC.UNITS">Units</label>
+                    <md-select name="minutesPerFlowMeasurement" width="2" class="simplified" ng-model="vm.value.MinutesPerFlowMeasurement" translate-attr-placeholder="ARC.UNITS" required>
+                        <md-option value="60">Hours</md-option>
+                        <md-option value="1">Minutes</md-option>
+                        <md-option value="0.016666666">Seconds</md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container ng-if="vm.showDCS" flex="40" required>
+                    <label translate="DCS_TOTALIZER_TIME">DCS Totalizer Time</label>
+                    <input type="time" id="exampleInput" name="time" ng-model="vm.value.ResetTotalizerAt" />
+                </md-input-container>
+            </div>
+            <arc-comment service="vm.commentService" />
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="vm.closeDialog()">
+                <span class="fa fa-fw fa-times"></span>
+                <span translate="ARC.CLOSE">Close</span>
+            </md-button>
+            <span flex></span>
+            <md-button type="submit" ng-click="vm.saveTagDetails(vm.value)" class="send-button md-accent md-raised" ng-disabled="vm.editTagForm.$invalid || vm.editTagForm.$pristine" aria-label="SAVE">
+                <span class="fa fa-fw fa-save"></span>
+                <span translate="ARC.SAVE">Save</span>
+            </md-button>
+        </md-dialog-actions>
+
+    </form>
+</md-dialog>

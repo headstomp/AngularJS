@@ -1,0 +1,57 @@
+<md-dialog class="edit-dialog" aria-label="Edit">
+    <form name="vm.editValueForm" class="md-inline-form" novalidate>
+        
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">
+                    <span translate="ARC.EDIT_TAG_ID"></span>
+                    <span ng-bind="vm.value.TagId"></span>
+                </span>
+                <md-button class="md-icon-button" ng-click="vm.closeDialog()">
+                    <md-icon md-font-icon="icon-close" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content ms-scroll>
+            <div class="md-block">
+                <strong translate="ARC.GROUP_ID">Group Id</strong>
+                <span ng-bind="vm.value.GroupId"></span>
+            </div>
+            
+            <br />
+            
+            <div class="md-block">
+                <strong translate="ARC.DATE_TIME">Date / Time</strong>
+                <span ng-bind="vm.value.DateTime | date:'yyyy-MM-dd HH:mm'"></span>
+            </div>
+            
+            <br />
+            
+            <md-input-container class="md-block">
+                <label translate="ARC.VALUE">Value</label>
+                <input name="value" ng-model="vm.value.Value" required md-autofocus>
+                <div ng-messages="vm.editValueForm.value.$error" ng-show="vm.editValueForm.value.$touched" role="alert">
+                    <div ng-message="required">
+                        <span translate="ARC.TITLE_REQUIRED">Value field is required</span>
+                    </div>
+                </div>
+            </md-input-container>
+            
+            <arc-comment service="vm.commentService"></arc-comment>
+        </md-dialog-content>
+            
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="vm.closeDialog()">
+                <span class="fa fa-fw fa-times"></span>
+                <span>Close</span>
+            </md-button>
+            <span flex></span>
+            <md-button type="button" class="send-button md-accent md-raised" ng-click="vm.saveValue(vm.value)" ng-disabled="vm.editValueForm.$pristine || vm.editValueForm.$invalid">
+                <span class="fa fa-fw fa-save"></span>
+                <span>Save</span>
+            </md-button>
+        </md-dialog-actions>
+        
+    </form>
+</md-dialog>

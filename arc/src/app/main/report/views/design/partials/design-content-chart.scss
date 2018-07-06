@@ -1,0 +1,16 @@
+.chart-doc-page {
+
+    .content {
+        max-width: 800px;
+        .c3 {
+            > svg {
+                min-height: 300px;
+            }
+        }
+    }
+
+}
+
+.rzslider .rz-pointer {
+    opacity: 0.5 !important;
+}

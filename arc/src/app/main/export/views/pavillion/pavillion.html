@@ -1,0 +1,131 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- TAG NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1"
+                 flex-xs="100">
+                  <h2>
+                    <span class="fa fa-handshake-o"></span>
+                    <span translate="ARC.PAVILLION_STAGING_TABLE">Pavillion</span>
+                </h2>
+            </div>
+            <!-- / TAG NAME -->
+
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+                <!-- SEARCH -->
+                <div class="search" layout="row" layout-align="start center">
+                    <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                    <input id="design-search" class="search-input" type="text" placeholder="Search"
+                           translate-attr-placeholder="ARC.SEARCH_SOURCE_LIST">
+                    </input>
+                </div>
+                <!-- / SEARCH -->
+
+                <!-- SETTINGS BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.toggleSidenav('settings-sidenav')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-cog"></md-icon>
+                    <md-tooltip><span translate="ARC.SETTINGS">Settings</span></md-tooltip>
+                </md-button>
+                <!-- / SETTINGS BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+
+        </div>
+
+    </div>
+    <!-- / HEADER -->
+
+
+
+    <!-- CONTENT -->
+    <div id="appcontent" class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+
+
+
+        <div class="content">
+            <div class="white-bg md-whiteframe-4dp" >
+
+
+
+                <md-toolbar class="md-grey-50-bg blue-500-fg border-top border-bottom">
+                    <div class="md-toolbar-tools">
+                        <h2 md-truncate flex>
+                            <span translate="ARC.LAST_COMMUNICATION_AT">last</span>&nbsp;:&nbsp;
+                            <span ng-bind="vm.pavillionData[vm.unit].LastDataUpdateDate | date:'yyyy-MM-dd HH:mm'"></span>
+                        </h2>
+                        <div layout="column" layout-align="center center">
+                            <md-select placeholder="Select a Location" ng-model="vm.unit" style="min-width: 200px;">
+                                <md-option ng-value="unit" ng-repeat="unit in vm.availableUnit" ng-bind="unit"></md-option>
+                            </md-select>
+                        </div>
+
+                    </div>
+                </md-toolbar>
+                <table id="importer-list" class="dataTable row-border hover" 
+                       datatable="ng" 
+                       dt-instance="vm.PavDTInstance" 
+                       dt-options="vm.PavdtOptions">
+                    <thead>
+                        <tr>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title" translate="ARC.DATE">date</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title" translate="ARC.ITEM_ID">item</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title" translate="ARC.ITEM_NAME">name</span>
+                                </div>
+                            </th>
+                            <th class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title" translate="ARC.VALUE">Value</span>
+                                </div>
+                            </th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active" ng-repeat="value in vm.pavillionData[vm.unit].PavillionDataEntrySet">
+                            <td>{{ value.Date | date:'yyyy-MM-dd HH:mm'}}</td>
+                            <td>
+                                <a href="javascript:void(0)" target="_blank" ui-sref="app.tagdetail({ id: value.TagId })">
+                                    <span ng-bind="value.TagId"></span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" target="_blank" ui-sref="app.tagdetail({ id: value.TagId })">
+                                    <span ng-bind="value.TagName"></span>
+                                </a>
+                            </td>
+                            <td ng-if="value.Value != 0">{{ value.Value }}</td>
+                            <td ng-if="value.ValueText != 0">{{ value.ValueText }}</td>
+                            <td ng-if="value.Value == 0 && value.ValueText == 0">{{ value.ValueInteger }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+              </div></div>
+
+
+    <!-- / CONTENT -->
+
+  
+</div>
+
+
+<!--
+-->

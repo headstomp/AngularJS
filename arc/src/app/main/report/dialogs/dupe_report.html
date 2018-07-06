@@ -1,0 +1,71 @@
+<md-dialog aria-label="{{vm.values.Name}}">
+  <form ng-cloak>
+    <md-toolbar class="md-accent md-hue-2">
+      <div class="md-toolbar-tools">
+        <h2>Duplicate Report: {{vm.values.Id}}</h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+         <div layout-xs="column" layout="row">
+            <div class="date-container">
+              <label>If you would like to change any details before duplicating, do so below:</label><br><br>
+            </div>
+        </div>
+        <md-divider></md-divider><br><br>
+        <md-dialog-content ms-scroll>
+          <md-input-container class="md-block">
+              <label>Report Name</label>
+              <input required minlength="5" md-maxlength="60" no-special-char name="Name" ng-model="vm.values.Name" md-autofocus>
+                <div ng-messages="DetailForm.Name.$error" role="alert">
+                    <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
+                        Name is required and must be 5-60 characters.
+                    </div>
+                </div>
+          </md-input-container>
+          <md-input-container class="md-block">
+              <label>Description</label>
+              <textarea max-rows="3" md-maxlength="110" name="ShortDescription" ng-model="vm.values.ShortDescription"></textarea>
+                <div ng-messages="DetailForm.ShortDescription.$error" role="alert">
+                    <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
+                        Description cannot exceed 110 characters.
+                    </div>
+                </div>
+          </md-input-container>
+          <md-input-container class="md-block">
+              <label>Owner</label>
+              <input disabled name="Owner" ng-model="vm.values.Owner">
+          </md-input-container>
+          <md-input-container class="container">
+            <label>Location</label>
+            <md-select class="simplified" ng-model="vm.values.LocationId" aria-label="Location" translate-attr-placeholder="ARC.LOCATION">
+              <md-option value="0" >GFSA</md-option>
+              <md-option value="1" >Chatham</md-option>
+              <md-option value="2" >Tiverton</md-option>
+              <md-option value="3" >Mount Forest</md-option>
+              <md-option value="4" >GET</md-option>
+              <md-option value="5" >Varennes</md-option>
+              <md-option value="6" >Johnstown</md-option>
+              <md-option value="7" >Brampton Chelsea</md-option>
+              <md-option value="8" >Brookfield</md-option>
+              <md-option value="9" >Shelbyville</md-option>
+              <md-option value="10" >Brampton Walker</md-option>
+              <md-option value="11" >Boucherville</md-option>
+              <md-option value="12" >Toronto Front Street</md-option>
+              <md-option value="13" >Toronto DataCenter</md-option>
+            </md-select>
+          </md-input-container>
+        </div>
+      </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button class="md-raised" ng-click="vm.closeDialog()">
+        Close
+      </md-button>
+      <span flex></span>
+      <md-button type="submit" class="send-button md-accent md-raised" ng-click="vm.dupeMe(vm.values)">
+        DUPE ME!
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

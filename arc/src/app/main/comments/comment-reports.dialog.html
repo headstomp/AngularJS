@@ -1,0 +1,58 @@
+<md-dialog class="used-on-dialog" aria-label="Edit">
+    
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">
+                    <span translate="ARC.COMMENT_REPORTS"></span>
+                </span>
+                <md-button class="md-icon-button" ng-click="vm.closeDialog()">
+                    <md-icon md-font-icon="icon-close" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content ms-scroll>
+            <table id="reportlist" class="dataTable row-border hover">
+                <thead>
+                     <tr>
+                          <th class="secondary-text"> 
+                               <div class="table-header">
+                                    <span class="column-title" translate="ARC.ID">ID</span>
+                               </div>
+                          </th>
+                          <th class="secondary-text">
+                               <div class="table-header">
+                                    <span class="column-title" translate="ARC.NAME">Name</span>
+                               </div>
+                          </th>
+                          <th class="secondary-text">
+                               <div class="table-header">
+                                    <span class="column-title" translate="ARC.DESCRIPTION">Description</span>
+                               </div>
+                          </th>
+                          <th class="secondary-text">
+                               <div class="table-header">
+                                    <span class="column-title" translate="ARC.OWNER">Owner</span>
+                               </div>
+                          </th>  
+                     </tr>
+                </thead>
+                <tbody>
+                     <tr ng-repeat="report in vm.reportSet" ui-sref="app.design({id:report.Id})" style="cursor: pointer;">
+                          <td>{{ report.Id }}</td>
+                          <td>{{ report.Name }}</td>
+                          <td>{{ report.ShortDescription }}</td>
+                          <td>{{ report.Owner }}</td>
+                     </tr>
+                </tbody>
+           </table>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised" ng-click="vm.closeDialog()">
+                <span class="fa fa-fw fa-times"></span>
+                <span translate="ARC.CLOSE">Close</span>
+            </md-button>
+        </md-dialog-actions>
+        
+</md-dialog>

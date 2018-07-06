@@ -1,0 +1,452 @@
+[
+  {
+    "Area": "area info goes here",
+    "DataLocationId": 1,
+    "Description": "this is the description field, maximum chars allowed is this 105 that is exactly this length and i ran ou",
+    "Id": 1,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "TT_7204-AVGa",
+    "ParentTagId": "FIC_6206-PV",
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FIC_6206-PV",
+    "Id": 2,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FIC_6206-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FT4203TOT",
+    "Id": 3,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FT4203TOT",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "LIC5103_SPH",
+    "Id": 4,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "LIC5103_SPH",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "PIC_3501-VL",
+    "Id": 5,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "PIC_3501-VL",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FVP_7211-PV",
+    "Id": 6,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FVP_7211-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FIC_3521-PV",
+    "Id": 7,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FIC_3521-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "LV_9801-VL",
+    "Id": 8,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "LV_9801-VL",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FERM_GAP_TOT",
+    "Id": 9,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FERM_GAP_TOT",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "TI_3105-PV",
+    "Id": 10,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "TI_3105-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "cooling water conductivity",
+    "Id": 11,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "CI_9901-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "HRSG Conductivity",
+    "Id": 12,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "CI_9201-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FIC_2101-VL",
+    "Id": 13,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FIC_2101-VL",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "pHI_9901-PV",
+    "Id": 14,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "pHI_9901-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FIC_6802-VL",
+    "Id": 15,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FIC_6802-VL",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "TI_3107-PV",
+    "Id": 16,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "TI_3107-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "LV_9811-VL",
+    "Id": 17,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "LV_9811-VL",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  },
+  {
+    "Area": null,
+    "DataLocationId": 1,
+    "Description": "FI_8405-PV",
+    "Id": 18,
+    "IsActive": true,
+    "Location": {
+      "Code": 220,
+      "Description": "Varennes Plant",
+      "Id": 5,
+      "Name": "Varennes"
+    },
+    "LocationId": 5,
+    "Name": "FI_8405-PV",
+    "ParentTagId": null,
+    "RawTableName": "raw.va_dcs_analog_history",
+    "ReducedTableName": "extract.va_dcs_analog_history",
+    "TagSource": {
+      "Description": "DCS Import from va-historian",
+      "Id": 1,
+      "Name": "Varennes DCS Importer",
+      "QvReload": null
+    },
+    "TagSourceId": 1
+  }
+]

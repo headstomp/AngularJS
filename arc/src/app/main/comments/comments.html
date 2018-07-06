@@ -1,0 +1,218 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+  <div class="header md-accent-bg" layout="column">
+      <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+          <!-- TAG NAME -->
+          <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1"
+               flex-xs="100">
+                <!-- translate="ARC.TAG_LIST" -->
+              <span translate="ARC.COMMENTS">Comments</span>
+          </div>
+          <!-- / TAG NAME -->
+          <!-- TOOLBAR -->
+          <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+              <!-- SEARCH -->
+              <div class="search" layout="row" layout-align="start center">
+                  <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                  <input id="design-search" class="search-input" type="text" placeholder="Search"
+                         translate-attr-placeholder="ARC.SEARCH_TAG_LIST" ng-model="vm.optionMap.query" ng-change="vm.search()" />
+              </div>
+              <!-- / SEARCH -->
+               <!-- HELP BUTTON -->
+              <md-button class="md-icon-button"
+                         ng-click="vm.gotoHelp('comments')"
+                         aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                  <md-icon md-font-icon="icon-help-circle"></md-icon>
+                  <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+              </md-button>
+              <!-- / HELP BUTTON -->
+          </div>
+          <!-- / TOOLBAR -->
+      </div>
+  </div>
+
+    <div class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content fullpage-datatable">
+            <div class="white-bg md-whiteframe-4dp">
+
+                <div class="layout-padding" layout="row" layout-align="space-around center">
+
+                    <md-input-container style="margin-top: -10px;">
+                        <label translate="ARC.COMMENT_TYPE">Comment Type</label>
+                        <md-select class="simplified" ng-model="vm.filter.CommentTypeId" translate-attr-placeholder="ARC.COMMENT_TYPE">
+                            <md-option ng-value="undefined">
+                                <span class="fa fa-fw fa-cube"></span>
+                                <span translate="ARC.ALL">All</span>
+                            </md-option>
+                            <md-option ng-value="0">
+                                <span class="fa fa-fw fa-comments"></span>
+                                <span translate="ARC.COMMENT">Comment</span>
+                            </md-option>
+                            <md-option ng-value="1">
+                                <span class="fa fa-fw fa-trash"></span>
+                                <span translate="ARC.VALUE_DELETED">Value Deleted</span>
+                            </md-option>
+                            <md-option ng-value="3">
+                                <span class="fa fa-fw fa-edit"></span>
+                                <span translate="ARC.VALUE_UPDATED">Value Updated</span>
+                            </md-option>
+                            <md-option ng-value="4">
+                                <span class="fa fa-fw fa-tag"></span>
+                                <span translate="ARC.TAG_UPDATED">Tag Updated</span>
+                            </md-option>
+                            <md-option ng-value="5">
+                                <span class="fa fa-fw fa-comment"></span>
+                                <span translate="ARC.VALUE_REMARK">Value Remark</span>
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+
+                    <md-input-container style="margin-top: -10px;">
+                        <label translate="ARC.TAG">Tag</label>
+                        <md-select ng-model="vm.filter.TagId"
+                                   md-on-close="vm.clearSearchTerm()"
+                                   data-md-container-class="selectdemoSelectHeader"
+                                   multiple="false"
+                                   placeholder="Select a tag">
+                            <div>
+                                <md-select-header class="demo-select-header">
+                                    <input ng-model="vm.tagFilter.Name"
+                                           ng-model-options="{ debounce: 250 }"
+                                           ng-keydown="$event.stopPropagation()"
+                                           type="search"
+                                           placeholder="Search for a tag &hellip;"
+                                           class="demo-header-searchbox md-text" />
+                                </md-select-header>
+                                <md-option ng-repeat="item in vm.tagSet | orderBy : 'Name'"
+                                           ng-value="item.Id">
+                                    <span ng-bind="item.Name"></span>
+                                </md-option>
+                            </div>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container>
+                        <label translate="ARC.USER">User</label>
+                        <input type="search" class="filter-input" placeholder="Created By &hellip;" ng-model="vm.filter.CreatedBy" ng-model-options="{ debounce: 250 }" />
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label translate="ARC.SEARCH">Search</label>
+                        <input type="search" class="filter-input" placeholder="Text &hellip;" ng-model="vm.filter.Value" ng-model-options="{ debounce: 250 }" />
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label translate="ARC.FROM">From</label>
+                        <input type="date" ng-model="vm.filter.StartOn" ng-model-options="{ debounce: 250 }" />
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label translate="ARC.UNTIL">Until</label>
+                        <input type="date" ng-model="vm.filter.EndOn" ng-model-options="{ debounce: 250 }" />
+                    </md-input-container>
+
+                    <md-button ng-click="vm.filter = {}">
+                        <span translate="ARC.CLEAR">Clear</span>
+                    </md-button>
+                    <md-button ng-click="vm.refresh()">
+                        <span class="fa fa-fw fa-refresh"></span>
+                    </md-button>
+                    <md-button ng-click="vm.pageBack();" ng-disabled="vm.limitIndex < 1">
+                        <span class="fa fa-fw fa-arrow-left"></span>
+                    </md-button>
+                    <md-button ng-click="vm.pageNext();" ng-disabled="vm.commentSet.length < 1">
+                        <span class="fa fa-fw fa-arrow-right"></span>
+                    </md-button>
+                </div>
+
+                <table id="data_tables" class="table row-border hover dataTable">
+                    <thead>
+                        <tr>
+                            <th><span translate="ARC.CREATED_AT">CREATED_AT</span></th>
+                            <th><span translate="ARC.CREATED_BY">CREATED_BY</span></th>
+                            <th><span translate="ARC.COMMENT_TYPE">COMMENT_TYPE</span></th>
+                            <th><span translate="ARC.DATE_TIME">DATE_TIME</span></th>
+                            <th><span translate="ARC.COMMENT">COMMENT</span></th>
+                            <th colspan="2"><span translate="ARC.ACTIONS"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="comment in vm.commentSet | orderBy : 'DateTime'">
+                            <td class="shrink">
+                                <span ng-bind="vm.moment(comment.CreatedAt).format()"></span>
+                            </td>
+                            <td class="shrink">
+                                <span class="fa fa-fw" ng-class="comment.CreatedBy === 'arc' ? 'fa-user-o' : 'fa-user'"></span>
+                                <span ng-bind="comment.CreatedBy"></span>
+                            </td>
+                            <td class="shrink" ng-switch="comment.CommentTypeId">
+                                <span ng-switch-when="0">
+                                    <span class="fa fa-fw fa-comments"></span>
+                                    <span translate="ARC.COMMENT">Comment</span>
+                                </span>
+                                <span ng-switch-when="1">
+                                    <span class="fa fa-fw fa-trash"></span>
+                                    <span translate="ARC.VALUE_DELETED">Value Deleted</span>
+                                </span>
+                                <span ng-switch-when="3">
+                                    <span class="fa fa-fw fa-edit"></span>
+                                    <span translate="ARC.VALUE_UPDATED">Value Updated</span>
+                                </span>
+                                <span ng-switch-when="4">
+                                    <span class="fa fa-fw fa-tag"></span>
+                                    <span translate="ARC.TAG_UPDATED">Tag Updated</span>
+                                </span>
+                                <span ng-switch-when="5">
+                                    <span class="fa fa-fw fa-comment"></span>
+                                    <span translate="ARC.VALUE_REMARK">Value Remark</span>
+                                </span>
+                            </td>
+                            <td class="shrink">
+                                <span ng-bind="vm.moment(comment.DateTime).format()"></span>
+                            </td>
+                            <td style="white-space: normal;">
+                                <span ng-bind="comment.Value"></span>
+                            </td>
+                            <td class="shrink one-percent">
+                                <a ui-sref="app.tagdetail({ id: comment.TagId })">
+                                    <span class="fa fa-fw fa-tag"></span>
+                                    <span ng-bind="comment.TagId"></span>
+                                    <md-tooltip><span translate="ARC.GOTO"></span>&nbsp<span translate="ARC.TAG"></span><md-tooltip>
+
+                                </a>
+                            </td>
+                            <td class="shrink one-percent">
+                                <a href="javascript:void(0)" ng-click="vm.showCommentReportsDialog(comment)">
+                                    <span class="fa fa-fw fa-bar-chart"></span>
+                                    <span translate="ARC.REPORTS">Reports</span>
+                                    <md-tooltip><span translate="ARC.GOTO"></span>&nbsp<span translate="ARC.REPORT"></span><md-tooltip>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <style type="text/css">
+                    #data_tables td {
+                        white-space: normal;
+                        vertical-align: top !important;
+                    }
+                    td.shrink {
+                        width: 12.5% !important;
+                        min-width: 12.5% !important;
+                        white-space: nowrap !important;
+                    }
+                    td.one-percent {
+                        width: 1% !important;
+                        min-width: 1% !important;
+                    }
+                    table.dataTable tbody td {
+                        padding: 4px;
+                        padding-left: 12px;
+                        padding-right: 12px;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</div>

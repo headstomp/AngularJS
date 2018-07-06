@@ -1,0 +1,90 @@
+<div class="white-bg md-whiteframe-4dp margin-16 flex">
+    <arc-table item-set="$vm.tagSet" on-filter-change="$vm.filter = filter">
+        <table-head>
+            <column style="width: 10%;">
+                <input type="number" placeholder="ID" style="width: 5em;" ng-model="$filter.id" />
+            </column>
+            <column style="width: 10%;">
+                <input type="text" placeholder="Name" ng-model="$filter.name" />
+            </column>
+            <column style="width: 35%;">
+                <input type="text" placeholder="Description" ng-model="$filter.description" />
+            </column>
+            <column style="width: 10%;">
+                <arc-select-location location="$filter.location"></arc-select-location>
+            </column>
+            <column style="width: 10%;">
+                <input type="text" placeholder="Area" ng-model="$filter.area" />
+            </column>
+            <column style="width: 10%;">
+                <arc-select-tag-source location="$filter.tagSource"></arc-select-tag-source>
+            </column>
+            <column style="width: 10%;">
+                <arc-select-tag-type location="$filter.tagType"></arc-select-tag-type>
+            </column>
+            <column class="shrink">&nbsp;</column>
+        </table-head>
+        <table-data>
+            <column>
+                <strong ng-bind="$item.Id"></strong>
+            </column>
+            <column>
+                <span ng-bind="$item.Name"></span>
+            </column>
+            <column>
+                <span ng-bind="$item.Description"></span>
+            </column>
+            <column>
+                <a href="javascript:void(0)" ng-click="{ 'viewLocation': $item.Location } | console">
+                    <span class="fa fa-fw fa-map-marker"></span>
+                    <span ng-bind="$item.Location.Name"></span>
+                </a>
+            </column>
+            <column>
+                <span ng-bind="$item.Area"></span>
+            </column>
+            <column>
+                <a href="javascript:void(0)" ng-click="{ 'viewTagSource': $item.TagSource } | console">
+                    <span class="fa fa-fw fa-database"></span>
+                    <span ng-bind="$item.TagSource.Name"></span>
+                </a>
+            </column>
+            <column>
+                <span ng-bind="$item.TagType.Name"></span>
+            </column>
+            <column class="shrink">
+                <md-button class="md-icon-button" ng-click="{ action: 'view', item: $item } | console">
+                    <span class="fa fa-fw fa-eye"></span>
+                </md-button>
+            </column>
+        </table-data>
+    </arc-table>
+    <div class="padding-8" layout="row" layout-align="space-between start">
+        <div>
+            <md-button class="md-raised" ng-click="{ action: 'csv' } | console">
+                <span class="fa fa-fw fa-download"></span>
+                <span>CSV</span>
+            </md-button>
+            <md-button class="md-raised" ng-click="{ action: 'csv' } | console">
+                <span class="fa fa-fw fa-download"></span>
+                <span>XML</span>
+            </md-button>
+        </div>
+        <div>
+            <span>Page</span>
+            <span ng-bind="$vm.filter.page.index + 1"></span>
+            <md-button class="md-raised" ng-click="$vm.minimumPage()">
+                <span class="fa fa-fw fa-arrow-left"></span>
+            </md-button>
+            <md-button class="md-raised" ng-click="$vm.decrementPage()">
+                <span class="fa fa-fw fa-caret-left"></span>
+            </md-button>
+            <md-button class="md-raised" ng-click="$vm.incrementPage()">
+                <span class="fa fa-fw fa-caret-right"></span>
+            </md-button>
+            <md-button class="md-raised" ng-click="$vm.maximumPage()">
+                <span class="fa fa-fw fa-arrow-right"></span>
+            </md-button>
+        </div>
+    </div>
+</div>

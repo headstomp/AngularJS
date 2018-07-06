@@ -1,0 +1,88 @@
+<div>
+    <table class="table row-border hover dataTable">
+        <thead>
+            <tr>
+                <th><span translate="ARC.CREATED_AT">CREATED_AT</span></th>
+                <th><span translate="ARC.CREATED_BY">CREATED_BY</span></th>
+                <th><span translate="ARC.COMMENT_TYPE">COMMENT_TYPE</span></th>
+                <th><span translate="ARC.DATE_TIME">DATE_TIME</span></th>
+                <th><span translate="ARC.COMMENT">COMMENT</span></th>
+                <th colspan="2"><span translate="ARC.ACTIONS">ACTIONS</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="comment in vm.commentSet | orderBy : 'DateTime'">
+                <td class="shrink">
+                    <span ng-bind="vm.moment(comment.CreatedAt).format()"></span>
+                </td>
+                <td class="shrink">
+                    <span class="fa fa-fw" ng-class="comment.CreatedBy === 'arc' ? 'fa-user-o' : 'fa-user'"></span>
+                    <span ng-bind="comment.CreatedBy"></span>
+                </td>
+                <td class="shrink" ng-switch="comment.CommentTypeId">
+                    <span ng-switch-when="0">
+                        <span class="fa fa-fw fa-comments"></span>
+                        <span>Comment</span>
+                    </span>
+                    <span ng-switch-when="1">
+                        <span class="fa fa-fw fa-trash"></span>
+                        <span>Value Deleted</span>
+                    </span>
+                    <span ng-switch-when="3">
+                        <span class="fa fa-fw fa-edit"></span>
+                        <span>Value Updated</span>
+                    </span>
+                    <span ng-switch-when="4">
+                        <span class="fa fa-fw fa-tag"></span>
+                        <span>Tag Updated</span>
+                    </span>
+                    <span ng-switch-when="5">
+                        <span class="fa fa-fw fa-comment"></span>
+                        <span>Value Remark</span>
+                    </span>
+                </td>
+                <td class="shrink">
+                    <span ng-bind="vm.moment(comment.DateTime).format()"></span>
+                </td>
+                <td style="white-space: normal;">
+                    <span ng-bind="comment.Value"></span>
+                </td>
+                <td class="shrink one-percent">
+                    <a ui-sref="app.tagdetail({ id: comment.TagId })">
+                        <span class="fa fa-fw fa-tag"></span>
+                        <span ng-bind="comment.TagId"></span>
+                        <md-tooltip>Go To tag<md-tooltip>
+                    </a>
+                </td>
+                <td class="shrink one-percent">
+                    <a href="javascript:void(0)" ng-click="vm.showCommentReportsDialog(comment)">
+                        <span class="fa fa-fw fa-bar-chart"></span>
+                        <span>Reports</span>
+                        <md-tooltip>Go To Report<md-tooltip>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <style type="text/css">
+        .dataTable td {
+            white-space: normal;
+            vertical-align: top !important;
+        }
+        td.shrink {
+            width: 12.5% !important;
+            min-width: 12.5% !important;
+            white-space: nowrap !important;
+        }
+        td.one-percent {
+            width: 1% !important;
+            min-width: 1% !important;
+        }
+        table.dataTable tbody td {
+            padding: 4px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    </style>
+</div>

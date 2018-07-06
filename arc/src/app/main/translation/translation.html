@@ -1,0 +1,148 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1" flex-xs="100">
+                 <h2>
+                    <span class="fa fa-language"></span>
+                    <span translate="ARC.TRANSLATION_MANAGER">Translations Manager</span>
+                </h2>
+            </div>
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+                <div class="search" layout="row" layout-align="start center">
+                    <md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>
+                    <input id="design-search" class="search-input" type="text" placeholder="Search" translate-attr-placeholder="ARC.SEARCH_TRANSLATIONS" ng-model="vm.search" ng-change="vm.pageFirst()" />
+                </div>
+                 <!-- HELP BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('translation')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+                <!-- / HELP BUTTON -->
+            </div>
+        </div>
+    </div>
+
+    <div class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content">
+            <div md-whiteframe="4">
+                <md-toolbar class="md-grey-50-bg blue-500-fg border-top border-bottom" layout="row">
+                    <div class="md-toolbar-tools">
+                        <div md-truncate flex>
+                              <md-button ng-click="vm.pageFirst()">
+                                <span class="fa fa-arrow-left"></span>
+                                <span translate="ARC.FIRST_PAGE">First</span>
+                            </md-button>
+                            <md-button ng-click="vm.pagePrevious()">
+                                <span class="fa fa-chevron-left"></span>
+                                <span translate="ARC.PREVIOUS_PAGE">Back</span>
+                            </md-button>
+                            <md-button ng-click="vm.pageNext()">
+                                <span translate="ARC.NEXT_PAGE">Next</span>
+                                <span class="fa fa-chevron-right"></span>
+                            </md-button>
+                            <md-button ng-click="vm.pageLast()">
+                                <span translate="ARC.LAST_PAGE">Last</span>
+                                <span class="fa fa-arrow-right"></span>
+                            </md-button>
+                        </div>
+                        <div class="tr-btn-group">
+                            <md-button class="md-fab md-mini" ng-click="vm.add()">
+                                <md-icon md-font-icon="icon-plus"></md-icon>
+                                <md-tooltip><span translate="ARC.ADD">Add</span></md-tooltip>
+                            </md-button>
+                            <md-button class="md-fab md-mini" ng-click="vm.save()">
+                                <md-icon md-font-icon="icon-floppy"></md-icon>
+                                <md-tooltip><span translate="ARC.SAVE">Save</span></md-tooltip>
+                            </md-button> 
+                        </div>
+                    </div>
+                </md-toolbar>
+                <md-content class="md-padding">
+                    <div id="translations" layout="column">
+                        <style type="text/css" scoped="scoped">
+                            table {
+                                width:100%;
+                                border-collapse: collapse;
+                            }
+
+                            table,tr, th, td {
+                                border-bottom: 1px solid grey;
+                            }
+
+                            th, td {
+                                padding: 5px;
+                                text-align: left;
+                                border-bottom: 1px solid #ddd;
+                            }
+
+                            tr:hover{
+                                background-color:#f5f5f5
+                            }
+
+                            table tr td input[type="text"]{
+                                border: 1px solid transparent;
+                                border-radius: 3px;
+                                padding: 10px;
+                                width: 100%;
+                            }
+                            table tr td input:focus {
+                                border-color: rgba(0, 0, 255, 0.25);
+                                background-color: rgba(0, 0, 255, 0.025);
+                            }
+
+                            table tr td input[type="text"].ng-dirty{
+                                color: #00f !important;
+                                background-color: rgba(0, 0, 255, 0.1);
+                            }
+                            
+                            table thead th {
+                                padding-left: 11px !important;
+                            }
+                        </style>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th translate="ARC.key">key</th>
+                                    <th>English</th>
+                                    <th>French</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active" ng-repeat="(sourceKey, languageMap) in (vm.sourceLanguageMap | translationSearch : vm.search | objectLimitTo : vm.pageIndex : vm.pageCount )">
+                                    <td>
+                                        <input type="text" tabindex="-1" ng-readonly="true" ng-model="sourceKey" />
+                                    </td>
+                                    <td ng-repeat="supportedLanguage in vm.supportedLanguageSet">
+                                        <input type="text" tabindex="1" ng-model="languageMap[supportedLanguage.LanguageCode].Target" ng-change="vm.markForUpdate(sourceKey, supportedLanguage.LanguageCode)" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--
+                    <div id="translations" layout="column">
+                       <div layout="row" layout-align="center center" ng-repeat="(sourceKey, languageMap) in (vm.sourceLanguageMap | translationSearch : vm.search | objectLimitTo : vm.pageIndex : vm.pageCount )">
+                            <md-input-container flex class="md-block">
+                                <label><span translate="ARC.KEY">KEY</span></label>
+                                <input readonly="readonly" ng-model="sourceKey" ng-change="vm.markForUpdate(sourceKey)" />
+                            </md-input-container>
+                            <md-input-container flex class="md-block" ng-repeat="supportedLanguage in vm.supportedLanguageSet">
+                                <label ng-bind="supportedLanguage.Name"></label>
+                                <input type="text" ng-model="languageMap[supportedLanguage.LanguageCode].Target" ng-change="vm.markForUpdate(sourceKey, supportedLanguage.LanguageCode)" />
+                            </md-input-container>
+                        </div>
+                    </div>
+                  -->
+                    <style type="text/css" scoped="scoped">
+                        #translations md-input-container input.ng-dirty {
+                            color: #00f !important;
+                            background-color: rgba(0, 0, 255, 0.1);
+                        }
+                    </style>
+                </md-content>
+            </div>
+        </div>
+    </div>
+</div>

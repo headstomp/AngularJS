@@ -1,0 +1,351 @@
+// .download{
+//   width:75.22px;
+//   height: 37.60px;
+//   border:1px solid #D6D6D6;
+// }
+
+// .download:hover {
+//   background: #D6D6D6;
+//   padding: 9px 12px;
+//   border: 1px solid rgba(0, 0, 0, 0.12) !important;
+//   cursor: pointer;
+//
+// }
+
+#loadingDiv{
+  position:fixed;
+  top:0px;
+  right:0px;
+  width:100%;
+  height:100%;
+  background-color:#666;
+  //background-image:url('ajax-loader.gif');
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:10000000;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  align-content: center;
+}
+
+#loadingDiv img{
+  width: 100px;
+  height: 100px;
+
+
+}
+
+#loadingDiv .loading-img{
+  margin-top: 400px;
+}
+
+
+
+button-padding{
+
+}
+
+#tagTable-values tbody th, #tagTable-values tbody td {
+    padding: 1px 5px;
+    background-color: white;
+
+
+
+}
+
+#tagTable-values tbody td span {
+  vertical-align:middle;
+  margin-left: 5px;
+}
+
+#tagTable-values thead th {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #FAFAFA;
+
+}
+
+.details-container{
+    overflow: auto;
+    width: 100%;
+}
+.detail-title{
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    font-weight: bold;
+    padding: 0.5em 0.7em;
+    color: #333;
+    white-space: nowrap;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -moz-background-clip: padding; /* for Firefox 3.6 */
+    background-clip: padding-box;
+
+
+}
+
+table#detail-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table#detail-table td {
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.3em 1em;
+    background-color: white;
+    font-size:1em;
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-width: 1px 0 1px 0;
+}
+
+#hc-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+.tag-chart {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+
+    .tagchart {
+        //width: 100%;
+        //height: 400px;
+        //padding-right:10px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-left: -10px;
+
+    }
+
+}
+
+
+.aspect-btn-group {
+
+	width:100%;
+	margin-top:7px;
+
+}
+
+
+
+
+/* ------------------------------------------
+ * CSS3 GITHUB BUTTONS (Nicolas Gallagher)
+ * Licensed under Unlicense
+ * http://github.com/necolas/css3-github-buttons
+ * --------------------------------------- */
+
+
+/* =============================================================================
+   Base Button
+   ========================================================================== */
+
+.button {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.3em 0.4em;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    font:0.9em/normal sans-serif;
+    color: #333;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+
+    background-clip: padding-box;
+    border-radius: 0.2em;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+.button:hover,
+.button:focus,
+.button:active,
+.button.active {
+
+    text-decoration: none;
+    border: 1px inset #d4d4d4;
+
+    background-color: #FAFAFA;
+
+}
+
+.button:active,
+.button.active {
+    border: 1px solid #d4d4d4;
+    background-color: #BBDEFB;
+    text-shadow: 0 0 0 #FAFAFA;
+    font-weight: bold;
+
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+.button.title {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    cursor: inherit;
+    outline: none;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -moz-background-clip: padding; /* for Firefox 3.6 */
+    background-clip: padding-box;
+    border-radius: 0.2em;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+
+
+
+/* Primary button
+   ========================================================================== */
+
+.button.primary {
+    font-weight: bold;
+}
+
+/* Danger button
+   ========================================================================== */
+
+
+
+/* Pill button
+   ========================================================================== */
+
+.button.pill {
+    border-radius: 50em;
+}
+
+/* Disabled button
+   ========================================================================== */
+
+.button.disable {
+    opacity: 0.5;
+
+}
+
+/* Big button
+   ========================================================================== */
+
+
+
+/* Standard group
+   ========================================================================== */
+
+.button-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+.button + .button,
+.button + .button-group,
+.button-group + .button,
+.button-group + .button-group {
+    margin-left: 15px;
+}
+
+.button-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.button-group .button {
+    float: left;
+    margin-left: -1px;
+}
+
+.button-group > .button:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) .button {
+    border-radius: 0;
+}
+
+.button-group > .button:first-child,
+.button-group li:first-child .button {
+    margin-left: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button-group > .button:last-child,
+.button-group li:last-child > .button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Minor group
+   ========================================================================== */
+
+.button-group.minor-group .button {
+    border: 1px solid #d4d4d4;
+    text-shadow: none;
+    background-image: none;
+    background-color: #fff;
+}
+
+.button-group.minor-group .button:hover,
+.button-group.minor-group .button:focus {
+    background-color: #599bdc;
+}
+
+.button-group.minor-group .button:active,
+.button-group.minor-group .button.active {
+    background-color: #3072b3;
+}
+
+.button-group.minor-group .button.icon:before {
+    opacity: 0.8;
+}
+
+/* =============================================================================
+   Button container (mixing buttons and groups, e.g., nav bar)
+   ========================================================================== */
+
+.button-container .button,
+.button-container .button-group {
+    vertical-align: top;
+}

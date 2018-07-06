@@ -1,0 +1,61 @@
+@debug "arc-table";
+
+.arc-table {
+    
+    .shrink {
+        
+        width: 1%;
+        white-space: nowrap;
+        
+    }
+    
+    table {
+        
+        width: 100%;
+        border-collapse: collapse;
+        
+        th, 
+        td {
+            padding: 0.125em;
+            padding-left: 1.25em;
+            padding-right: 1.25em;
+            vertical-align: middle;
+            white-space: normal;
+            
+            &:first-child {
+                padding-left: 2.5em;
+            }
+            
+            &:last-child {
+                padding-right: 2.5em;
+            }
+            
+        }
+        
+        
+        thead {
+        
+        }
+        
+        tbody {
+            > tr {
+                &.no-results {
+                    > td {
+                        height: 10em;
+                        text-align: center;
+                        color: #999;
+                    }
+                }
+                > th, 
+                > td {
+                    border: 1px #ccc solid;
+                    border-left: 0;
+                    border-right: 0;
+                    
+                }
+            }
+        }
+        
+    }
+    
+}

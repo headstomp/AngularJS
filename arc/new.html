@@ -1,0 +1,135 @@
+<!--   <div layout="row" layout-wrap>
+
+        <div layout="column" flex="100">
+
+            <div class="tag-chart white-bg">
+
+                <table id="tagTable-values"  class="dataTable row-border hover" datatable="ng" dt-instance="vm.arcTagDataDTInstance" dt-options="vm.arcTagDataDTOptions">
+                    <thead>
+                        <tr ng-if="vm.tagType == 'red'">
+
+                            <th ng-if="vm.checkAspect(value)" ng-repeat="value in vm.redAspects" class="secondary-text"  >
+
+                                <div ng-if="vm.checkAspect(value)" class="table-header">
+                                    <span ng-if="vm.checkAspect(value)" class="column-title" >{{ value }}</span>
+                                </div>
+                            </th>
+                            <th ng-if="vm.tagType == 'red' || vm.tagType == 'cal'" class="secondary-text">
+                              <div class="table-header" ><span class="column-title" >Comment</span></div>
+                            </th>
+
+
+                        </tr>
+                        <tr ng-if="vm.tagType == 'cal'">
+
+                            <th ng-if="vm.checkAspect(value)" ng-repeat="value in vm.redAspects track by $index" class="secondary-text"  >
+
+                                <div ng-if="vm.checkAspect(value)" class="table-header">
+                                    <span ng-if="vm.checkAspect(value)" class="column-title" >{{ value }}</span>
+                                </div>
+                            </th>
+                            <th ng-if="vm.tagType == 'cal'" class="secondary-text">
+                              <div class="table-header" ><span class="column-title" >Comment</span></div>
+                            </th>
+
+
+                        </tr>
+                        <tr ng-if="vm.tagType == 'raw'">
+                            <th ng-repeat="value in vm.rawAspects" class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title" >{{ value }}</span>
+                                </div>
+                            </th>
+
+
+                        </tr>
+                        <tr ng-if="vm.tagType == 'rawLive'">
+                            <th ng-repeat="value in vm.rawLiveAspects" class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title" >{{ value }}</span>
+                                </div>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  ng-repeat="value in vm.tagResultSet track by $index">
+                            <td>
+                                <span ng-if="vm.tagType == 'raw' || vm.tagType == 'red' || vm.tagType == 'cal'">{{value.DateTime | date:'yyyy-MM-dd HH:mm'}}</span>
+                                <span ng-if="vm.tagType == 'rawLive'">{{value.DateTime | date:'yyyy-MM-dd HH:mm:ss'}}</span>
+                            </td>
+                            <td ng-if="vm.tagType == 'raw'">
+                                <span class="pr-5" ng-if="vm.$type == 'Gfsa.Arc.Api.ArcService.CommentNonReducedReportResult, Gfsa.Arc.Api'">{{ value.Value }}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'N'">{{ value.Value | number:4}}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'I'">{{ value.Value | number:0 }}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'S'">{{ value.Value }}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'F'">
+
+                                    <a ng-href="{{ BASE_URL }}/File/{{value.MD5}}?filename={{value.Value}}" target="_blank">
+                                        {{value.Value}}
+                                    </a>
+                                </span>
+        </td>
+        <td ng-if="vm.tagType == 'raw'">
+          <span style="cursor: pointer;" ng-click="vm.openEditTagValueDialog($event, value)" class="trash fa fa-pencil fa-lg" aria-hidden="true"></span>
+          <span style="cursor: pointer;" ng-click="vm.deleteTagValue($event,value)" class="trash fa fa-trash-o fa-lg" aria-hidden="true"></span>
+          <span id="comment"><span ng-if="vm.commentCounts[value.GroupId || value.DateTime]==undefined" class="fa fa-comment-o" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>Add Comment</md-tooltip></span></span>
+          <span ng-if="vm.commentCounts[value.GroupId || value.DateTime]!==undefined" class="fa fa-comment" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>{{vm.commentCounts[value.GroupId|| value.DateTime]}} Comments</md-tooltip></span>
+
+        </td>
+        <td ng-if="vm.tagType == 'rawLive'">
+          <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'N'">{{ value.Value | number:4}}</span>
+          <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'I'">{{ value.Value | number:0 }}</span>
+          <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'S'">{{ value.Value }}</span>
+        </td>
+        <td ng-if="vm.totalizerFlag && vm.tagType == 'red' " ng-class="vm.chartType == 'totalizer' && 'md-blue-100-bg' || ''">
+          {{value.Totalizer | number:2}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'lst' && 'md-blue-100-bg' || ''">
+          {{value.LastValue | number:2}}
+        </td>
+          <td ng-if="vm.tagType == 'cal'" ng-class="vm.chartType == 'cal' && 'md-blue-100-bg' || ''">
+                                {{value.LastValue | number:2}}
+                            </td>
+
+        <td ng-repeat="(key, val) in value.value track by $index" ng-if="vm.tagType == 'cal'" ng-class="key==0 ? 'md-blue-100-bg' : '' ">
+          {{value.LastValue | number:2}} {{val | number:2 }}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'min' && 'md-blue-100-bg' || ''">
+          {{value.Minimum | number:2}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'max' && 'md-blue-100-bg' || ''">
+          {{value.Maximum | number:2}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'wavg' && 'md-blue-100-bg' || ''">
+          {{value.WeightedAverage | number:2}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'var' && 'md-blue-100-bg' || ''">
+          {{value.Variance | number:2}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'std' && 'md-blue-100-bg' || ''">
+          {{value.StandardDeviation | number:2}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'cnt' && 'md-blue-100-bg' || ''">
+          {{value.Count | number:0}}
+        </td>
+        <td ng-if="vm.tagType == 'red'" ng-class="vm.chartType == 'tot' && 'md-blue-100-bg' || ''">
+          {{value.Total | number:0}}
+        </td>
+        <td ng-if="vm.tagType == 'red' || vm.tagType == 'cal'">
+
+          <span id="comment"><span ng-if="vm.commentCounts[value.GroupId || value.DateTime]==undefined" class="fa fa-comment-o" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>Add Comment</md-tooltip></span></span>
+          <span ng-if="vm.commentCounts[value.GroupId || value.DateTime]!==undefined" class="fa fa-comment" ng-click="vm.showCommentPrompt($event,value,'')"><md-tooltip>{{vm.commentCounts[value.GroupId|| value.DateTime]}} Comments</md-tooltip></span>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+</div>
+
+</div>
+
+</div> -->

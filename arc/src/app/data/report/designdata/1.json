@@ -1,0 +1,6718 @@
+{
+   "2016-09-29T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":9004.7600000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3180.0000000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":231533.9000000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9180.7820000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.0900000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0293000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-29 04:00:00.0",
+            "DateTime":"2016-09-29T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-28T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8976.4400000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3170.0000000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":230209.7000000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9128.2750000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.2100000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-28 04:00:00.0",
+            "DateTime":"2016-09-28T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-27T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8948.1200000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3160.0000000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":229082.7000000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9083.5870000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.3500000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-09-27 04:00:00.0",
+            "DateTime":"2016-09-27T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-26T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8749.9100000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3090.0000000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":224377.7000000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8897.0250000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.2900000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-26 04:00:00.0",
+            "DateTime":"2016-09-26T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-25T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8608.3200000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3040.0000000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":221194.0000000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8770.7850000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.4500000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-25 04:00:00.0",
+            "DateTime":"2016-09-25T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-24T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8664.9600000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3060.0000000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":223194.4000000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8850.1040000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.4100000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0295000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9466.5000000000,
+            "GroupId":"2016-09-24 04:00:00.0",
+            "DateTime":"2016-09-24T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-23T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8976.4400000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3170.0000000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":229167.2000000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9086.9380000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.4200000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0260000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-23 04:00:00.0",
+            "DateTime":"2016-09-23T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-22T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8891.4900000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3140.0000000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":227702.2000000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9028.8480000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6500000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-22 04:00:00.0",
+            "DateTime":"2016-09-22T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-21T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8834.8600000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3120.0000000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":227223.2000000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9009.8540000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6100000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0292000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-09-21 04:00:00.0",
+            "DateTime":"2016-09-21T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-20T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8863.1700000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3130.0000000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":227814.9000000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9033.3160000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6300000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0291000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-20 04:00:00.0",
+            "DateTime":"2016-09-20T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-19T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8891.4900000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3140.0000000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":227195.1000000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9008.7400000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6800000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0259000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-19 04:00:00.0",
+            "DateTime":"2016-09-19T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-18T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8891.4900000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3140.0000000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":228491.1000000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9060.1290000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6700000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0290000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-18 04:00:00.0",
+            "DateTime":"2016-09-18T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-17T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":9033.0700000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3190.0000000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":231139.4000000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9165.1400000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6600000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0274000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-17 04:00:00.0",
+            "DateTime":"2016-09-17T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-16T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8948.1200000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3160.0000000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":228293.9000000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9052.3100000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8100000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0258000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-16 04:00:00.0",
+            "DateTime":"2016-09-16T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-15T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8976.4400000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3170.0000000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":230209.7000000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9128.2750000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.7000000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0290000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-09-15 04:00:00.0",
+            "DateTime":"2016-09-15T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-14T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8976.4400000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3170.0000000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":229279.9000000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9091.4070000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6900000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-09-14 04:00:00.0",
+            "DateTime":"2016-09-14T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-13T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8778.2200000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3100.0000000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":224800.3000000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8913.7820000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8800000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10058.1000000000,
+            "GroupId":"2016-09-13 04:00:00.0",
+            "DateTime":"2016-09-13T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-12T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8806.5400000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3110.0000000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":225589.1000000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8945.0590000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8400000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-12 04:00:00.0",
+            "DateTime":"2016-09-12T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-11T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8608.3200000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3040.0000000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":221250.4000000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8773.0210000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.7800000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0292000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-11 04:00:00.0",
+            "DateTime":"2016-09-11T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-10T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8523.3700000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3010.0000000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":218602.0000000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8668.0070000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.7700000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0274000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-10 04:00:00.0",
+            "DateTime":"2016-09-10T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-09T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8466.7400000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2990.0000000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":216686.2000000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8592.0410000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9400000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0261000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-09 04:00:00.0",
+            "DateTime":"2016-09-09T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-08T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8410.1000000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2970.0000000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":216488.9000000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8584.2180000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9200000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0294000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-08 04:00:00.0",
+            "DateTime":"2016-09-08T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-07T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8438.4200000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2980.0000000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":215925.5000000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8561.8780000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":19.1400000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0260000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-07 04:00:00.0",
+            "DateTime":"2016-09-07T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-06T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8580.0000000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3030.0000000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":220771.4000000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8754.0280000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":19.0800000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0293000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-06 04:00:00.0",
+            "DateTime":"2016-09-06T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-05T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8580.0000000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3030.0000000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":220489.7000000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8742.8580000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9700000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-05 04:00:00.0",
+            "DateTime":"2016-09-05T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-04T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8664.9600000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3060.0000000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222321.0000000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8815.4720000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8900000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0275000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9466.5000000000,
+            "GroupId":"2016-09-04 04:00:00.0",
+            "DateTime":"2016-09-04T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-03T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8353.4700000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2950.0000000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":214854.9000000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8519.4270000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8600000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-09-03 04:00:00.0",
+            "DateTime":"2016-09-03T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-02T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8863.1700000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3130.0000000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":227082.4000000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":9004.2710000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8200000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0275000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-02 04:00:00.0",
+            "DateTime":"2016-09-02T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-09-01T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8834.8600000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3120.0000000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":226857.0000000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8995.3340000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8000000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0292000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-09-01 04:00:00.0",
+            "DateTime":"2016-09-01T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-31T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8721.5900000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3080.0000000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222602.7000000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8661.4710000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8300000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0256000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-08-31 04:00:00.0",
+            "DateTime":"2016-08-31T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-30T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8551.6900000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3020.0000000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":220067.0000000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8562.8070000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9200000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0292000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-30 04:00:00.0",
+            "DateTime":"2016-08-30T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-29T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":220686.9000000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8586.9270000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9200000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0257000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-29 04:00:00.0",
+            "DateTime":"2016-08-29T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-28T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8551.6900000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3020.0000000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":220123.4000000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8565.0020000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9000000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0293000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-28 04:00:00.0",
+            "DateTime":"2016-08-28T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-27T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":220799.6000000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8591.3120000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9100000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0259000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9410.1000000000,
+            "GroupId":"2016-08-27 04:00:00.0",
+            "DateTime":"2016-08-27T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-26T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":221588.4000000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8622.0050000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8800000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-26 04:00:00.0",
+            "DateTime":"2016-08-26T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-25T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8664.9600000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3060.0000000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222630.9000000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8662.5680000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9000000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0292000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9410.1000000000,
+            "GroupId":"2016-08-25 04:00:00.0",
+            "DateTime":"2016-08-25T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-24T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8834.8600000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3120.0000000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":226096.3000000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8797.4070000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.9900000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-08-24 04:00:00.0",
+            "DateTime":"2016-08-24T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-23T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8919.8100000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3150.0000000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":228378.4000000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8886.2040000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8000000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-08-23 04:00:00.0",
+            "DateTime":"2016-08-23T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-22T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8976.4400000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3170.0000000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":229702.6000000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8937.7280000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.7300000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-08-22 04:00:00.0",
+            "DateTime":"2016-08-22T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-21T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8778.2200000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3100.0000000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":224800.3000000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8746.9800000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6800000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0275000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-08-21 04:00:00.0",
+            "DateTime":"2016-08-21T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-20T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8551.6900000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3020.0000000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":219813.5000000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8552.9430000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8900000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0293000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-20 04:00:00.0",
+            "DateTime":"2016-08-20T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-19T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8551.6900000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3020.0000000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":218376.6000000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8497.0340000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.8700000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0257000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-19 04:00:00.0",
+            "DateTime":"2016-08-19T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-18T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8211.8900000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2900.0000000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":211023.2000000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8210.9130000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.7500000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9410.1000000000,
+            "GroupId":"2016-08-18 04:00:00.0",
+            "DateTime":"2016-08-18T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-17T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":7730.5000000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2730.0000000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":198936.6000000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":7740.6230000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6700000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0279000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-17 04:00:00.0",
+            "DateTime":"2016-08-17T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-16T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8041.9800000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2840.0000000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":206430.8000000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8032.2220000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.5800000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9410.1000000000,
+            "GroupId":"2016-08-16 04:00:00.0",
+            "DateTime":"2016-08-16T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-15T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8381.7900000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2960.0000000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":215756.4000000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8395.0820000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6000000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0293000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-15 04:00:00.0",
+            "DateTime":"2016-08-15T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-14T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8098.6200000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2860.0000000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":207726.8000000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8082.6500000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.4700000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0260000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-14 04:00:00.0",
+            "DateTime":"2016-08-14T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-13T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8126.9400000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2870.0000000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":209868.1000000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8165.9680000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.5700000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0297000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-13 04:00:00.0",
+            "DateTime":"2016-08-13T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-12T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8523.3700000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3010.0000000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":218292.1000000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8493.7460000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6400000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0261000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-12 04:00:00.0",
+            "DateTime":"2016-08-12T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-11T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8664.9600000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3060.0000000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222405.5000000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8653.7980000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.6900000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9438.3000000000,
+            "GroupId":"2016-08-11 04:00:00.0",
+            "DateTime":"2016-08-11T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-10T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":221870.2000000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8632.9700000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.4300000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9466.5000000000,
+            "GroupId":"2016-08-10 04:00:00.0",
+            "DateTime":"2016-08-10T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-09T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8749.9100000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3090.0000000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":224687.6000000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8742.5950000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.2600000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0278000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10114.5000000000,
+            "GroupId":"2016-08-09 04:00:00.0",
+            "DateTime":"2016-08-09T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-08T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8693.2700000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3070.0000000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":224124.1000000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8720.6690000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.1700000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0294000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10170.8000000000,
+            "GroupId":"2016-08-08 04:00:00.0",
+            "DateTime":"2016-08-08T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-07T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":221588.4000000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8622.0050000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.0200000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0261000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10142.6000000000,
+            "GroupId":"2016-08-07 04:00:00.0",
+            "DateTime":"2016-08-07T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-06T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8523.3700000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3010.0000000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":219531.7000000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8541.9780000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.0200000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0278000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9494.6000000000,
+            "GroupId":"2016-08-06 04:00:00.0",
+            "DateTime":"2016-08-06T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-05T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8664.9600000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3060.0000000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222828.1000000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8670.2410000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.0500000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0277000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9466.5000000000,
+            "GroupId":"2016-08-05 04:00:00.0",
+            "DateTime":"2016-08-05T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-04T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8466.7400000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2990.0000000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":218742.9000000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8511.2860000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":18.1100000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0297000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9466.5000000000,
+            "GroupId":"2016-08-04 04:00:00.0",
+            "DateTime":"2016-08-04T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-03T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8806.5400000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3110.0000000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":226265.3000000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8803.9830000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.9100000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0276000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10170.8000000000,
+            "GroupId":"2016-08-03 04:00:00.0",
+            "DateTime":"2016-08-03T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-02T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8891.4900000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3140.0000000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":228631.9000000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8896.0670000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.8100000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0278000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10170.8000000000,
+            "GroupId":"2016-08-02 04:00:00.0",
+            "DateTime":"2016-08-02T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-08-01T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8891.4900000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3140.0000000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":228744.6000000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8900.4520000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.7500000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0280000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10170.8000000000,
+            "GroupId":"2016-08-01 04:00:00.0",
+            "DateTime":"2016-08-01T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-31T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8721.5900000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3080.0000000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":224715.8000000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8816.0500000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.6900000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0280000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9466.5000000000,
+            "GroupId":"2016-07-31 04:00:00.0",
+            "DateTime":"2016-07-31T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-30T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222715.4000000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8737.5710000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.6000000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0279000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9494.6000000000,
+            "GroupId":"2016-07-30 04:00:00.0",
+            "DateTime":"2016-07-30T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-29T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8268.5200000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2920.0000000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":213756.1000000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8386.0790000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.4400000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0281000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9494.6000000000,
+            "GroupId":"2016-07-29 04:00:00.0",
+            "DateTime":"2016-07-29T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-28T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8749.9100000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3090.0000000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":225589.1000000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8850.3120000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.3800000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0280000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9494.6000000000,
+            "GroupId":"2016-07-28 04:00:00.0",
+            "DateTime":"2016-07-28T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-27T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8749.9100000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3090.0000000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":225758.2000000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8856.9460000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.3600000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0280000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9494.6000000000,
+            "GroupId":"2016-07-27 04:00:00.0",
+            "DateTime":"2016-07-27T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-26T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8749.9100000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3090.0000000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":225166.5000000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8833.7320000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.2700000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0264000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9522.8000000000,
+            "GroupId":"2016-07-26 04:00:00.0",
+            "DateTime":"2016-07-26T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-25T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":223842.4000000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8781.7850000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.2000000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0297000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9494.6000000000,
+            "GroupId":"2016-07-25 04:00:00.0",
+            "DateTime":"2016-07-25T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-24T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8664.9600000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3060.0000000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":223814.2000000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8780.6790000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.2400000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0281000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9522.8000000000,
+            "GroupId":"2016-07-24 04:00:00.0",
+            "DateTime":"2016-07-24T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-23T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8608.3200000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3040.0000000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222715.4000000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8737.5710000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.0700000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0284000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9522.8000000000,
+            "GroupId":"2016-07-23 04:00:00.0",
+            "DateTime":"2016-07-23T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-22T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8608.3200000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3040.0000000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":222602.7000000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8733.1490000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.0800000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0282000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9522.8000000000,
+            "GroupId":"2016-07-22 04:00:00.0",
+            "DateTime":"2016-07-22T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-21T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8636.6400000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":3050.0000000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":223476.1000000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8767.4140000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":17.0500000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0282000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9551.0000000000,
+            "GroupId":"2016-07-21 04:00:00.0",
+            "DateTime":"2016-07-21T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-20T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":8381.7900000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2960.0000000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":216658.0000000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":8499.9270000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":16.8200000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0268000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":9522.8000000000,
+            "GroupId":"2016-07-20 04:00:00.0",
+            "DateTime":"2016-07-20T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   },
+   "2016-07-19T04:00:00Z":{
+      "5290":[
+         {
+            "Value":"SA2405",
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5290,
+            "TagName":"CH UnionGas - Contract ID"
+         }
+      ],
+      "5291":[
+         {
+            "Value":"02405868",
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5291,
+            "TagName":"CH UnionGas - Meter ID"
+         }
+      ],
+      "5292":[
+         {
+            "Value":"Steam Pwr Gen/Grain Drying",
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5292,
+            "TagName":"CH UnionGas - Meter Name"
+         }
+      ],
+      "5293":[
+         {
+            "Value":7560.6000000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5293,
+            "TagName":"CH UnionGas - Uncorrected M3"
+         }
+      ],
+      "5294":[
+         {
+            "Value":2670.0000000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5294,
+            "TagName":"CH UnionGas - Uncorrected CCF"
+         }
+      ],
+      "5295":[
+         {
+            "Value":198006.8000000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5295,
+            "TagName":"CH UnionGas - Corrected M3"
+         }
+      ],
+      "5296":[
+         {
+            "Value":7768.2030000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5296,
+            "TagName":"CH UnionGas - Corrected GJ"
+         }
+      ],
+      "5297":[
+         {
+            "Value":16.6900000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5297,
+            "TagName":"CH UnionGas - Temperature C"
+         }
+      ],
+      "5298":[
+         {
+            "Value":1.0305000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5298,
+            "TagName":"CH UnionGas - Super X Factor"
+         }
+      ],
+      "5299":[
+         {
+            "Value":10199.0000000000,
+            "GroupId":"2016-07-19 04:00:00.0",
+            "DateTime":"2016-07-19T04:00:00Z",
+            "TagId":5299,
+            "TagName":"CH UnionGas - Peak Hour Volume"
+         }
+      ]
+   }
+}

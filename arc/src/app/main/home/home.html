@@ -1,0 +1,297 @@
+<div id="dashboard-server">
+
+    <!-- WIDGETS -->
+    <div id="widgets" >
+        
+        <!-- WIDGET GROUP -->
+        <div class="widget-group" layout="row" flex="100" layout-wrap>
+            <div class="widget-group" layout="column" flex="55" layout-wrap flex-gt-md="55" flex-gt-xs="100">
+                
+                <div class="widget-group" layout="row" flex="100" layout-wrap>
+
+                    <!-- IMPORTER LIST WIDHET -->
+                    <ms-widget flippable="false" layout="column" flex="100" flex-gt-md="100">
+                        <!-- Front -->
+                        <ms-widget-front class="importWidget white-bg">
+                            <div id="data_tables">
+                                <style type="text/css">
+                                </style>
+                                <script type="text/javascript">
+                                </script>
+                                <table id="data_table-list" datatable="" class="table row-border hover dataTable" dt-instance="vm.dtInstance" dt-options="vm.arcHomeDTOptions" dt-columns="vm.arcHomeDTColumns" dt-disable-deep-watchers="true">
+                                    <thead>
+                                    <tr>
+                                        <th><span translate="ARC.DATA_SOURCE">Source</span></th>
+                                        <th><span translate="ARC.LOCATION">LOCATION</span></th>
+                                        <th><span translate="ARC.LAST_RUN">LAST RUN</span></th>
+                                        <th><span translate="ARC.LAST_DATA">LAST DATA</span></th>
+                                        <th><span translate="ARC.STATUS">STATUS</span></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </ms-widget-front>
+                        <!-- / Front -->
+                    </ms-widget>
+                </div>
+                <!-- / IMPORTER LIST WIDHET -->
+            </div>
+               
+
+            <div class="widget-group" layout="column" flex="45" layout-wrap flex-gt-md="45" flex-gt-xs="100">
+                <div class="widget-group" layout="row" flex="30" layout-wrap>
+
+                    <!-- VALUE COUNT WIDGET -->
+                    <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="50">
+
+                        <!-- Front -->
+                        <ms-widget-front class="p-16 pink-400-bg white-fg">
+                            <div class="pb-24" layout="row" layout-align="space-between center">
+                                <div layout="row" layout-align="start center">
+                                    <md-icon class="m-0 mr-8" md-font-icon="icon-source-pull"></md-icon>
+                                    <div class="h3"><span translate="ARC.VALUES_PROCESSED"> Values</span></div>
+                                </div>
+                                    <md-button aria-label="more" class="md-icon-button"
+                                               ng-click="flipWidget()" aria-label="Flip widget">
+                                        <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                                    </md-button>          
+                            </div>
+                            <div class="pb-24" layout="row" layout-align="start center">
+                                <div class="md-display-1">{{vm.counter | number: 0}}</div>
+                            </div>
+
+                            <md-progress-linear md-mode="determinate"
+                                                value="{{vm.percentage}}"></md-progress-linear>
+                        </ms-widget-front>
+                        <!-- / Front -->
+
+                        <!-- Back -->
+                        <ms-widget-back class="p-16 pr-32 pink-400-bg white-fg">
+                            <div class="flip-to-front">
+                                <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                                    <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                                </md-button>
+                            </div>
+
+                            <div>
+                                {{vm.importerValCount.detail}}
+                            </div>
+                        </ms-widget-back>
+                        <!-- / Back -->
+
+                    </ms-widget>
+                    <!-- / VALUE COUNT WIDGET -->
+
+
+
+                    <!-- UPTIME WIDGET-->
+                    <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="50">
+                        <!-- Front -->
+                        <ms-widget-front class="p-16 cyan-600-bg white-fg">
+                            <div class="pb-24" layout="row" layout-align="space-between center">
+                                <div layout="row" layout-align="start center">
+                                    <md-icon class="m-0 mr-8" md-font-icon="icon-server-network"></md-icon>
+                                    <div class="h3"><span translate="ARC.UPTIME">UPTIME<span></div>
+                                </div>
+
+                                    <md-button aria-label="more" class="md-icon-button"
+                                               ng-click="flipWidget()">
+                                        <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                                    </md-button>
+                            </div>
+
+                            <div class="pb-6" layout="row" layout-align="start end">
+                                <div class="h1">{{vm.uptime.value.days}}</div>
+                                <div translate="ARC.DAYS" class="h2 pl-8 pr-8 secondary-text"> days, </div>
+                                <div class="h1">{{vm.uptime.value.hours}}</div>
+                                <div translate="ARC.HOURS" class="h2 pl-8 secondary-text"> hours</div>
+                            </div>
+                            <div class="pb-24" layout="row" layout-align="start end">
+                                <div class="h1">{{vm.uptime.value.minutes}}</div>
+                                <div translate="ARC.MINUTES" class="h2 pl-8 pr-8 secondary-text"> minutes, </div>
+                                <div class="h1">{{vm.uptime.value.seconds}}</div>
+                                <div translate="ARC.SECONDS" class="h2 pl-8 secondary-text"> seconds</div>
+                            </div>
+
+                            <div translate="ARC.SINCE_LAST_DOWNTIME" class="h3 secondary-text">{{vm.uptime.footnote}}</div>
+                        </ms-widget-front>
+                        <!-- / Front -->
+
+                        <!-- Back -->
+                        <ms-widget-back class="p-16 pr-32 cyan-600-bg white-fg">
+                            <div class="flip-to-front">
+                                <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                                    <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                                </md-button>
+                            </div>
+
+                            <div>
+                                {{vm.uptime.detail}}
+                            </div>
+                        </ms-widget-back>
+                        <!-- / Back -->
+
+                    </ms-widget>
+                    <!-- / UPTIME WIDGET-->
+
+                </div> <!-- / ROW -->
+
+
+                <div class="widget-group" layout="row" flex="30" layout-wrap>
+                    <!-- CPU WIDGET -->
+                    <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="50">
+
+                        <!-- Front -->
+                        <ms-widget-front class="p-16 teal-400-bg white-fg">
+                            <div layout="row" layout-align="space-between center">
+                                <div layout="row" layout-align="start center">
+                                    <md-icon class="m-0 mr-8" md-font-icon="icon-thermometer-lines"></md-icon>
+                                    <div class="h3"><span translate="ARC.CPU">CPU </span> <span translate="ARC.UTLIZATION"> UTILIZATION</span></div>
+                                </div>
+                                    <md-button aria-label="more" class="md-icon-button"
+                                               ng-click="flipWidget()">
+                                        <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                                    </md-button>               
+                            </div>
+
+                            <div class="md-display-1">{{vm.CPUChart.value | number: 2}} %</div>
+                             <div layout="row" layout-align="start end">
+                                <div layout="column" flex="25">
+                                    <div id="core" class="h4 secondary-text"> core-1 </div>
+                                    <div id="core1" class="h2">{{vm.CPU_0tfappsvc01 | number: 1}}</div>
+                                </div>
+                                <div layout="column" flex="25">
+                                    <div id="core" class="h4 secondary-text"> core-2 </div>
+                                    <div id="core1" class="h2">{{vm.CPU_1tfappsvc01 | number: 1}}</div>
+                                </div>
+                                 <div layout="column" flex="25">
+                                    <div id="core" class="h4 secondary-text"> core-3 </div>
+                                    <div id="core1" class="h2">{{vm.CPU_2tfappsvc01 | number: 1}}</div>
+                                </div>
+                                 <div layout="column" flex="25">
+                                    <div id="core" class="h4 secondary-text"> core-4 </div>
+                                    <div id="core1" class="h2">{{vm.CPU_3tfappsvc01 | number: 1}}</div>
+                                </div>
+                            </div>
+                            <div class="chart-fill-16">
+                                <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                                      config="vm.CPUChart.chart.config"
+                                      options="vm.CPUChart.chart.options"
+                                      data="vm.CPUChart.chart.data"></nvd3>
+                            </div>
+                        </ms-widget-front>
+                        <!-- / Front -->
+
+                        <!-- Back -->
+                        <ms-widget-back class="p-16 pr-32 teal-400-bg white-fg">
+                            <div class="flip-to-front">
+                                <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                                    <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                                </md-button>
+                            </div>
+
+                            <div>
+                                {{vm.cpuUtilization.detail}}
+                            </div>
+                        </ms-widget-back>
+                        <!-- / Back -->
+
+                    </ms-widget>
+                    <!-- / CPU WIDGET -->
+
+                    <!-- RAM WIDGET -->
+                    <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="50">
+                        <!-- Front -->
+                        <ms-widget-front class="p-16 indigo-400-bg white-fg">
+                            <div layout="row" layout-align="space-between center">
+                                <div layout="row" layout-align="start center">
+                                    <md-icon class="m-0 mr-8" md-font-icon="icon-memory"></md-icon>
+                                    <div class="h3"><span translate="ARC.RAM">RAM </span> <span translate="ARC.UTLIZATION"> UTILIZATION</span></div>
+                                </div>
+                                    <md-button aria-label="more" class="md-icon-button"
+                                               ng-click="flipWidget()">
+                                        <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                                    </md-button>
+                            </div>
+                             <div class="md-display-1">{{vm.ramChart.value | number: 2}} %</div>
+                             <div layout="row" layout-align="start end">
+                                <div layout="column" flex="25">
+                                    <div translate="ARC.TOTAL" id="core" class="h4 secondary-text"> total </div>
+                                    <div id="core1" class="h2">{{vm.RAMUTottfappsvc01 | number: 0}} <span class="h4 secondary-text">gb</span></div>
+                                </div>
+                                <div layout="column" flex="25">
+                                    <div translate="ARC.USED"id="core" class="h4 secondary-text"> used </div>
+                                    <div id="core1" class="h2">{{vm.RAMUsedtfappsvc01 | number: 1}}</div>
+                                </div>
+                                <div layout="column" flex="25">
+                                    <div translate="ARC.FREE" id="core" class="h4 secondary-text"> free </div>
+                                    <div id="core1" class="h2">{{vm.RAMFreetfappsvc01 | number: 1}}</div>
+                                </div>
+                                 <div layout="column" flex="25">
+                                    <div translate="ARC.SWAP" id="core" class="h4 secondary-text"> swap </div>
+                                    <div id="core1" class="h2">{{vm.RAMSwapfappsvc01 | number: 1}}</div>
+                                </div>
+                            </div>
+                            <div class="chart-fill-16">
+                                <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                                      config="vm.ramChart.chart.config"
+                                      options="vm.ramChart.chart.options"
+                                      data="vm.ramChart.chart.data"></nvd3>
+                            </div>
+                        </ms-widget-front>
+                        <!-- / Front -->
+
+                        <!-- Back -->
+                        <ms-widget-back class="p-16 pr-32 teal-400-bg white-fg">
+                            <div class="flip-to-front">
+                                <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                                    <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                                </md-button>
+                            </div>
+
+                            <div>
+                                {{vm.ramUtilization.detail}}
+                            </div>
+                        </ms-widget-back>
+                        <!-- / Back -->
+
+                    </ms-widget>
+                    <!-- / RAM WIDGET -->
+                </div>
+
+                <div class="widget-group" layout="row" flex="40" layout-wrap>
+
+                    <!-- IMPORTER CPU WIDGET -->
+                    <ms-widget flippable="false" layout="row" flex="100">
+
+                        <!-- Front -->
+                        <ms-widget-front class="p-16 white-bg">
+                            <div class="pb-24" layout="row" layout-align="space-between center">
+                                <div class="h3">(Import Server) - <span translate="ARC.AVERAGE">Avg</span> <span translate="ARC.CPU"> CPU</span> <span translate="ARC.UTLIZATION"> UTILIZATION</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{vm.CPUtfarcimp01 | number: 2}} %</div>
+
+                                    <md-button aria-label="more" class="md-icon-button"
+                                               ng-click="refreshWidget()">
+                                        <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                                    </md-button>
+                           
+                            </div>
+
+                            <div>
+                                <nvd3 class="h-140 remove-x-lines remove-opacity"
+                                      config="vm.cpuImporterChart.chart.config"
+                                      options="vm.cpuImporterChart.chart.options"
+                                      data="vm.cpuImporterChart.chart.data"></nvd3>
+                            </div>
+
+                        </ms-widget-front>
+                        <!-- / Front -->
+
+                    </ms-widget>
+                    <!-- / IMPORTER CPU WIDGET -->
+
+                </div>
+            </div>
+        </div>
+        <!-- / WIDGET GROUP -->
+
+</div>

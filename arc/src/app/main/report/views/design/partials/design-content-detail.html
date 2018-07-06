@@ -1,0 +1,203 @@
+<!-- MENU -->
+<div class="list-menu md-grey-50-bg border pl-25" layout="row">
+    <div>
+        <div>
+            <md-input-container>
+                <label translate="ARC.PRECISION">Precision</label>
+                <md-select class="simplified" ng-model="vm.designdetail.Precision" placeholder="Precision"
+                translate-attr-placeholder="ARC.PRECISION">
+                    <md-option value="0">No Decimals</md-option>
+                    <md-option value="1">1 Decimal</md-option>
+                    <md-option value="2">2 Decimal</md-option>
+                    <md-option value="3">3 Decimal</md-option>
+                    <md-option value="4">4 Decimal</md-option>
+                    <md-option value="5">5 Decimal</md-option>
+                    <md-option value="6">6 Decimal</md-option>
+                    <md-option value="7">7 Decimal</md-option>
+                    <md-option value="8">8 Decimal</md-option>
+                </md-select>
+              </md-input-container>
+        </div>
+    </div>
+    <div>
+        <div>
+            <md-input-container>
+                <label translate="ARC.GAP_FILL">Gap Fill</label>
+                <md-select class="simplified" ng-model="vm.designdetail.GapFillMethodId"
+                translate-attr-placeholder="ARC.GAP_FILL">
+                    <md-option value="4" translate="ARC.SHOW_BLANK">Show Blank Space</md-option>
+                    <md-option value="3" translate="ARC.SHOW_ZERO">Show a Zero</md-option>
+                    <md-option value="1" translate="ARC.CARRY_LAST">Carry Last value</md-option>
+                </md-select>
+              </md-input-container>
+        </div>
+    </div>
+    <div>
+        <div>
+            <md-input-container ng-hide="vm.importerType == 1">
+                <label translate="ARC.LABEL_PERIOD">Label Period</label>
+                <md-select class="simplified" ng-model="vm.designdetail.LabelPeriodStart"
+                translate-attr-placeholder="ARC.LABEL_PERIOD">
+                    <md-option value="true" translate="ARC.START_TIME">Start Time</md-option>
+                    <md-option value="false" translate="ARC.END_TIME">End Time</md-option>
+                </md-select>
+              </md-input-container>
+        </div>
+    </div>
+    <div>
+        <div>
+            <md-input-container ng-hide="vm.importerType == 1">
+                <label translate="ARC.BUCKET_TYPE">Bucket Type</label>
+                <md-select class="simplified" ng-model="vm.designdetail.BucketTypeId"
+                translate-attr-placeholder="ARC.BUCKET_TYPE">
+                    <div ng-if="vm.importerType == 1 ">
+                        <md-option value="1" translate="ARC.RAW">Raw Data</md-option>
+                    </div>
+                     <div ng-if="vm.importerType == 4">
+                        <md-option value="4" translate="ARC.TEN_MINUTE">10 minute</md-option>
+                        <md-option value="5" translate="ARC.30_MINUTE">30 Minute</md-option>
+                        <md-option value="6" translate="ARC.60_MINUTE">60 Minute</md-option>
+                        <md-option value="7" translate="ARC.12_HOUR">12 Hour</md-option>
+                        <md-option value="8" translate="ARC.24_HOUR">24 Hour</md-option>
+                    </div>
+                    <div ng-if="vm.importerType == 0">
+                        <md-option value="9" translate="ARC.SELECT_TAGS_FIRST">Select some tags first</md-option>
+                    </div>
+                </md-select>
+              </md-input-container>
+        </div>
+    </div>
+    <div>
+        <div class="where_used">
+                <md-button class="md-accent" ng-click="vm.whereUsedDialog($event, vm.designdetail)" translate="ARC.WHERE_USED">where used</md-button>
+        </div>
+    </div>
+</div>
+<div class="selected-header md-grey-50-bg border pl-10" layout="row">
+    <span class="index"></span>
+    <span class="name pl-5" translate="ARC.TAG_NAME">Tag Name</span>
+    <span class="desc pr-5" translate="ARC.DESCRIPTION">Description</span>
+    <span class="importer"></span>
+    <div class="aspects">
+        <span class="aspects" translate="ARC.ASPECTS">Aspects</span>
+    </div>
+    <span class="trash"></span>
+</div>
+
+<!--  MENU -- >
+
+<div ng-hide="vm.loadingFlag" id="loadingDiv">
+  <div class="loading-img" align="middle">
+      <img src="assets/images/loading/Loading.gif" align="middle"/>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="list-content white-bg" layout="row">
+    <md-list flex
+    	dnd-list="vm.designdetail.ReportDataItemSet"
+        class="selected-cards">
+
+        <md-list-item ng-repeat="detail in vm.designdetail.ReportDataItemSet"
+            dnd-draggable="detail"
+            dnd-moved="vm.designdetail.ReportDataItemSet.splice($index, 1)"
+            class="selected-card border brad-2 pl-5"
+            ng-class="{'calculated-list-item' : vm.isCalculatedTag(detail) || detail.Tag.TagTypeId==8} ">
+                <div class="index">
+                    <a ui-sref="app.tagdetail({id:detail.Tag.Id})" target="height=600,width=800" md-autofocus>
+                        <span class="goto-on-list fa fa-external-link">
+                            <md-tooltip><span translate="ARC.OPEN_TAG_DETAILS_PAGE">open tag details page</span></md-tooltip>
+                        </span>
+                    </a>
+                    <span ng-if="detail.Tag.LastValue!=Null" class="preview-on-list fa fa-eye" ng-click="vm.getTagResults($event,detail.Tag)">
+                        <md-tooltip><span translate="ARC.PREVIEW_DATA">preview data</span></md-tooltip>
+                    </span>
+                    <span ng-if="detail.Tag.LastValue==Null" class="preview_null-on-list fa fa-eye-slash" ng-click="vm.getTagResults($event,detail.Tag)">
+                        <md-tooltip><span translate="ARC.NO_DATA_IN_LAST_30_DAYS">no data in last 30 days</span></md-tooltip>
+                    </span>
+                </div>
+                <span class="name">{{ detail.Tag.Name }}</span>
+                <span class="desc pr-5">{{ detail.Tag.Description }}</span>
+                <div class="importer">
+                    <span class="open-importer fa fa-tags" ng-click="vm.openImporter(detail)">
+                        <md-tooltip>
+                            <span translate="ARC.OPEN_IMPPORTER_VIEW">open importer view</span>
+                        </md-tooltip>
+                    </span>
+                </div>
+                <div class="aspects"  >
+                    <button class="aspectbutton" ng-hide="vm.isBucketed" ng-class="{aspectbuttonselected: !vm.isBucketed}" >Raw
+                    <input type="checkbox" hidden />
+                    <md-tooltip><span translate="ARC.RAW">Raw Tag Values</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed" ng-class="{aspectbuttonselected: detail.ShowLastValue}" ng-mousedown="detail.ShowLastValue = !detail.ShowLastValue">Lst
+                    <input type="checkbox" hidden ng-model="detail.ShowLastValue" ng-change="detail.ShowLastValue = !detail.ShowLastValue"/>
+                    <md-tooltip><span translate="ARC.LAST_VALUE_IN_BUCKET">last value in bucket</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed ||  detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowWeightedAverage}" ng-mousedown="detail.ShowWeightedAverage = !detail.ShowWeightedAverage">Wvg
+                    <input type="checkbox" hidden ng-model="detail.ShowWeightedAverage" ng-change="detail.ShowWeightedAverage = !detail.ShowWeightedAverage"/>
+                    <md-tooltip><span translate="ARC.WEIGHTED_AVERAGE">weighted average</span></md-tooltip>
+
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowAverage}" ng-mousedown="detail.ShowAverage = !detail.ShowAverage">Avg
+                    <input type="checkbox" hidden ng-model="detail.ShowAverage" ng-change="detail.ShowAverage = !detail.ShowAverage"/>
+                    <md-tooltip><span translate="ARC.AVERAGE">average</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowMinimum}" ng-mousedown="detail.ShowMinimum = !detail.ShowMinimum">Min
+                    <input type="checkbox" hidden ng-model="detail.ShowMinimum" ng-change="detail.ShowMinimum = !detail.ShowMinimum"/>
+                    <md-tooltip><span translate="ARC.MINIMUM_VALUE">minimum value</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowMaximum}" ng-mousedown="detail.ShowMaximum = !detail.ShowMaximum">Max
+                    <input type="checkbox" hidden ng-model="detail.ShowMaximum" ng-change="detail.ShowMaximum = !detail.ShowMaximum"/>
+                    <md-tooltip><span translate="ARC.MAXIMUM_VALUE">maximum value</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowTotal}" ng-mousedown="detail.ShowTotal = !detail.ShowTotal">Tot
+                    <input type="checkbox" hidden ng-model="detail.ShowTotal" ng-change="detail.ShowTotal = !detail.ShowTotal"/>
+                    <md-tooltip><span translate="ARC.SUM_OF_ALL_VALUES">sum of all values</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowCount}" ng-mousedown="detail.ShowCount = !detail.ShowCount">Cnt
+                    <input type="checkbox" hidden ng-model="detail.ShowCount" ng-change="detail.ShowCount = !detail.ShowCount"/>
+                    <md-tooltip><span translate="ARC.COUNT_OF_ALL_VALUES">count of all values</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowRange}" ng-mousedown="detail.ShowRange = !detail.ShowRange">Rng
+                    <input type="checkbox" hidden ng-model="detail.ShowRange" ng-change="detail.ShowRange = !detail.ShowRange"/>
+                    <md-tooltip><span translate="ARC.RANGE_BETWEEN_MIN_AND_MAX">range between min and max</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowVariance}" ng-mousedown="detail.ShowVariance = !detail.ShowVariance">Var
+                    <input type="checkbox" hidden ng-model="detail.ShowVariance" ng-change="detail.ShowVariance = !detail.ShowVariance"/>
+                    <md-tooltip><span translate="ARC.VARAINCE_IS_SQUARE_OF_STANDARD_DEVIATION">variance is square of standard deviation</span></md-tooltip>
+                    </button>
+
+                    <button class="aspectbutton" ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" ng-class="{aspectbuttonselected: detail.ShowStandardDeviation}" ng-mousedown="detail.ShowStandardDeviation = !detail.ShowStandardDeviation">SDV
+                    <input type="checkbox" hidden ng-model="detail.ShowStandardDeviation" ng-change="detail.ShowStandardDeviation = !detail.ShowStandardDeviation"/>
+                    <md-tooltip><span translate="ARC.STANDARD_DEVIATION">standard deviation</span></md-tooltip>
+                    </button>
+                      <!--ng-init="bucketTotalizer=(!vm.isBucketed || !vm.totalizerFlag )" -->
+                    <button ng-disabled="!vm.isBucketed || detail.Tag.TagTypeId==8" class="aspectbutton" ng-class="{aspectbuttonselected:detail.ShowTotalizer}" ng-click="vm.makeTotalizerTagDialog($event,detail.Tag, $index)" ng-mousedown="detail.ShowTotalizer = !detail.ShowTotalizer" >TTZ
+                    <input type="checkbox" hidden ng-model="detail.ShowTotalizer" ng-change="detail.ShowTotalizer = !detail.ShowTotalizer" />
+                    <md-tooltip><span translate="ARC.TOTALIZER">Totalizer</span></md-tooltip>
+                    </button>
+
+
+                </div>
+                 <div class="trashcan">
+                    <span class="trash-icon fa fa-trash" ng-click="vm.deleteTagFromReport($event, $index, detail)"></span>
+                    <md-tooltip><span translate="ARC.REMOVE_TAG">remove tag</span></md-tooltip>
+                </div>
+        </md-list-item>
+        <md-list-item class="dndPlaceholder"><span translate="ARC.DROP_HERE">drop here</span></md-list-item>
+        <md-list-item  style="max-height:100px;"></md-list-item>
+
+    </md-list>
+</div>
+
+<!-- / CONTENT -->

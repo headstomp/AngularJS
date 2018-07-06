@@ -1,0 +1,31 @@
+<!-- HEADER -->
+<div class="header md-whiteframe-2dp">
+  
+    <!-- SELECTED COLOR -->
+        <md-list-item class="selected-color">
+            <p class="title" flex>Selected Bucket: </p>
+            <div ng-if="!vm.design.settings.bucket" class="preview md-background-bg md-hue-1"></div>
+            <div ng-if="vm.design.settings.bucket" class="preview"
+                 ng-class="'md-'+vm.design.settings.bucket+'-bg'">
+                {{vm.design.settings.bucket}}
+            </div>
+            <md-button class="md-icon-button" ng-click="vm.design.settings.bucket = ''" aria-label="Default Color">
+                <md-icon md-font-icon="icon-close-circle"></md-icon>
+            </md-button>
+        </md-list-item>
+    <!-- / SELECTED COLOR -->
+
+    <md-list flex>
+    <md-subheader class="md-no-sticky" translate="ARC.BUCKET_SIZE">Bucket Size</md-subheader>
+  
+    <md-list-item>
+   <md-radio-group ng-model="selected">
+          <md-radio-button ng-repeat="bucket in vm.buckets" ng-value="bucket.selected" aria-label="{{ bucket.type }}">
+                 <H4>{{ bucket.type }} {{ bucket.period }}</H4>
+          </md-radio-button>
+        </md-radio-group>
+    </md-list-item>
+ 
+
+</div>
+<!-- / CONTENT-->

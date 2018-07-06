@@ -1,0 +1,29 @@
+<md-input-container>
+    <md-select
+        multiple="false"
+        placeholder="Search for a Tag Type &hellip;"
+        ng-model="vm.tagType"
+        ng-disabled="vm.disabled"
+        ng-required="vm.required"
+        md-on-open="vm.updateTagTypeSet()">
+        <div>
+            <md-select-header>
+                <input 
+                    type="search"
+                    placeholder="Search for a Tag Type &hellip;"
+                    ng-model="vm.search"
+                    ng-model-options="{ debounce: 250 }"
+                    ng-keydown="$event.stopPropagation()" />
+            </md-select-header>
+            <md-option
+                ng-repeat="tagType in vm.tagTypeSet track by tagType.Id" 
+                ng-value="tagType"
+                ng-selected="vm.tagType.Id === tagType.Id">
+                <div>
+                    <span class="fa fa-fw fa-map-sitemap"></span>
+                    <span ng-bind="vm.formatTagType(tagType)"></span>
+                </div>
+            </md-option>
+        </div>
+    </md-select>
+</md-input-container>

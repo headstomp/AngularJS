@@ -1,0 +1,87 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" ng-class="'md-'+vm.settings.color+'-bg'" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="1">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                           ng-class="''+vm.settings.color+'-700-bg'"
+                           ui-sref="app.design({id:'-1'})"
+                           aria-label="apps button" translate-attr-aria-label="ARC.NEW">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.NEW">New</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+            <!-- DESIGN NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="3" flex-order-xs="3"
+                 flex-xs="50">
+                <span translate="ARC.MY_DESIGNS">My Designs</span>
+            </div>
+            <!-- / DESIGN NAME -->
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+                 <!-- HELP BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('designList')">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+                <!-- / HELP BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+        </div>
+    </div>
+    <!-- / HEADER -->
+
+
+    <!-- PAGE CONTENT -->
+    <div class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content fullpage-datatable">
+            <div class="white-bg md-whiteframe-4dp">
+
+                <div id="data_tables">
+                    <style type="text/css">
+                    </style>
+                    <script type="text/javascript">
+                    </script>
+                    <table id="data_table-list" datatable="" class="table row-border hover dataTable" dt-instance="vm.arcDesignsdtInstance" dt-options="vm.arcDesignsDTOptions" dt-columns="vm.arcDesignsColumns" dt-disable-deep-watchers="true">
+                        <thead>
+                        <tr>
+                            <th><span translate="ARC.ID">ID</span></th>
+                            <th><span translate="ARC.NAME">NAME</span></th>
+                            <th><span translate="ARC.DESCRIPTION">DESCRIPTION</span></th>
+                            <th><span translate="ARC.LOCATION">LOCATION</span></th>
+                            <th><span translate="ARC.OWNER">OWNER</span></th>
+                            <th><span translate="ARC.ACTIONS">ACTIONS</span></th>
+                        </tr>
+                        </thead>
+                    </table>
+
+
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- / PAGE CONTENT -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

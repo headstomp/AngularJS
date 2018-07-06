@@ -1,0 +1,223 @@
+<md-dialog flex="60">
+    <md-toolbar class="md-accent md-hue-2">
+        <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+            <span class="title" flex>
+                <span class="fa fa-fw fa-book"></span>
+                <span>Expression Catalog</span>
+            </span>
+            <span flex="nogrow">
+                <md-button class="md-icon-button" ng-click="vm.close()">
+                    <span class="fa fa-fw fa-times"></span>
+                </md-button>
+            </span>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        
+        <div class="line-heightened">
+
+            <div>
+                <h2>Area(A)</h2>
+                <div>
+                    <strong>Square</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('pow(any_side,2)')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span>pow (<var>any_side</var>,2)</span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Rectangle</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('length*width')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span><var>length</var> * <var>width</var></span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Parallelogram</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('base*height')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span><var>base</var> * <var>height</var></span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Triangle</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('1/2*pow(radius,2)')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span><var>1/2</var> * <var>base</var> * <var>height</var></span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Circle</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('pi*pow(radius,2')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span>pi * pow(<var>radius</var>,2)</span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Trapezoid</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('1/2*(base_1+base_2)*height')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span>1/2 * (<var>base_1</var> + <var>base_2</var>)* height</span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Sphere</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('4*pi*pow(radius,2)')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span>4 * pi * pow(<var>radius</var>,2)</span>
+                    </code>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <h2>Volume(V)</h2>
+                <div>
+                    <strong>Cube</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('pow(any_side,3)')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span>pow(<var>any_side</var>,3)</span>
+                    </code>
+                </div>
+                <div>
+                    <strong>Rectangular Container</strong>
+                    <a href="javascript:void(0)" ng-click="vm.setExpression('length*width*height')">
+                        <span>Use this expression</span>
+                        <span class="fa fa-fw fa-external-link"></span>
+                    </a>
+                </div>
+                <div>
+                    <code class="block">
+                        <span><var>length</var> * <var>width</var> * <var>height</var></span>
+                    </code>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+
+
+            
+            <div>
+                <strong>Density</strong>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('mass / volume')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            <div>
+                <code class="block">
+                    <span><var>mass</var> / <var>volume</var></span>
+                </code>
+            </div>
+            
+            <hr />
+            
+            <div>
+                <strong>Farenheit to Celcius</strong>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('(farenheit - 32) * (5 / 9)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            <div>
+                <code class="block">
+                    <span>(<var>farenheit</var> - 32) * (5 / 9)</span>
+                </code>
+            </div>
+            
+            <hr />
+            
+            <div>
+                <strong>Celcius to Farenheit</strong>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('(celcius * (9 / 5)) + 32')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            <div>
+                <code class="block">
+                    <span>(<var>celcius</var> * (9 / 5)) + 32</span>
+                </code>
+            </div>
+            
+            <hr />
+            
+            <div>
+                <strong>Binomial Coefficient</strong>
+                <a href="javascript:void(0)" ng-click="vm.setExpression('n! / (k! * (n - k)!)')">
+                    <span>Use this expression</span>
+                    <span class="fa fa-fw fa-external-link"></span>
+                </a>
+            </div>
+            <div>
+                <code class="block">
+                    <span><var>n</var>! / (<var>k</var>! * (<var>n</var> - <var>k</var>)!)</span>
+                </code>
+            </div>
+
+        </div>
+        
+        <style type="text/css">
+            .line-heightened {
+                line-height: 200%;
+            }
+            code.block { 
+                display: block;
+                text-align: center;
+                font-size: 125%;
+                padding: 10px;
+            }
+            code * { line-height: 125%; }
+            code var { 
+                color: #090;
+                font-size: 125%;
+            }
+            .md-whiteframe-4dp, .md-whiteframe-z2 { overflow-x: auto !important; }
+        </style>
+        
+    </md-dialog-content>
+</md-dialog>

@@ -1,0 +1,247 @@
+
+#importTagTableValues tbody th, #importTagTableValues tbody td {
+    padding: 1px 5px;
+    background-color: white;
+
+}
+
+#importTagTableValues thead th {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #FAFAFA;
+
+}
+
+#download-button a {
+
+
+        &:hover{
+        background-color: rgba(158,158,158,0.2);
+        border-radius: 2px;
+        text-decoration:none;
+        width:120px;
+        height:inherit;
+        }
+
+  }
+
+
+
+
+
+
+#importers{
+
+
+
+    .tag-list-wrapper {
+
+        width:100%;
+
+
+        .list {
+
+            background-color: #FFFFFF;
+            color: #000;
+            border-radius: 2px;
+            transition: box-shadow 150ms ease;
+            width:100%;
+
+            .list-header {
+                height: 45px;
+                min-height: 45px;
+                width:100%;
+                margin-left:-8px;
+                border-bottom-width: 0px;
+
+
+
+                .search {
+
+
+                }
+
+                .list-header-option-button {
+
+                    .md-button {
+                    }
+                }
+            }
+            .list-menu {
+                height: 50px;
+                min-height: 50px;
+                max-height: 50px;
+            }
+
+            .list-content {
+                width:100%;
+                position: relative;
+                overflow: hidden;
+                background-color: #FAFAFA;
+
+
+                .list-cards {
+                    position: relative;
+                    min-width: 125px;
+                    padding: 0 10px;
+                    overflow-y: auto;
+                    height: 100%;
+                    border-top: 1px solid rgba(0, 0, 0, 0.12);
+
+                    .list-card {
+                        position: relative;
+                        width: 100%;
+                        margin-left: -4px;
+                        margin-top: 4px;
+                        margin-bottom: 2px;
+                        margin-right: 5px;
+                        background-color: white;
+                        overflow: hidden;
+
+                        cursor: pointer;
+                        height: 53px;
+                        min-height: 53px;
+                        max-height: 53px;
+
+                            &:hover {
+                                background-color: #FAFAFA;
+                            }
+                             &:checked {
+                                background-color: #BBDEFB;
+                            }
+                        .name {
+
+                            position: relative;
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 4px;
+                                left: 6px;
+                            overflow: hidden;
+                        }
+                        .description {
+                            text-transform: uppercase;
+                            color: black;
+                            font-size: 10px;
+                            line-height: 9px;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 20px;
+                                left: 6px;
+                            overflow: hidden;
+                        }
+                        .edit {
+                                z-index: 100;
+                                color: grey;
+                                position: absolute;
+                                    top: 4px;
+                                    right: 4px;
+                                    cursor: pointer;
+                            }
+                        .goto {
+                            z-index: 100;
+                            color: grey;
+                            position: absolute;
+                                top: 20px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                    }
+                    .list-card-selected {
+                        position: relative;
+                        width: 100%;
+                        margin-left: -4px;
+                        margin-top: 4px;
+                        margin-bottom: 2px;
+                        margin-right: 5px;
+                        background-color: #FAFAFA;
+                        overflow: hidden;
+
+                        cursor: pointer;
+                        height: 53px;
+                        min-height: 53px;
+                        max-height: 53px;
+
+                            &:hover {
+                                background-color: #FAFAFA;
+                            }
+                             &:checked {
+                                background-color: #BBDEFB;
+                            }
+                        .name {
+
+                            position: relative;
+                            text-transform: uppercase;
+                            color: #0091EA;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 4px;
+                                left: 6px;
+                            overflow: hidden;
+                        }
+                        .description {
+                            text-transform: uppercase;
+                            color: #0091EA;
+                            font-size: 10px;
+                            line-height: 9px;
+                            padding-right: 20px;
+                            position: absolute;
+                                top: 20px;
+                                left: 6px;
+                            overflow: hidden;
+                        }
+                        .edit {
+                                z-index: 100;
+                                color: grey;
+                                position: absolute;
+                                    top: 4px;
+                                    right: 4px;
+                                    cursor: pointer;
+                            }
+                        .goto {
+                            z-index: 100;
+                            color: grey;
+                            position: absolute;
+                                top: 20px;
+                                right: 4px;
+                                cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .list-footer {
+                height:15px;
+                min-height: 15px;
+
+            }
+
+        }
+    }
+}
+
+.link{
+
+    cursor: pointer;
+    color: #039BE5;
+     &:hover {
+                text-decoration: underline;
+            }
+}
+
+
+#button{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    float: right;
+}
+
+#f_right{
+    float: right;
+}
+
+

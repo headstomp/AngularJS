@@ -1,0 +1,69 @@
+<!-- SIDENAV HEADER -->
+<md-toolbar class="md-accent" ng-class="'md-'+vm.settings.color+'-bg'">
+    <div class="md-toolbar-tools">
+
+        <md-button ng-hide="vm.selectedMenu === 'REPORT.SETTINGS'" class="md-icon-button"
+                   ng-click="vm.selectedMenu = 'REPORT.SETTINGS'" aria-label="back"
+                   translate-attr-aria-label="ARC.BACK">
+            <md-icon md-font-icon="icon-arrow-left"></md-icon>
+        </md-button>
+
+        <span flex class="menu-title" translate="{{vm.selectedMenu}}">{{vm.selectedMenu}}</span>
+    </div>
+</md-toolbar>
+<!-- / SIDENAV HEADER -->
+<!-- SETTINGS -->
+<md-content ng-show="vm.selectedMenu === 'REPORT.SETTINGS'" class="animate-slide-right settings" ms-scroll ms-sidenav-helper>
+    <md-list>
+
+        <md-list-item class="item" ng-click="vm.selectedMenu = 'REPORT.REPORT_COLOR'">
+            <md-icon md-font-icon="icon-basket-fill" class="s18"></md-icon>
+            <p class="title" translate="ARC.REPORT_COLOR">Report Color</p>
+        </md-list-item>
+
+        <md-list-item class="item" ng-click="vm.selectedMenu = 'REPORT.REPORT_LABELS'">
+            <md-icon md-font-icon="icon-image-area" class="s18"></md-icon>
+            <p class="title" translate="ARC.REPORT_LABELS">Report Labels</p>
+        </md-list-item>
+
+        <md-list-item class="item" ng-click="vm.selectedMenu = 'REPORT.BUCKET_SIZE'">
+            <md-icon md-font-icon="icon-basket-fill" class="s18"></md-icon>
+            <p class="title" translate="ARC.BUCKET_SIZE">Bucket Size</p>
+        </md-list-item>
+
+        <md-divider></md-divider>
+
+        <md-list-item class="item">
+            <md-icon md-font-icon="icon-content-copy" class="s18"></md-icon>
+            <p class="title" translate="ARC.COPY_DESIGN">Copy Design</p>
+        </md-list-item>
+
+        <md-list-item class="item">
+            <md-icon md-font-icon="icon-delete" class="s18"></md-icon>
+            <p class="title" translate="ARC.DELETE_DESIGN">Delete Design</p>
+        </md-list-item>
+    </md-list>
+</md-content>
+<!-- / SETTINGS -->
+<!-- COLOR -->
+<md-content ng-show="vm.selectedMenu === 'REPORT.REPORT_COLOR'" class="animate-slide-left app-color-selection">
+    <div layout="column" layout-fill
+         ng-include="'app/main/report/views/design/sidenavs/settings/menus/color/color-menu.html'">
+    </div>
+</md-content>
+<!-- COLOR -->
+<!-- REPORT LABELS -->
+<md-content ng-show="vm.selectedMenu === 'REPORT.REPORT_LABELS'" class="animate-slide-left app-color-selection">
+    <div layout="column" layout-fill
+         ng-include="'app/main/report/views/design/sidenavs/settings/menus/metadata/metadata-menu.html'">
+    </div>
+</md-content>
+<!-- REPORT LABELS -->
+<!-- BUCKET SIZE -->
+<md-content ng-show="vm.selectedMenu === 'REPORT.BUCKET_SIZE'" class="animate-slide-left app-color-selection">
+    <div layout="column" layout-fill
+         ng-include="'app/main/report/views/design/sidenavs/settings/menus/bucket/bucket-menu.html'">
+    </div>
+</md-content>
+<!-- BUCKET SIZE -->
+<!-- MEMBERS -->

@@ -1,0 +1,219 @@
+<div id="appheader-reports" class="page-layout simple fullwidth doc-page element-doc-page">
+    <!-- HEADER -->
+    <div class="header md-accent-bg" ng-class="'md-'+vm.settings.color+'-bg'" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="1">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                           ng-class="''+vm.settings.color+'-700-bg'"
+                           ui-sref="{{ vm.previousListStateName || 'app.designlist' }}"
+                           aria-label="apps button" translate-attr-aria-label="ARC.LIST">
+                    <md-icon md-font-icon="icon-format-list-bulleted" class="icon"></md-icon>
+                    <span ng-bind="vm.previousListStateNameLabel">List</span>
+                </md-button>
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                           ng-class="''+vm.settings.color+'-700-bg'"
+                           ui-sref="app.design({id:'-1'})"
+                           aria-label="apps button" translate-attr-aria-label="ARC.NEW">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.NEW">New</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+            <!-- DESIGN NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="3" flex-order-xs="3"
+                 flex-xs="50">
+                <span>
+                    {{ vm.designdetail.Name }}<br>
+                    {{ vm.designdetail.Owner }}
+                </span>
+            </div>
+
+
+            <!-- / DESIGN NAME -->
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+                <!-- HELP BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.gotoHelp('design')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-help-circle"></md-icon>
+                    <md-tooltip><span translate="ARC.HELP">Help</span></md-tooltip>
+                </md-button>
+                <!-- / HELP BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+        </div>
+    </div>
+    <!-- / HEADER -->
+    
+    <!--
+    <div ng-hide="vm.loadingFlag" id="loadingDiv">
+      <div class="loading-img" align="middle">
+          <img src="assets/images/loading/Loading.gif" align="middle"/>
+      </div>
+    </div>
+    -->
+    
+    <!-- PAGE CONTENT -->
+
+    <div id="appcontent" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+        <div class="content">
+            <div id="board" layout="row">
+
+                <!-- IF DETAILS VIEV LOAD SIDE BAR -->
+                <div ng-if="vm.contenView === 'details' && vm.detailView == 'tags'"
+                     ng-include="'app/main/report/views/design/partials/design-taglist.html'"
+                     class="tag-list-wrapper" layout="column">
+                </div>
+                <!-- load either the report details or the tag list depending on button click -->
+                <div ng-show="vm.contenView === 'details' && vm.detailView == 'more'"
+                     ng-include="'app/main/report/views/design/partials/design-header.html'"
+                     class="tag-list-wrapper" layout="column">
+                </div>
+                <!-- / IF DETAILS VIEW LOAD SIDEBAR -->
+                <!-- CONTENT WINDOW-->
+                <div class="data-list-wrapper" layout="column">
+                    <div class="list md-whiteframe-1dp" layout="column">
+                        <!-- HEADER -->
+                        <div class="list-header" layout="row" layout-align="space-between center">
+                            <!-- load the proper button depending on the state -->
+                            <div class="list-header-name">
+                                <md-button ng-if="vm.contenView == 'details' && vm.detailView != 'tags'"
+                                           ng-click="vm.getImporterList()">
+                                    <md-icon class="blue-500-fg" md-font-icon="icon-backburger"></md-icon>
+                                    <span class="blue-500-fg" translate="ARC.TAGS">Tags</span>
+                                </md-button>
+                                <md-button ng-if="vm.contenView == 'details' && vm.detailView == 'tags'"
+                                           ng-click="vm.detailView='more'">
+                                    <md-icon class="blue-500-fg" md-font-icon="icon-backburger"></md-icon>
+                                    <span class="blue-500-fg" translate="ARC.DETAILS">Details</span>
+                                </md-button>
+                            </div>
+                            <!-- change look of tab button depending on  the state -->
+                                <section layout="row" layout-align="center center">
+                                    <div class='tabs'>
+                                        <span ng-if="vm.reportOwner==true" ng-class="vm.contenView == 'details' && 'active' || 'selected'"
+                                               ng-click="vm.contenView = 'details'"
+                                               translate="ARC.DETAILS">Details
+                                        </span>
+                                        <span ng-if="vm.isLive == false" ng-class="vm.contenView == 'table' && 'active' || 'selected'"
+                                                   ng-click="vm.contenView = 'table'"
+                                                   translate="ARC.TABLE_VIEW">Table View{{vm.isLive}}
+                                        </span>
+                                        <span ng-if="vm.isLive == true" ng-class="vm.contenView == 'table' && 'active' || 'selected'"
+                                                   ng-click="vm.refreshData(vm.designdetail.Id); vm.contenView = 'table'"
+                                                   translate="ARC.TABLE_VIEW">Table View
+                                        </span>
+                                        <span ng-if="vm.isLive == false" ng-class="vm.contenView == 'chart' && 'active' || 'selected'"
+                                                   ng-click="vm.contenView = 'chart'; vm.getChartData()"
+                                                   translate="ARC.CHART_VIEW">Chart View
+                                        </span>
+                                        <span ng-if="vm.isLive == true" ng-class="vm.contenView == 'chart' && 'active' || 'selected'"
+                                                   ng-click="vm.refreshData(vm.designdetail.Id); vm.getChartData(); vm.contenView = 'chart'"
+                                                   translate="ARC.CHART_VIEW">Chart View
+                                        </span>
+                                        <span ng-if="vm.reportOwner==true" ng-class="vm.contenView == 'publish-settings' && 'active' || 'selected'"
+                                                   ng-click="vm.contenView = 'publish-settings'"
+                                                   translate="ARC.PUBLISH">Publish
+                                        </span>
+                                        <span ng-if="vm.isBucketed==true" ng-class="vm.contenView == 'live-data' && 'active' || 'selected'"
+                                                   ng-click="vm.refreshDataLive(vm.designdetail.Id); vm.contenView = 'live-data'; vm.chartTypeLive = 'table';"
+                                                   translate="ARC.LIVE_DATA"> Live
+                                        </span>
+                                    </div>
+                                </section><br>
+                            <div>
+                                <!-- Refresh Data SAVED -->
+                                <md-button ng-if="vm.reportOwner==true && vm.isLive == false"
+                                           ng-disabled="vm.disableRefreshButton"
+                                           md-offset="0 24px" class="md-fab md-mini"
+                                           ng-click="vm.refreshData(vm.designdetail.Id)">
+                                    <md-icon md-font-icon="icon-refresh"></md-icon>
+                                    <md-tooltip><span translate="ARC.REFRESH">refresh</span></md-tooltip>
+                                </md-button>
+                                <!-- Refresh Data LIVE -->
+                                <md-button ng-if="vm.reportOwner==true && vm.isLive == true"
+                                           ng-disabled="vm.disableRefreshButton"
+                                           md-offset="0 24px" class="md-fab md-mini"
+                                           ng-click="vm.refreshDataLive(vm.designdetail.Id)">
+                                    <md-icon md-font-icon="icon-refresh"></md-icon>
+                                    <md-tooltip><span translate="ARC.REFRESH">refresh</span></md-tooltip>
+                                </md-button>
+
+                                <!-- Delete Report -->
+                                <md-button ng-if="vm.reportOwner==true" md-offset="0 24px" class="md-fab md-mini"
+                                           ng-click="vm.deleteReport($event, vm.designdetail.Id)">
+                                    <md-icon md-font-icon="icon-trash"></md-icon>
+                                    <md-tooltip><span translate="ARC.DELETE">Delete</span></md-tooltip>
+                                </md-button>
+                                <!-- Dupe Report -->
+                                <md-button md-offset="0 24px" class="md-fab md-mini"
+                                           ng-click="vm.openDupeDialog($event, vm.designdetail)">
+                                    <md-icon md-font-icon="icon-window-restore"></md-icon>
+                                    <md-tooltip><span translate="ARC.DUPLICATE_REPORT">Duplicate Report</span></md-tooltip>
+                                </md-button>
+
+
+                                <!-- Save Report -->
+                                <md-button ng-if="vm.reportOwner==true" md-offset="0 24px"
+                                           ng-disabled ="vm.disableSaveButton"
+                                           class="md-fab md-mini"
+                                           ng-click="vm.putReportDetails()"
+                                           ui-sref="app.design({id:vm.designdetail.Id})">
+                                    <md-icon md-font-icon="icon-floppy"></md-icon>
+                                    <md-tooltip><span translate="ARC.SAVE">Save</span></md-tooltip>
+                                </md-button>
+                            </div>
+                        </div>
+                        <!-- / HEADER -->
+                        <!-- LOAD THE APP DEPENDING ON TAB CLICKED -->
+                        <!-- DETAILS VIEV -->
+                        <div ng-if="vm.contenView === 'details'"
+                             ng-include="'app/main/report/views/design/partials/design-content-detail.html'"
+                             class="list-content" layout="column">
+                        </div>
+                        <!-- / DETAILS VIEW -->
+                        <!-- TABLE - DEFAULT VIEW -->
+                        <div ng-show="vm.contenView ==='table'"
+                             ng-include="'app/main/report/views/design/partials/design-content-table.html'"
+                             class="list-content" layout="column">
+                        </div>
+                        <!-- TABLE -  DEFAULT VIEW -->
+                        <!-- CHART VIEW -->
+                        <div ng-if="vm.contenView ==='chart'"
+                             ng-include="'app/main/report/views/design/partials/design-content-chart.html'"
+                             class="list-chart" layout="column">>
+                        </div>
+                        <!-- / CHART VIEW -->
+                        <!-- PUBLISH SETTINGS -->
+                        <div ng-if="vm.contenView ==='publish-settings'"
+                             ng-include="'app/main/report/views/design/partials/design-content-publish-settings.html'"
+                             class="list-publish" layout="column">
+                        </div>
+                        <!-- / PUBLISH SETTINGS -->
+                        <!-- CUSTOM -->
+                        <div ng-if="vm.contenView ==='live-data'"
+                             ng-include="'app/main/report/views/design/partials/design-content-live-data.html'"
+                             class="list-chart" layout="column">
+                        </div>
+                        <!-- / CUSTOM -->
+                        <!-- FOOTER-->
+                        <div class="list-footer"></div>
+                        <!-- / FOOTER-->
+                    </div>
+                </div>
+                <!-- / CONTENT WINDOW -->
+            </div>
+        </div>
+    </div>
+    <!-- / PAGE CONTENT -->
+    <!-- SETTINGS SIDENAV -->
+    <md-sidenav class="settings-sidenav md-sidenav-right" md-component-id="settings-sidenav"
+                ng-include="'app/main/report/views/design/sidenavs/settings/design-settings-sidenav.html'"
+                ms-sidenav-helper>
+    </md-sidenav>
+    <!-- / SETTINGS SIDENAV -->
+</div>

@@ -1,0 +1,124 @@
+<md-dialog aria-label="{{vm.values.Name}}">
+  <form ng-cloak>
+    <md-toolbar class="md-accent md-hue-2">
+      <div class="md-toolbar-tools">
+        <h2>Last 30 Days Data for Tag:  {{vm.values.Id}} - {{vm.values.Name}}</h2>
+        <span flex></span>
+
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <!-- VALUE LIST -->
+        <ms-widget flippable="false" class="result-wrapper" layout="column" flex="100">
+            <!-- Front -->
+            <ms-widget-front class="white-bg">
+                <div class="tag-data-header pl-16 grey-50-bg border-bottom" layout="row" layout-align="start center">
+
+                    <span class="h4 secondary-text">Selected Tag:</span>
+                    <span class="h3 ml-8 blue-600-fg font-weight-500 text-truncate">{{ vm.values.Name }}</span>
+
+                    <span class="h4 pl-24 secondary-text">Bucket:</span>
+                    <span class="h3 ml-8 grey-600-fg font-weight-500 text-truncate">{{ vm.aspectTitle }}</span>
+
+                    <md-menu ng-if="vm.tagType == 'red'">
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdOpenMenu($event)">
+                            <md-icon md-font-icon="icon-chevron-double-down"></md-icon>
+                        </md-button>
+                        <md-menu-content width="1">
+                            <md-menu-item>
+                                <md-button ng-click="vm.tagResult(4)" aria-label="10 Minute">
+                                    10 minute
+                                </md-button>
+                                <md-button ng-click="vm.tagResult(5)" aria-label="30 Minute">
+                                    30 minute
+                                </md-button>
+                                <md-button ng-click="vm.tagResult(6)" aria-label="60 minute">
+                                    60 minute
+                                </md-button>
+                                <md-button ng-click="vm.tagResult(7)" aria-label="12 hour">
+                                    12 hour
+                                </md-button>
+                                <md-button ng-click="vm.tagResult(8)" aria-label="24 hour">
+                                    24 hour
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <table id="tag-values" class="dataTable row-border hover" datatable="ng"
+                       dt-options="vm.dtOptions">
+                    <thead>
+                        <tr ng-if="vm.tagType == 'red'">
+                            <th ng-repeat="value in vm.redAspects" class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">{{ value }}</span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr ng-if="vm.tagType == 'raw'">
+                            <th ng-repeat="value in vm.rawAspects" class="secondary-text">
+                                <div class="table-header">
+                                    <span class="column-title">{{ value }}</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="value in vm.tagResultSet">
+                            <td>
+                                {{value.DateTime | date:'yyyy-MM-dd HH:mm'}}
+                            </td>
+                            <td ng-if="vm.tagType == 'raw'">
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'N'">{{ value.Value | number:4}}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'I'">{{ value.Value | number:0 }}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'S'">{{ value.Value }}</span>
+                                <span class="pr-5" ng-if="vm.typeCheck(value.Value, value.MD5) == 'F'">
+                                    <a ng-href="{{ BASE_URL }}/File/{{value.MD5}}?filename={{value.Value}}">
+                                        {{value.Value}}
+                                    </a>
+                                </span>
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.LastValue | number:2}}
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.Minimum | number:2}}
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.Maximum | number:2}}
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.Average | number:2}}
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.WeightedAverage | number:2}}
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.Variance | number:2}}
+                            </td>
+                            <td ng-if="vm.tagType == 'red'">
+                                {{value.StandardDeviation | number:2}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ms-widget-front>
+            <!-- / Front -->
+        </ms-widget>
+        <!-- / VALUE LIST -->
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button ui-sref="app.tagdetail({id:vm.values.Id})" target="_blank" md-autofocus>
+        More at Tag Details Page
+      </md-button>
+      <span flex></span>
+      <md-button ng-click="vm.closeDialog()">
+        Close
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

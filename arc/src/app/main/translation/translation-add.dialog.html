@@ -1,0 +1,34 @@
+<md-dialog aria-label="{{vm.values.Name}}">
+    <form ng-cloak>
+    <md-toolbar class="md-accent md-hue-2">
+        <div class="md-toolbar-tools">
+            <h2>Add Translation</h2>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            
+            <md-input-container class="md-block">
+                <label>Key</label>
+                <input required name="Name" ng-model="vm.sourceKey" ng-change="vm.sourceKey = vm.sourceKey.toUpperCase();" md-autofocus />
+            </md-input-container>
+            
+            <md-input-container class="md-block" ng-repeat="supportedLanguage in vm.supportedLanguageSet">
+                <label ng-bind="supportedLanguage.Name"></label>
+                <input required name="Name" ng-model="vm.targetMap[supportedLanguage.LanguageCode].target" />
+            </md-input-container>
+            
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+        <md-button class="md-raised" ng-click="vm.cancel();">
+            <span>Cancel</span>
+        </md-button>
+        <span flex></span>
+        <md-button type="submit" class="send-button md-accent md-raised" ng-click="vm.create();">
+            <span>Create</span>
+        </md-button>
+    </md-dialog-actions>
+    </form>
+</md-dialog>

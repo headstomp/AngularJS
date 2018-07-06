@@ -1,0 +1,89 @@
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<h3>Build an Export</h3>
+</div>
+<div class="modal-body">
+	<div>
+		<div class="btn-group">
+			<button class="btn" ng-class="{'btn-primary':isCurrentStep(0)}" ng-click="setCurrentStep(0)">One</button>
+			<button class="btn" ng-class="{'btn-primary':isCurrentStep(1)}" ng-click="setCurrentStep(1)">Two</button>
+			<button class="btn" ng-class="{'btn-primary':isCurrentStep(2)}" ng-click="setCurrentStep(2)">Three</button>
+		</div>	
+		<div ng-switch="getCurrentStep()" ng-animate="'wave'" class="slide-frame">
+			<div ng-switch-when="one">
+				<fieldset>  
+					<div class="control-group">  
+						<label class="control-label" for="firstName">Export Name</label>  
+						<div class="controls">  
+							<input type="text" class="input-xlarge" id="firstName" ng-model="wizard.firstName">  
+						</div>  
+					</div>
+					<div class="control-group">  
+						<label class="control-label" for="lastName">Export Description</label>  
+						<div class="controls">
+							<input type="text" class="input-xlarge" id="lastName" ng-model="wizard.lastName">  
+						</div>  
+					</div> 
+					<div class="control-group">  
+						<div class="controls">  
+							<label class="checkbox">  
+								<input type="checkbox" id="optionsCheckbox" ng-model="wizard.coming">  
+								Should this data be reduced to a daily average?
+							</label>  
+						</div>  
+					</div>  
+				</fieldset>  
+			</div>
+			<div ng-switch-when="two">
+				<fieldset>  
+					<div class="control-group">  
+						<label class="control-label" for="select01">How Many Data Points do you need?</label>  
+						<div class="controls">  
+							<select id="select01" ng-model="wizard.tacos">  
+								<option>Unlimited</option>  
+								<option>2</option>  
+								<option>3</option>  
+								<option>4</option>  
+								<option>5</option>  
+							</select>  
+						</div>  
+					</div>  
+					<div class="control-group">  
+						<label class="control-label" for="multiSelect">Data Items?</label>  
+						<div class="controls">  
+							<select multiple="multiple" id="multiSelect" ng-model="wizard.toppings">  
+								<option>Chatham - Daily Fuel Production</option>  
+								<option>Chatham - Daily Ind. Production</option>  
+								<option>Chatham - Daily DDG Production</option>  
+								<option>Chatham - Daily Corn Oil Production</option>  
+								<option>Chatham - Daily Co2 Production</option>  
+							</select>  
+						</div>  
+					</div>  
+				</fieldset>  
+			</div>
+			<div ng-switch-when="three">
+				<fieldset>  
+					<div class="control-group">  
+						<h4>Not going to do it</h4>
+						<div class="row">
+							<div class="span2">
+								<img src="images/thanks.jpg" alt="Thanks!" width="160px" height="120px">
+							</div>
+							<div class="span4">
+						  		<p><strong>Daily Reduction:</strong> {{wizard.coming}}</p>
+						  		<p><strong>Data Count:</strong> {{wizard.tacos}}</p>
+						  		<p><strong>Data Items:</strong></p>
+								<div class="badge badge-success pull-left" ng-repeat="topping in wizard.toppings">{{topping}}</div>
+						  	</div>
+						</div>
+					</div>  
+				</fieldset>  
+			</div>
+		</div>	
+	</div>
+</div>	
+<div class="modal-footer">
+	<a class="btn" ng-click="handlePrevious()" ng-show="!isFirstStep()">Back</a>
+	<a class="btn btn-primary" ng-click="handleNext(dismiss)">{{getNextLabel()}}</a>
+</div>	

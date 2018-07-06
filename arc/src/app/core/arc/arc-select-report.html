@@ -1,0 +1,29 @@
+<md-input-container>
+    <md-select 
+        multiple="false"
+        placeholder="Search for a Report &hellip;"
+        ng-model="vm.report"
+        ng-disabled="vm.disabled"
+        ng-required="vm.required"
+        md-on-open="vm.updateReportSet()">
+        <div>
+            <md-select-header>
+                <input 
+                    type="search"
+                    placeholder="Search for a Report &hellip;"
+                    ng-model="vm.search"
+                    ng-model-options="{ debounce: 250 }"
+                    ng-keydown="$event.stopPropagation()" />
+            </md-select-header>
+            <md-option
+                ng-repeat="report in vm.reportSet track by report.Id"
+                ng-value="report"
+                ng-selected="report.Id === vm.report.Id">
+                <div>
+                    <span class="fa fa-fw fa-table"></span>
+                    <span ng-bind="vm.formatReport(report)"></span>
+                </div>
+            </md-option>
+        </div>
+    </md-select>
+</md-input-container>

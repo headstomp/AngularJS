@@ -1,0 +1,136 @@
+
+<!-- MENU -->
+<div class="list-menu md-grey-50-bg border pl-25" layout="row">
+    <div>
+        <div>
+            <md-button ng-class="vm.chartTypeLive == 'table' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.chartTypeLive = 'table'"
+                translate="ARC.TABLE">Table
+            </md-button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <md-button ng-class="vm.chartTypeLive == 'line' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.chartTypeLive = 'line'"
+                translate="ARC.LINE_CHART">Line Chart
+            </md-button>
+        </div>
+    </div>
+     <div>
+        <div>
+            <md-button ng-class="vm.chartTypeLive == 'bar' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.chartTypeLive = 'bar'"
+                translate="ARC.BAR_CHART">Bar Chart
+            </md-button>
+        </div>
+    </div>
+    <div>
+
+        <div class="where_used">
+            <md-button class="md-accent" ng-click="vm.whereUsedDialog($event, vm.designdetail)" translate="ARC.WHERE_USED">where used</md-button>
+        </div>
+    </div>
+</div>
+<!-- / MENU -- >
+<!-- CONTENT -->
+<div ng-show="vm.chartTypeLive == 'bar'" class="list-content white-bg" layout="row">
+    <div class="report-chart">
+        <div layout="row">
+            <div class="reportcharts">
+                <div class="card">
+                    <hc-bar-chart options="vm.chartConfig1">Placeholder for generic chart</bar-chart>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div ng-show="vm.chartTypeLive == 'line'" class="list-content white-bg" layout="row">
+    <div class="report-chart">
+        <div layout="row">
+            <div class="reportcharts">
+                <div class="card">
+                    <hc-stock-chart options="vm.chartConfig">Placeholder for generic chart</hc-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-if="vm.chartTypeLive == 'table'" class="list-content" layout="column">
+    <div class="list-card" ms-scroll>
+        <table id="tag-data-live" class="dataTable row-border hover" datatable="ng"  dt-instance="vm.arcReportTagLiveDTInstance" dt-options="vm.dtOptionsLive">
+            <thead>
+
+                <tr>
+                    <th class="secondary-text">
+                        <div class="table-header">
+                            <span class="column-title" translate="ARC.TAG_NAME">Tag Name</span>
+                        </div>
+                    </th>
+                    <th colspan="{{vm.updateColumnSpan(detail.Tag.Id)}}" class="secondary-text" ng-class=" {'md-blue-100-bg': vm.calculatedTagClass(detail)}" ng-repeat="detail in vm.designdetail.ReportDataItemSet">
+                        <div class="table-header">
+                            <span class="column-title">{{ detail.Tag.Name }}
+                                <a ui-sref="app.tagdetail({id:detail.Tag.Id})" target="height=600,width=800" md-autofocus>
+                                    <span class="goto-on-list fa fa-external-link">
+                                        <md-tooltip><span translate="ARC.OPEN_TAG_DETAILS_PAGE">open tag details page</span></md-tooltip>
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="secondary-text">
+                        <div class="table-header">
+                            <span class="column-title" translate="ARC.DATE">Date</span>
+                        </div>
+                    </th>
+                    <th class="secondary-text" ng-repeat="aspect in ::vm.updateAspectHeader() track by $index" ng-model="key">
+                        <div class="table-header">
+                            <span class="column-title">{{ aspect }}</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  ng-repeat="(key, Value) in vm.aspectData" ng-model="key">
+                    <td>
+                        {{ key | date:'yyyy-MM-dd HH:mm'}}
+                    </td>
+                    <!--ng-class=" {'md-blue-100-bg': vm.calculatedTagClass(val)}"-->
+                    <td ng-repeat="val in ::Value" ng-model="key">
+
+                        <span style="cursor: pointer;" ng-click="vm.openEditDialog($event, val)" class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'N' && val.Raw == 1">
+                            {{ val.Value | number:vm.designdetail.Precision }}
+                        </span>
+                        <span class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'N' && val.Raw != 1">
+                            {{ val.Value | number:vm.designdetail.Precision }}
+                        </span>
+
+                        <span style="cursor: pointer;" ng-click="vm.openEditDialog($event, val)" class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'I' && val.Raw == 1">
+                            {{ val.Value | number:0 }}
+                        </span>
+                        <span class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'I' && val.Raw != 1">
+                            {{ val.Value | number:0 }}
+                        </span>
+
+                        <span style="cursor: pointer;" ng-click="vm.openEditDialog($event, val)" class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'S' && val.Raw == 1">
+                            {{ val.Value }}
+                        </span>
+                        <span class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'S' && val.Raw != 1">
+                            {{ val.Value }}
+                        </span>
+
+                        <span class="pr-5" ng-if="vm.typeCheck(val.Value, val.hash) == 'F'">
+                            <a ng-href="{{ BASE_URL }}/File/{{val.hash}}?filename={{val.Value}}" target="_blank">
+                                {{val.Value}}
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

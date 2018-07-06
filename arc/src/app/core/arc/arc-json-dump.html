@@ -1,0 +1,16 @@
+<div class="json-dump-container">
+    <textarea ng-readonly="true">{{vm.object | json}}</textarea>
+    <style type="text/css">
+        .json-dump-container { 
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .json-dump-container > textarea {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            font-family: monospace;
+        }
+    </style>
+</div>

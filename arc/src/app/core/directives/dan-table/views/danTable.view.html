@@ -1,0 +1,85 @@
+﻿<section>
+    <style type="text/css" scoped="scoped">
+        th, td {
+            padding: 4px 10px !important;
+        }
+
+        th {
+            line-height: 32px;
+        }
+
+            .pagination *, th, th * {
+                color: #888;
+            }
+
+                th, th * {
+                    font-weight: bold;
+                }
+
+        .pagination * {
+            font-weight: normal;
+        }
+    </style>
+    <table class="dataTable dataTable row-border hover">
+        <thead>
+            <tr>
+                <th ng-repeat="col in colSet">
+                    <button ng-if="col.isSortable" type="button" ng-click="setOrder(col)">
+                        <span ng-bind="col.name"></span>
+                        <span style="font-size: 8px; padding: 6px; top: -2px; position: relative;">
+                            <span ng-if="order.key === col.key && order.direction === 0" class="fa fa-chevron-up"></span>
+                            <span ng-if="order.key === col.key && order.direction === 1" class="fa fa-chevron-down"></span>
+                        </span>
+                    </button>
+                    <span ng-if="!col.isSortable" ng-bind="col.name"></span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in (visSet | dtLimit : limit) track by $index" ng-click="invokeRow(row)">
+                <td ng-repeat="col in colSet" ng-style="{ width: col.width }">
+                    <span ng-bind-html="row[col.key] | dtFormat : col : row"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div layout="row" layout-align="space-between start">
+        <md-content layout-padding>
+            <div>
+                <label>
+                    <span>Showing </span>
+                    <select ng-model="limit.count" ng-options="count for count in [10, 20, 50]"></select>
+                    <span>of</span>
+                    <span ng-bind="visSet.length"></span>
+                    <span>entries, page</span>
+                    <span ng-bind="limit.index + 1"></span>
+                    <span>of</span>
+                    <span ng-bind="limit.final + 1"></span>
+                </label>
+            </div>
+        </md-content>
+        <div>
+            <div class="pagination">
+                <div class="dataTables_paginate paging_simple">
+                    <md-button class="md-primary" ng-click="(limit.index = 0)">
+                        <span class="fa fa-fast-backward"></span>
+                        <span>First</span>
+                    </md-button>
+                    <md-button class="md-primary" ng-click="(limit.index = limit.index - 1)">
+                        <span class="fa fa-backward"></span>
+                        <span>Previous</span>
+                    </md-button>
+                    <md-button class="md-primary" ng-click="(limit.index = limit.index + 1)">
+                        <span>Next</span>
+                        <span class="fa fa-forward"></span>
+                    </md-button>
+                    <md-button class="md-primary" ng-click="(limit.index = limit.final)">
+                        <span>Last</span>
+                        <span class="fa fa-fast-forward"></span>
+                    </md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

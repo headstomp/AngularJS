@@ -1,0 +1,63 @@
+<div class="chart-view">
+<div class="list-menu md-grey-50-bg border pl-25" layout="row">
+    <div>
+        <div>
+            <md-button ng-class="vm.chartType == 'line' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.chartType = 'line'"
+                translate="ARC.LINE_CHART">Line Chart
+            </md-button>
+        </div>
+    </div>
+     <div>
+        <div>
+            <md-button ng-class="vm.chartType == 'bar' && 'md-accent' || 'md-primary md-hue-1'"
+                ng-click="vm.chartType = 'bar'"
+                translate="ARC.BAR_CHART">Bar Chart
+            </md-button>
+        </div>
+    </div>
+    <div>
+        <div class="where_used">
+            <md-button class="md-accent" ng-click="vm.whereUsedDialog($event, vm.designdetail)" translate="ARC.WHERE_USED">where used</md-button>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- / MENU -- >
+
+<!-- CONTENT -->
+<div ng-hide="vm.chartType == 'bar'" class="list-content white-bg" layout="row">
+    <div class="report-chart">
+        <div layout="row">
+          <div class="reportcharts">
+            <div  class="reportchart">
+                    <div class="card">
+                          <hc-stock-chart-report options="vm.chartConfig || {}">Placeholder for generic chart</hc-stock-chart-report>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-hide="vm.chartType == 'line'" class="list-content white-bg" layout="row">
+    <div class="report-chart">
+        <div layout="row">
+            <div class="reportcharts">
+                <div class="reportchart">
+                    <div class="card">
+                        <hc-bar-chart-report options="vm.chartConfig1 || {}">Placeholder for generic chart</hc-bar-chart-report>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

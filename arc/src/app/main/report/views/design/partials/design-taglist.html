@@ -1,0 +1,110 @@
+<div class="list" layout="column">
+
+<!-- HEADER -->
+    <div class="list-header" layout="row" layout-align="space-between center">
+
+        <arc-select-tag-source
+            tag-source="vm.tagSource"
+            where-set="vm.tagSourceWhereSet"
+            format="%Location.Name &bull; %DisplayName">
+        </arc-select-tag-source>
+
+    </div>
+    <!-- / HEADER -->
+
+<!-- MENU -->
+<div class="list-menu md-grey-50-bg border pl-10" layout="row" layout-align="space-between center">
+
+    <!-- SEARCH -->
+    <div ng-if="vm.tagSourceId" class= "border white-bg p-5 mr-10" layout="row" layout-align="start center" flex>
+        <div class="search white-bg" flex layout="row" layout-align="start center">
+            <md-icon md-font-icon="icon-magnify" class="icon s18">
+            </md-icon>
+            <input ng-change="vm.limit=500" class="p-15 white-bg" flex ng-model="vm.tagSearch" ng-model-options="{ debounce: 400 }" type="text" placeholder="Search Tags" translate="" translate-attr-placeholder="ARC.SEARCH_TAGS">
+        </div>
+    </div>
+    <div ng-if="!vm.tagSourceId">
+        <md-list-item style="max-height:100px;"><span translate="ARC.SELECT_A_TAG_SOURCE_FROM_ABOVE_FIRST">select a tag source from above first.</span></md-list-item>
+    </div>
+
+    <!-- / SEARCH -->
+
+</div>
+
+
+<!-- / MENU -- >
+
+
+    <!-- CONTENT -->
+<div class="list-content" layout="column">
+    <md-list class="list-cards" ms-scroll>
+
+        <md-list-item class="calculator-tag" dnd-draggable="vm.copyCalculatedTagDetails()" ng-if="vm.designdetail.IsBucketed !== false"
+        dnd-dragend="vm.calculateTag($event, vm.calculatedTag, vm.designdetail)"
+
+        class="list-card md-whiteframe-2dp">
+
+        <md-list-item class="calculator-tag"
+                      dnd-draggable="vm.copyCalculatedTagDetails()"
+                      dnd-dragend="vm.calculateTag($event, vm.calculatedTag, vm.designdetail)"
+                      ng-if="vm.designdetail.IsBucketed !== false">
+
+            <div class="calculator-tag-listitem" layout="row" layout-wrap>
+                <div class="calculator-tag-name" flex="90"><span translate="CREATE_CALCULATED_TAG">Create Calculated Tag</span></div>
+                <div flex="5"><span class="fa fa-lg fa-calculator" aria-hidden="true"></span></div>
+            </div>
+        </md-list-item>
+        <md-list-item class="list-card md-whiteframe-2dp"
+                      ng-repeat="tag in vm.tagSet | filter: vm.tagSearch track by $index"
+                      dnd-draggable="vm.copyDraggedTagDetails(tag)"
+
+                      dnd-dragstart="vm.checkIfTaginList(vm.copyTag.TagId)"
+                      dnd-canceled = "vm.dragCancelled()"
+                      class="list-card md-whiteframe-2dp">
+
+
+
+            <span class="name text-truncate" md-highlight-text="vm.tagSearch" md-highlight-flags="i">{{ tag.Name }}</span>
+            <span class="description" md-highlight-text="vm.tagSearch" md-highlight-flags="i">{{ tag.Description }}</span>
+            <span class="edit fa fa-edit" ng-click="vm.openEditTagDetailsDialog($event, tag,$index)">
+                <md-tooltip>
+                    <span translate="ARC.EDIT_TAG_DETAILS">Edit tag details</span>
+                </md-tooltip>
+            </span>
+            <a ui-sref="app.tagdetail({id:tag.Id})" target="_blank" md-autofocus>
+                <span class="goto fa fa-external-link">
+                    <md-tooltip>
+                        <span translate="ARC.GOTO_DETAILS_PAGE">Go to details page</span>
+                    </md-tooltip>
+                </span>
+            </a>
+            <span ng-if="tag.LastValue!=Null" class="preview fa fa-eye" ng-click="vm.getTagResults($event,tag)">
+                <md-tooltip>
+                    <span translate="ARC.DATA_PREVIEW">Data preview</span>
+                </md-tooltip>
+            </span>
+            <span ng-if="tag.LastValue==Null" class="preview_null fa fa-eye-slash" ng-click="vm.getTagResults($event,tag)">
+                <md-tooltip>
+                    <span translate="ARC.NO_DATA_TO_PREVIEW">No data to preview</span>
+                </md-tooltip>
+            </span>
+        </md-list-item>
+    </md-list>
+</div>
+    <!-- / CONTENT -->
+
+    <div ng-if="vm.tagSet.length === 0 && vm.tagSourceId" >
+        <md-list-item style="max-height:100px;">
+            <span class="fa fa-fw fa-warning"></span>
+            <span>&nbsp;</span>
+            <span translate="ARC.NO_SEARCH_RESULTS_FOUND">Search resulted in 0 tags found</span>
+        </md-list-item>
+    </div>
+
+    <!-- FOOTER-->
+    <div class="list-footer">
+
+    </div>
+    <!-- / FOOTER-->
+
+</div>

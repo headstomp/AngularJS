@@ -1,0 +1,59 @@
+
+
+/*SNAP DRAWERS and CONTENT*/
+
+.snap-content {
+  position: absolute;
+  height: auto;
+  top: 52px;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+}
+
+.snap-content {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #E0E0E0  ;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #E0E0E0  ;
+   background-color: white;
+   padding: 10px;
+}
+
+.snap-drawers {
+  position: absolute;
+  overflow: auto;
+  background-color: #F8F8F8;
+  padding: 10px;
+  height: auto;
+  top: 52px;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.drawer-list{
+  width: 240px; 
+  height: 95%;
+}
+
+
+
+

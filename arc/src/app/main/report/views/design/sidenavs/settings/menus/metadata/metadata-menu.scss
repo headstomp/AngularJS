@@ -1,0 +1,42 @@
+#metadata {
+
+    .settings-sidenav {
+
+        md-content {
+
+            &.app-color-selection {
+                overflow-x: hidden;
+                overflow-y: hidden;
+
+                .header {
+
+                    .selected-color {
+
+                        .title {
+                            padding-left: 16px;
+                        }
+
+                        .preview {
+                            padding: 8px 16px;
+                        }
+                    }
+                }
+
+                .content {
+                    position: relative;
+
+                    md-list {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .inputdemoErrors .inputErrorsApp {
+      min-height: 48px; }
+    .inputdemoErrors md-input-container > p {
+      font-size: 0.8em;
+      text-align: left;
+      width: 100%; }
+}

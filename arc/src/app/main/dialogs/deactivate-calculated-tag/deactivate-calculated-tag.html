@@ -1,0 +1,36 @@
+<md-dialog class="edit-dialog" aria-label="Edit">
+    <form name="vm.editValueForm" class="md-inline-form" novalidate>
+        <md-toolbar class="md-accent md-hue-2">
+            <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+                <span class="title">
+                    <span translate="ARC.DeleteTag"></span>
+                    <span>&bull;</span>
+                    <span style="font-size: 0.6em" ng-bind="vm.reportDataItem.Tag.Name"></span>
+                </span>
+                <md-button class="md-icon-button" ng-click="vm.cancel()">
+                    <md-icon md-font-icon="icon-close" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content ms-scroll>
+            <md-input-container ng-if="vm.reportDataItem.Tag.TagTypeId == 8" class="md-block">
+                <md-checkbox ng-model="vm.isChecked" aria-label="Finished?">
+                    <span translate="DO_YOU_WANT_TO_DEACTIVATE_SYSTEM_WIDE"> Do you want to deactivate this calculation system wide<span>
+                </md-checkbox>
+            </md-input-container>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <span flex></span>
+            <md-button class="md-raised" ng-click="vm.cancel()">
+                <span class="fa fa-fw fa-times"></span>
+                <span translate="ARC.CANCEL">Cancel</span>
+            </md-button>
+            <md-button class="md-raised" ng-click="vm.remove()">
+                <span class="fa fa-fw fa-trash"></span>
+                <span translate="ARC.REMOVE">Remove</span>
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

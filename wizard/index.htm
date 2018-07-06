@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html ng-app="App" ng-controller="AppCtrl">
+<head>
+	<title>DAVE v2 Wizard</title>
+	
+	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+<body>
+
+	<div class="container">
+      <div class="form-signin">
+        <h3>DAVE v2 Help Wizard</h3>
+		<div class="thumbnail">
+			<img src="images/start.jpg" alt="Naaaaaaaaaaacho Libre!">
+		</div>
+		<button type="button" class="btn btn-large btn-primary ng-scope" 
+			bs-modal="'partials/wizard.html'" 
+			data-toggle="modal">Open</button>
+      </div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/0.7.2/angular-strap.min.js"></script>
+	<script src="app.js"></script> 
+</body>
+</html>

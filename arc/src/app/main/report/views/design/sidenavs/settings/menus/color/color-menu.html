@@ -1,0 +1,57 @@
+<!-- HEADER -->
+<div class="header md-whiteframe-2dp">
+    <md-list>
+
+        <!-- SELECTED COLOR -->
+        <md-list-item class="selected-color">
+            <p class="title" flex>Selected Color: </p>
+            <div ng-if="!vm.app.settings.color" class="preview md-background-bg md-hue-1"></div>
+            <div ng-if="vm.app.settings.color" class="preview"
+                 ng-class="'md-'+vm.app.settings.color+'-bg'">
+                {{vm.app.settings.color}}
+            </div>
+            <md-button class="md-icon-button" ng-click="vm.app.settings.color = ''" aria-label="Default Color">
+                <md-icon md-font-icon="icon-close-circle"></md-icon>
+            </md-button>
+        </md-list-item>
+        <!-- / SELECTED COLOR -->
+
+        <!--<md-list-item>-->
+        <!--<md-button class="md-icon-button" ng-click="vm.app.backgroundHue = vm.app.backgroundHue -100"-->
+        <!--ng-disabled="vm.app.backgroundHue == 100"-->
+        <!--aria-label="decrease hue">-->
+        <!--<md-icon md-font-icon="icon-brightness-5"></md-icon>-->
+        <!--</md-button>-->
+
+        <!--<md-slider flex min="100" max="600" step="100" ng-model="vm.app.backgroundHue" aria-label="hue"-->
+        <!--id="hue-slider"></md-slider>-->
+
+        <!--<md-button class="md-icon-button" ng-click="vm.app.backgroundHue = vm.app.backgroundHue + 100"-->
+        <!--ng-disabled="vm.app.backgroundHue == 900"-->
+        <!--aria-label="increase hue">-->
+        <!--<md-icon md-font-icon="icon-brightness-7"></md-icon>-->
+        <!--</md-button>-->
+        <!--</md-list-item>-->
+
+    </md-list>
+</div>
+<!-- / HEADER -->
+
+<!-- CONTENT-->
+<div flex class="content" ms-scroll ms-sidenav-helper>
+
+    <md-list>
+
+        <!-- COLORS -->
+        <md-list-item class="color" ng-repeat="(paletteName, palette) in vm.palettes"
+                      ng-click="vm.app.settings.color = paletteName"
+                      ng-class="'md-'+paletteName+'-bg'" aria-label="color select">
+            <p flex>{{paletteName}}</p>
+            <i class="icon-check s16" ng-if="paletteName === vm.app.settings.color"></i>
+        </md-list-item>
+        <!-- / COLORS -->
+
+    </md-list>
+
+</div>
+<!-- / CONTENT-->

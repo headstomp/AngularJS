@@ -1,0 +1,354 @@
+<div id="appheader" class="page-layout simple fullwidth doc-page element-doc-page" layout="column">
+
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column">
+        <div class="header-content" layout="row" layout-align="space-between" layout-wrap flex>
+
+            <!-- APP SELECTION BUTTON -->
+            <div layout="row" layout-align="center center" flex-order="1" flex-order-xs="2">
+                <md-button class="md-accent md-raised md-hue-2 header-apps-button"
+                    ng-click="vm.appSelectorVisible = !vm.appSelectorVisible"
+                    aria-label="apps button" translate-attr-aria-label="ARC.APPS_BUTTON">
+                    <md-icon md-font-icon="icon-trello" class="icon"></md-icon>
+                    <span translate="ARC.TAG_APPS">Apps</span>
+                </md-button>
+            </div>
+            <!-- / APP SELECTION BUTTON -->
+
+            <!-- TAG NAME -->
+            <div class="header-app-name" layout="row" layout-align="center center" flex-order="2" flex-order-xs="1"
+                 flex-xs="100">
+
+                <span translate="ARC.TAG_LIST">Tag List</span>
+            </div>
+            <!-- / TAG NAME -->
+
+            <!-- TOOLBAR -->
+            <div class="toolbar" layout="row" layout-align="space-between center" flex-order="3">
+
+
+                <!-- SETTINGS BUTTON -->
+                <md-button class="md-icon-button"
+                           ng-click="vm.toggleSidenav('settings-sidenav')"
+                           aria-label="Settings" translate-attr-aria-label="ARC.SETTINGS">
+                    <md-icon md-font-icon="icon-cog"></md-icon>
+                    <md-tooltip><span translate="ARC.SETTINGS">Settings</span></md-tooltip>
+                </md-button>
+                <!-- / SETTINGS BUTTON -->
+            </div>
+            <!-- / TOOLBAR -->
+
+        </div>
+
+    </div>
+    <!-- / HEADER -->
+
+    <!-- TAG SELECTION -->
+    <div ng-show="vm.appSelectorVisible"
+         id="app-selector"
+         class="md-accent-bg animate-slide-down app-list md-whiteframe-3dp"
+         layout="row" layout-align="start center">
+
+        <!-- APPS -->
+        <!-- TAG LIST BUTTON -->
+        <div class="app-list-item"
+            ui-sref="app.tag.taglist"
+            layout="column" layout-align="space-between center">
+            <div class="app-icon">
+                <i class="icon-library s64"></i>
+            </div>
+            <div flex class="app-name" translate="ARC.TAG_LIST">Tag List</div>
+        </div>
+        <!-- / TAG LIST BUTTON -->
+
+        <!-- TAG DETAILS BUTTON -->
+        <div class="app-list-item"
+            ui-sref="app.tag.tagnew"
+            layout="column" layout-align="space-between center">
+            <div class="app-icon">
+                <i class="icon-plus-circle s64"></i>
+            </div>
+            <div flex class="app-name" translate="ARC.NEW_TAG">New Tag</div>
+            <div class="selected-icon green-bg">
+                <i class="icon-check s24"></i>
+            </div>
+        </div>
+            <!-- / TAG DETAILS BUTTON -->
+
+    </div>
+
+    <md-backdrop class="app-selector-backdrop md-dialog-backdrop md-opaque" ng-show="vm.appSelectorVisible"
+                 ng-click="vm.appSelectorVisible = false" aria-hidden="true">
+    </md-backdrop>
+    <!-- / TAG SELECTION -->
+
+    <!-- CONTENT -->
+    <div id="forms" class="page-layout simple fullwidth doc-page element-doc-page" ms-scroll>
+        <div class="content">
+            <div class="white-bg md-whiteframe-4dp">
+                <div class="p-32">
+                    <div class="md-title" translate="ARC.NEW_TAG_WIZARD">New Tag - Wizard</div>
+                        <div class="pb-16" translate="ARC.TAG_CREATION_DESCRIPTION">
+                            This will guide you through the tag creation process. Fill in the data for each step, Use the previous and next buttons to navigate the steps. Click submit when done.
+                        </div>
+                    <div layout="row">
+
+                        <!-- FORM WIZARD -->
+                        <ms-form-wizard flex>
+                            <!-- FORM WIZARD TABS -->
+                            <md-tabs md-dynamic-height md-selected="msWizard.selectedIndex" md-center-tabs="true">
+                                <md-tab>
+                                    <md-tab-label>
+                                        <span class="ms-form-wizard-step-label">
+                                            <span class="ms-form-wizard-step-number md-accent-bg"
+                                                  ng-if="wizardStep1.$invalid">1</span>
+                                            <span class="ms-form-wizard-step-number md-accent-bg" ng-if="wizardStep1.$valid">
+                                                <i class="icon-check s16"></i>
+                                            </span>
+                                            <span class="ms-form-wizard-step-text" translate="ARC.OWNER_INFORMATION">Owner Information</span>
+                                        </span>
+                                    </md-tab-label>
+                                    <!-- WIZARD TAB 1 -->
+                                    <md-tab-body>
+                                        <form name="wizardStep1" class="md-inline-form" ms-form-wizard-form novalidate>
+                                            <div layout="column" layout-gt-xs="row" flex>
+                                                <md-input-container flex="100" flex-gt-xs="50">
+                                                    <input type="text" name="firstname" ng-model="vm.formWizard.firstname"
+                                                           placeholder="First Name"
+                                                           required>
+                                                    <div ng-messages="wizardStep1.firstname.$error"
+                                                         role="alert">
+                                                        <div ng-message="required">
+                                                            <span translate="ARC.FIRST_NAME_REQUIRED">First Name field is required.</span>
+                                                        </div>
+                                                    </div>
+                                                </md-input-container>
+
+                                                <md-input-container flex="100" flex-gt-xs="50">
+                                                    <input type="text" name="lastname" ng-model="vm.formWizard.lastname"
+                                                           placeholder="Last Name"
+                                                           required>
+                                                    <div ng-messages="wizardStep1.lastname.$error"
+                                                         role="alert">
+                                                        <div ng-message="required">
+                                                            <span translate="ARC.LAST_NAME_REQUIRED">Last Name field is required.</span>
+                                                        </div>
+                                                    </div>
+                                                </md-input-container>
+                                            </div>
+                                            <div layout="column" layout-gt-xs="row" flex>
+                                                <md-input-container flex="100" flex-gt-xs="50">
+                                                    <input type="text" name="site" ng-model="vm.formWizard.site"
+                                                           placeholder="Site"
+                                                           required>
+                                                    <div ng-messages="wizardStep1.site.$error"
+                                                         role="alert">
+                                                        <div ng-message="required">
+                                                            <span translate="ARC.SITE_FIELD_REQUIRED">Site field is required.</span>
+                                                        </div>
+                                                    </div>
+                                                </md-input-container>
+
+                                                <md-input-container flex="100" flex-gt-xs="50">
+                                                    <input type="text" name="department" ng-model="vm.formWizard.department"
+                                                           placeholder="Department"
+                                                           required>
+                                                    <div ng-messages="wizardStep1.department.$error"
+                                                         role="alert">
+                                                        <div ng-message="required">
+                                                            <span translate="ARC.DEPARTMENT_FIELD_REQUIRED">Department field is required.</span>
+                                                        </div>
+                                                    </div>
+                                                </md-input-container>
+                                            </div>
+                                        </form>
+                                    </md-tab-body>
+                                </md-tab>
+                                <!-- / WIZARD TAB 1 -->
+                                <!-- WIZARD TAB 2 -->
+                                <md-tab ng-disabled="wizardStep1.$invalid">
+                                    <md-tab-label>
+                                        <span class="ms-form-wizard-step-label">
+                                            <span class="ms-form-wizard-step-number md-accent-bg"
+                                                  ng-if="wizardStep2.$invalid">2</span>
+                                            <span class="ms-form-wizard-step-number md-accent-bg" ng-if="wizardStep2.$valid">
+                                                <i class="icon-check s16"></i>
+                                            </span>
+                                            <span class="ms-form-wizard-step-text" translate="ARC.TAG_INFORMATION">Tag Information</span>
+                                        </span>
+                                    </md-tab-label>
+
+                                    <md-tab-body>
+                                        <form name="wizardStep2" ms-form-wizard-form novalidate>
+                                            <div layout="column" layout-gt-sm="row" flex>
+                                                <md-input-container flex="100" flex-gt-xs="50">
+                                                    <label translate="ARC.TAG_NAME">Tag Name</label>
+                                                    <textarea ng-model="vm.formWizard.tagname" md-maxlength="50"
+                                                              required></textarea>
+                                                    <div ng-messages="wizardStep2.address.$error"
+                                                         role="alert" multiple>
+                                                        <div ng-message="required"><span translate="ARC.TAG_NAME_REQUIRED">Tag Name is required.</span></div>
+                                                        <div ng-message="md-maxlength">
+                                                            <span translate="ARC.TAG_NAME_LENGTH_EXCEEDED">Tag Name can't be longer than 50 characters.</span>
+                                                        </div>
+                                                    </div>
+                                                </md-input-container>
+                                                <md-input-container flex="100" flex-gt-xs="25">
+                                                    <label translate="ARC.LOCATION">Location</label>
+                                                    <textarea ng-model="vm.formWizard.location"
+                                                              required></textarea>
+                                                    <div ng-messages="wizardStep2.location.$error"
+                                                         role="alert">
+                                                        <div ng-message="required"><span translate="ARC.TAG_NAME_REQUIRED">Tag Name is required.</span></div>
+                                                    </div>
+                                                </md-input-container>
+                                                <md-input-container flex="100" flex-gt-xs="25">
+                                                    <label translate="ARC.AREA">Area</label>
+                                                    <textarea ng-model="vm.formWizard.area"
+                                                              required></textarea>
+                                                    <div ng-messages="wizardStep2.area.$error"
+                                                         role="alert">
+                                                        <div ng-message="required"><span translate="ARC.AREA_IS_REQUIRED">Area is required.</span></div>
+                                                    </div>
+                                                </md-input-container>
+                                            </div>
+
+                                            <md-input-container class="md-block">
+                                                <label translate="ARC.DESCRIPTION">Description</label>
+                                                <textarea ng-model="vm.formWizard.description" md-maxlength="105" max-rows="5"
+                                                          required></textarea>
+                                                <div ng-messages="wizardStep2.address.$error"
+                                                     role="alert" multiple>
+                                                    <div ng-message="required"><span translate="ARC.DESCRIPTION_REQUIRED">Description is required.</span></div>
+                                                    <div ng-message="md-maxlength">
+                                                        <span translate="ARC.DESCRIPTION_LENGTH_EXCEEDED">Description can't be longer than 105 characters.</span>
+                                                    </div>
+                                                </div>
+                                            </md-input-container>
+
+                                            <div layout="column" layout-gt-sm="row" flex>
+                                                <md-input-container flex="100" flex-gt-xs="33">
+                                                    <label translate="ARC.GROUP_NAME">Group Name</label>
+                                                    <textarea ng-model="vm.formWizard.groupname"
+                                                              required></textarea>
+                                                    <div ng-messages="wizardStep2.groupname.$error"
+                                                         role="alert">
+                                                        <div ng-message="required"><span translate="ARC.GROUP_NAME_REQUIRED">Group Name is required.</span></div>
+                                                    </div>
+                                                </md-input-container>
+                                                <md-input-container flex="100" flex-gt-xs="33">
+                                                    <label translate="ARC.PARENT_TAG">Parent Tag</label>
+                                                    <textarea ng-model="vm.formWizard.parent"
+                                                              required></textarea>
+                                                    <div ng-messages="wizardStep2.parent.$error"
+                                                         role="alert">
+                                                        <div ng-message="required"><span translate="ARC.PARENT_TAG_REQUIRED">Parent Tag is required.</span></div>
+                                                    </div>
+                                                </md-input-container>
+                                                <md-input-container flex="100" flex-gt-xs="33">
+                                                    <label translate="ARC.INPUT_TYPE">Input Type</label>
+                                                    <textarea ng-model="vm.formWizard.inputtype"
+                                                              required></textarea>
+                                                    <div ng-messages="wizardStep2.inputtype.$error"
+                                                         role="alert">
+                                                        <div ng-message="required"><span translate="ARC.INPUT_TYPE_REQUIRED">Input Type is required.</span></div>
+                                                    </div>
+                                                </md-input-container>
+                                            </div>
+                                        </form>
+                                    </md-tab-body>
+                                </md-tab>
+                                <!-- / WIZARD TAB 2 -->
+                                <!-- WIZARD TAB 3 -->
+                                <md-tab ng-disabled="wizardStep1.$invalid || wizardStep2.$invalid">
+                                    <md-tab-label>
+                                        <span class="ms-form-wizard-step-label">
+                                            <span class="ms-form-wizard-step-number md-accent-bg"
+                                                  ng-if="wizardStep3.$invalid">3</span>
+                                            <span class="ms-form-wizard-step-number md-accent-bg" ng-if="wizardStep3.$valid">
+                                                <i class="icon-check s16"></i>
+                                            </span>
+                                            <span class="ms-form-wizard-step-text" translate="ARC.ACCESS_AVAILABILITY">Access / Availabilty</span>
+                                        </span>
+                                    </md-tab-label>
+                                    <md-tab-body>
+                                        <form name="wizardStep3" ms-form-wizard-form novalidate>
+                                            <div layout="column" layout-gt-sm="row" flex>
+                                                <md-input-container class="md-block" flex="100" flex-gt-xs="33">
+                                                    <div class="inset" ng-cloak>
+                                                        <md-switch ng-model="vm.formWizard.share" aria-label="Switch 1" translate="ARC.SHARE_THIS_TAG">
+                                                        Share this tag: {{ vm.formWizard.share }}
+                                                        </md-switch>
+                                                        <md-switch ng-model="vm.formWizard.limittosite" aria-label="Switch 1" translate="ARC.LIMIT_SHARING_TO_SITE">
+                                                        Limit sharing to site: {{ vm.formWizard.limittosite }}
+                                                        </md-switch>
+                                                        <md-switch ng-model="vm.formWizard.limittodept" aria-label="Switch 1" translate="ARC.LIMIT_SHARING_TO_DEPARTMENT">
+                                                        Limit sharing to department: {{ vm.formWizard.limittodept }}
+                                                        </md-switch>
+                                                    </div>
+                                                </md-input-container>
+                                                <md-input-container class="md-block" flex="100" flex-gt-xs="33">
+                                                    <div class="inset" ng-cloak>
+                                                        <md-switch ng-model="vm.formWizard.onforms" aria-label="Switch 1" translate="ARC.ALLOW_ON_FORMS">
+                                                        Allow on forms: {{ vm.formWizard.onforms }}
+                                                        </md-switch>
+                                                        <md-switch ng-model="vm.formWizard.newvalues" aria-label="Switch 1" translate="ARC.ALLOW_NEW_VALUES">
+                                                        Allow new values: {{ vm.formWizard.newvalues }}
+                                                        </md-switch>
+                                                        <md-switch ng-model="vm.formWizard.changevalues" aria-label="Switch 1" translate="ARC.ALLOW_VALUE_CHANGES">
+                                                        Allow value changes: {{ vm.formWizard.changevalues }}
+                                                        </md-switch>
+                                                    </div>
+                                                </md-input-container>
+                                                <md-input-container class="md-block" flex="100" flex-gt-xs="33">
+                                                    <div class="inset" ng-cloak>
+                                                        <md-switch ng-model="vm.formWizard.onreports" aria-label="Switch 1" translate="ARC.ALLOW_ON_REPORTS">
+                                                        Allow on Reports: {{ vm.formWizard.onreports }}
+                                                        </md-switch>
+                                                        <md-switch ng-model="vm.formWizard.modify" aria-label="Switch 1" translate="ARC.ALLOW_MODIFY">
+                                                        Allow others to modify tag: {{ vm.formWizard.modify }}
+                                                        </md-switch>
+                                                        <md-switch ng-model="vm.formWizard.delete" aria-label="Switch 1" translate="ARC.ALLOW_DELETE">
+                                                        Allow others to delete tag: {{ vm.formWizard.delete }}
+                                                        </md-switch>
+                                                    </div>
+                                                </md-input-container>
+                                            </div>
+                                        </form>
+                                    </md-tab-body>
+                                </md-tab>
+                                <!-- / WIZARD STEP 3 -->
+                            </md-tabs>
+                            <!-- / FORM WIZARD TABS -->
+                            <!-- FORM WIZARD NAVIGATION -->
+                            <div class="navigation" flex layout="row" layout-align="center center">
+                                <md-button class="md-raised md-accent" ng-click="msWizard.previousStep()"
+                                           ng-disabled="msWizard.isFirstStep()" translate="ARC.PREVIOUS">
+                                    Previous
+                                </md-button>
+                                <div class="steps">
+                                    <span ng-repeat="form in msWizard.forms"
+                                          ng-class="{'selected md-accent-bg':msWizard.selectedIndex === $index}"></span>
+                                </div>
+                                <md-button class="md-raised md-accent" ng-click="msWizard.nextStep()"
+                                           ng-hide="msWizard.isLastStep()"
+                                           ng-disabled="msWizard.currentStepInvalid()" translate="ARC.NEXT">
+                                    Next
+                                </md-button>
+                                <md-button class="md-raised md-warn" ng-click="vm.sendForm(); msWizard.resetForm();"
+                                           ng-show="msWizard.isLastStep()"
+                                           ng-disabled="msWizard.formsIncomplete()" translate="ARC.SEND">
+                                    Send
+                                </md-button>
+                            </div>
+                            <!-- / FORM WIZARD NAVIGATION -->
+                        </ms-form-wizard>
+                        <!-- / FORM WIZARD -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / CONTENT -->
+
+</div>
